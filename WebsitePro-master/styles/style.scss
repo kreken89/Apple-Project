@@ -1,0 +1,183 @@
+//import urls
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Montserrat:wght@200;300;400;500;600&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+// Import partials
+@import '../partials/variables';
+@import '../partials/mixins';
+@import '../partials/header';
+@import '../partials/footer';
+@import '../partials/video';
+@import '../partials/carousel';
+@import '../partials/cards';
+@import '../partials/headings';
+@import '../partials/text-image';
+@import '../partials/small-stylings';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background: $bg-color;
+  overflow-x: hidden;
+}
+
+@media (min-width: 992.98px) {
+  .destination .box-container {
+    @include grid(27rem);
+  }
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 1.5rem 2rem;
+  }
+  .home {
+    min-height: 75vh;
+    .content-contact {
+      margin-top: 6rem;
+    }
+  }
+  .about {
+    .content {
+      h3 {
+        font-size: 3.5rem;
+      }
+
+      p {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  .w3-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .mySlider {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .w3-animate-fading {
+      display: flex;
+      align-self: center;
+      width: 45vw;
+    }
+    span {
+      font-weight: bold;
+    }
+  }
+}
+@media (min-width: 297.98px) and (max-width: 992.98px) {
+  .destination .box-container {
+    @include grid(33rem);
+  }
+  html {
+    font-size: 50%;
+  }
+  #menu-btn {
+    display: inline-block;
+  }
+  .header {
+    padding: 2rem;
+    .logo {
+      @media (min-width: 297.98px) and (max-width: 378.98px) {
+        font-size: 1.9rem;
+      }
+    }
+
+    .navbar {
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.3);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+      &.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        background: rgba(0, 0, 0, 0.8);
+        padding: 0 30px;
+      }
+      li {
+        margin: 2rem;
+        font-size: 2rem;
+        display: block;
+
+        &:hover {
+          background: rgba(0, 0, 0, 0.4);
+          padding: 0 30px;
+        }
+      }
+    }
+
+    .home {
+      min-height: 50vh;
+      .content {
+        #email-s {
+          display: block;
+          font-size: 1.5rem;
+          font-weight: 900;
+          opacity: 0.5;
+          border-radius: 5px;
+          padding: 1rem;
+          margin-bottom: 1.5rem;
+          width: 60vw;
+        }
+
+        #party {
+          display: block;
+          font-size: 1.5rem;
+          font-weight: 600;
+          opacity: 0.5;
+          border-radius: 5px;
+          padding: 1rem;
+          width: 60vw;
+        }
+      }
+
+      input[type='text'],
+      select,
+      textarea {
+        display: flex;
+        color: $brown;
+        font-weight: 900;
+        opacity: 0.6;
+        width: 60vw;
+        padding: 1rem;
+        border-radius: 0.6rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+    .about {
+      .content {
+        h3 {
+          font-size: 3.5rem;
+        }
+
+        p {
+          font-size: 2.3rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+// Slider comments
+.w3-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .mySlides {
+    display: flex;
+    width: 40vw;
+    .mySlider {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  span {
+    font-weight: bold;
+  }
+}
+// OWL CAROUSEL AUTOPLAY
+.owl-item {
+  width: 10vw;
+  margin-right: 0px;
+}
+// Code to hide the dots
+.owl-theme .owl-dots .owl-dot {
+  display: none !important;
+}
+
+.owl-stage-outer {
+  .owl-stage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transform: translate3d(0px, 0px, 0px);
+    transition: all 0.25s ease 0s;
+    width: 100%;
+
+    .item {
+      display: flex;
+      justify-content: center;
+      flex-direction: space-around;
+      width: 100%;
+      height: auto;
+    }
+    @media (min-width: 297.98px) and (max-width: 767.98px) {
+      img {
+        width: auto;
+        height: auto;
+      }
+    }
+  }
+}
