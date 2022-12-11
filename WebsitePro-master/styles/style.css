@@ -378,6 +378,13 @@
   list-style: none;
   display: inline-flex;
 }
+.home .content ul li a {
+  padding: 2rem;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  color: #06c;
+  letter-spacing: inherit;
+}
 @media (min-width: 297.98px) and (max-width: 767.98px) {
   .home .content {
     padding: 3rem 1rem;

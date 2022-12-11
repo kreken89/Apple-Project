@@ -1,5 +1,5 @@
 .home {
-  margin-top: 3rem;  
+  margin-top: 3rem;
   background: url(/images/Home_images/h1.png) no-repeat;
   background-size: cover;
   background-position: center;
@@ -15,11 +15,19 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 3rem ;
+    padding: 3rem;
 
-    ul li{
+    ul li {
       list-style: none;
       display: inline-flex;
+
+      a {
+        padding: 2rem;
+        margin-bottom: 3rem;
+        font-size: 2rem;
+        color: #06c;
+        letter-spacing: inherit;
+      }
     }
 
     @media (min-width: 297.98px) and (max-width: 767.98px) {
@@ -90,7 +98,7 @@
       font-family: 'Bilbo Swash Caps', 'Montserrat', 'Poppins', sans-serif;
       font-size: 6vw;
       color: white;
-      line-break:normal
+      line-break: normal;
     }
 
     #email {
@@ -148,7 +156,7 @@
 
   @media (min-width: 297.98px) and (max-width: 767.98px) {
     padding: 3rem 1rem;
-    .s1{
+    .s1 {
       font-size: 5vw;
       margin: 3rem;
     }
@@ -167,7 +175,6 @@
 
   @media (min-width: 297.98px) and (max-width: 767.98px) {
     padding: 3rem 10rem;
-    
   }
 }
 
