@@ -11,7 +11,7 @@
   .content {
     min-width: 30vh;
     display: flex;
-    margin-top: -40rem;
+    margin-top: -50rem;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -19,11 +19,11 @@
 
     ul li {
       list-style: none;
-      display: inline-flex;
+      display: inline;
 
       a {
-        padding: 2rem;
-        margin-bottom: 3rem;
+        padding: 1.5rem;
+        margin-bottom: 5rem;
         font-size: 2rem;
         color: #06c;
         letter-spacing: inherit;
@@ -144,15 +144,37 @@
   }
 }
 
-// About home img
-.about {
+// About Ipad
+.ipad {
   background: url(/images/home_images/h2.png) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
-  min-height: 80vh;
+  min-height: 60vh;
   align-items: center;
   justify-content: center;
+
+  .content {
+    margin-top: 150px;
+    padding-left: 365px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+
+    ul li {
+      list-style: none;
+      display: inline;
+
+      a {
+        padding: 1.5rem;
+        margin-bottom: 5rem;
+        font-size: 2rem;
+        color: #06c;
+        letter-spacing: inherit;
+      }
+    }
+  }
 
   @media (min-width: 297.98px) and (max-width: 767.98px) {
     padding: 3rem 1rem;
@@ -162,6 +184,45 @@
     }
   }
 }
+
+// About presentcard 
+.presentcard {
+  background: url(/images/home_images/h3.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  min-height: 60vh;
+  align-items: center;
+  justify-content: center;
+
+  .content {
+    margin-top: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    ul li {
+      list-style: none;
+      display: inline;
+
+      a {
+
+        font-size: 2rem;
+        color: #06c;
+        letter-spacing: inherit;
+      }
+    }
+  }
+
+  @media (min-width: 297.98px) and (max-width: 767.98px) {
+    padding: 3rem 1rem;
+    .s1 {
+      font-size: 5vw;
+      margin: 3rem;
+    }
+  }
+}
+
 // Luxury home img
 
 .home_luxury {
