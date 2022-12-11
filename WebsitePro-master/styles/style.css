@@ -356,21 +356,27 @@
 }
 
 .home {
-  margin: 0 auto;
-  background: url(/images/p4.jpeg) no-repeat;
+  margin-top: 3rem;
+  background: url(/images/Home_images/h1.png) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
-  min-height: 80vh;
+  min-height: 70vh;
   align-items: center;
   justify-content: center;
 }
 .home .content {
-  text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(147, 146, 146, 0.1));
-  border-radius: 5rem;
-  padding: 3rem 8rem;
-  margin-top: 8rem;
+  min-width: 30vh;
+  display: flex;
+  margin-top: -40rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+.home .content ul li {
+  list-style: none;
+  display: inline-flex;
 }
 @media (min-width: 297.98px) and (max-width: 767.98px) {
   .home .content {
