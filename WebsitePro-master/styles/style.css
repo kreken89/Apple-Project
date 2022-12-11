@@ -357,7 +357,7 @@
 
 .home {
   margin-top: 3rem;
-  background: url(/images/Home_images/h1.png) no-repeat;
+  background: url(/images/home_images/h1.png) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -488,8 +488,8 @@
   line-height: 1;
 }
 
-.home_about {
-  background: url(/images/p3.webp) no-repeat;
+.about {
+  background: url(/images/home_images/h2.png) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -498,10 +498,10 @@
   justify-content: center;
 }
 @media (min-width: 297.98px) and (max-width: 767.98px) {
-  .home_about {
+  .about {
     padding: 3rem 1rem;
   }
-  .home_about .s1 {
+  .about .s1 {
     font-size: 5vw;
     margin: 3rem;
   }
