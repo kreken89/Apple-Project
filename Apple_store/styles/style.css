@@ -356,7 +356,7 @@ img {
 */
 .heading {
   text-align: center;
-  margin-bottom: 2rem;
+  margin: 5rem;
 }
 .heading span {
   color: rgb(212, 175, 55);
@@ -368,28 +368,24 @@ img {
 }
 
 .destination .box-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-  gap: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .destination .box-container .box {
-  border-radius: 1rem;
-  overflow: hidden;
-  box-shadow: 5px 9px 8px #dddcdc;
-}
-.destination .box-container .box:hover img {
-  transform: scale(1.1);
+  width: 200px;
+  height: 300px;
 }
 .destination .box-container .box .image {
+  padding: 0 4rem;
   height: 20rem;
-  overflow: hidden;
-  width: 100%;
+  width: 250px;
+  height: 200px;
 }
 .destination .box-container .box .image img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .destination .box-container .box .content {
   padding: 2rem;
@@ -441,43 +437,6 @@ img {
   color: #06c;
   letter-spacing: inherit;
 }
-@media (min-width: 297.98px) and (max-width: 767.98px) {
-  .home .content {
-    padding: 3rem 1rem;
-  }
-  .home .content .form #email-s {
-    display: block;
-    font-size: 1.5rem;
-    font-weight: 600;
-    opacity: 0.5;
-    border-radius: 5px;
-    padding: 0.9rem 1rem;
-    margin-bottom: 1.5rem;
-    width: 50vw;
-  }
-  .home .content .form #party {
-    display: block;
-    font-size: 1.5rem;
-    font-weight: 600;
-    opacity: 0.5;
-    border-radius: 5px;
-    padding: 0.9rem 1rem;
-    width: 50vw;
-  }
-  .home .content .form input[type=text],
-.home .content .form select,
-.home .content .form textarea {
-    display: flex;
-    color: rgb(55, 20, 1);
-    font-weight: 900;
-    opacity: 0.6;
-    width: 50vw;
-    padding: 1rem;
-    border-radius: 0.6rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-}
 .home .content .logo {
   padding: 0.2rem;
   font-size: 5rem;
@@ -492,56 +451,6 @@ img {
 }
 .home .content .headerlogo {
   font-family: "Montserrat", "Poppins", sans-serif;
-}
-.home .content span {
-  font-weight: bold;
-  color: transparent;
-  -webkit-text-stroke: 0.1rem white;
-  font-size: 3vw;
-  display: block;
-}
-.home .content .s1 {
-  font-family: "Bilbo Swash Caps", "Montserrat", "Poppins", sans-serif;
-  font-size: 6vw;
-  color: white;
-  line-break: normal;
-}
-.home .content #email {
-  display: block;
-  font-size: 1.5rem;
-  font-weight: 600;
-  opacity: 0.5;
-  border-radius: 5px;
-  padding: 0.9rem 1rem;
-  margin-bottom: 1.5rem;
-  width: 33vw;
-}
-.home .content #email-s {
-  display: block;
-  font-size: 1.5rem;
-  font-weight: 600;
-  opacity: 0.5;
-  border-radius: 5px;
-  padding: 0.9rem 1rem;
-  margin-bottom: 1.5rem;
-  width: 33vw;
-}
-.home .content #party {
-  display: block;
-  font-size: 1.5rem;
-  font-weight: 600;
-  opacity: 0.5;
-  border-radius: 5px;
-  padding: 0.9rem 1rem;
-  width: 33vw;
-}
-.home .content .p1 {
-  max-width: 60rem;
-  margin: 2rem auto;
-  font-size: 2rem;
-  font-weight: 700;
-  color: whitesmoke;
-  line-height: 1;
 }
 
 .ipad {
@@ -615,8 +524,8 @@ img {
   }
 }
 
-.home_luxury {
-  background: url(/images/p1.jpeg) no-repeat;
+.home_mac {
+  background: url(/Apple_store/images/mac_images/m1.png) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -624,9 +533,63 @@ img {
   align-items: center;
   justify-content: center;
 }
+.home_mac .content {
+  min-width: 30vh;
+  display: flex;
+  margin-top: -35rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+.home_mac .content ul li {
+  list-style: none;
+  display: inline;
+}
+.home_mac .content ul li a {
+  padding: 1.5rem;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  color: #06c;
+  letter-spacing: inherit;
+}
 @media (min-width: 297.98px) and (max-width: 767.98px) {
-  .home_luxury {
+  .home_mac {
     padding: 3rem 10rem;
+  }
+}
+
+.macBook_pro {
+  background: url(/Apple_store/images/mac_images/m2.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  min-height: 60vh;
+  align-items: center;
+  justify-content: center;
+}
+.macBook_pro .content {
+  margin-top: -5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.macBook_pro .content ul li {
+  list-style: none;
+  display: inline;
+}
+.macBook_pro .content ul li a {
+  font-size: 2rem;
+  color: #06c;
+  letter-spacing: inherit;
+}
+@media (min-width: 297.98px) and (max-width: 767.98px) {
+  .macBook_pro {
+    padding: 3rem 1rem;
+  }
+  .macBook_pro .s1 {
+    font-size: 5vw;
+    margin: 3rem;
   }
 }
 
@@ -871,11 +834,6 @@ body {
 }
 
 @media (min-width: 992.98px) {
-  .destination .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-    gap: 1.5rem;
-  }
   html {
     font-size: 55%;
   }

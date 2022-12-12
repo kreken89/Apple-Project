@@ -1,7 +1,7 @@
 // Destinations 
 .heading {
     text-align: center;
-    margin-bottom: 2rem;
+    margin: 5rem ;
 
     span {
         color: $gold-color;
@@ -15,26 +15,26 @@
 }
 /// Boxes ///
 .destination .box-container {
-    @include grid(27rem);
+    // @include grid(25rem);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    // justify-items: center;
 
     .box {
-        border-radius: 1rem;
-        overflow: hidden;
-        box-shadow: 5px 9px 8px #dddcdc;
-
-        &:hover img {
-            transform: scale(1.1);
-        }
+        width: 200px;
+        height: 300px;
 
         .image {
+            padding: 0 4rem;
             height: 20rem;
-            overflow: hidden;
-            width: 100%;
+            width: 250px;
+            height: 200px;
 
             img {
                 height: 100%;
                 width: 100%;
-                object-fit: cover;
             }
         }
 
