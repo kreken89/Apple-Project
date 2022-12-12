@@ -1,65 +1,108 @@
-// Destinations 
+// Destinations
 .heading {
-    text-align: center;
-    margin: 5rem ;
+  text-align: center;
+  margin: 5rem;
 
-    span {
-        color: $gold-color;
-        font-size: 2rem;
-    }
+  span {
+    color: $gold-color;
+    font-size: 2rem;
+  }
 
-    h2 {
-        font-size: 4rem;
-        color: $brown;
-    }
+  h2 {
+    font-size: 4rem;
+    color: $brown;
+  }
 }
 /// Boxes ///
-.destination .box-container {
-    // @include grid(25rem);
+#products{
+    min-height: 150vh;
+}
+
+.products .box-container {
+  display: flex;
+  flex-wrap: wrap;
+//   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    // justify-items: center;
-
+    // margin-bottom: 20rem;
     .box {
-        width: 200px;
-        height: 300px;
-
-        .image {
-            padding: 0 4rem;
-            height: 20rem;
-            width: 250px;
-            height: 200px;
-
-            img {
-                height: 100%;
-                width: 100%;
-            }
-        }
-
-        .content {
-            padding: 2rem;
-            text-align: center;
-
-            h3 {
-                font-size: 2rem;
-                color: $brown;
-            }
-
-            p {
-                padding-bottom: 1rem;
-            }
-
-            a {
-                color: $brown;
-                font-weight: 700;
-                text-decoration: overline;
-
-                &:hover {
-                    color: $gold-color;
-                }
-            }
-        }
+      padding-top: 3rem;
     }
+
+    h3 {
+      font-size: 3rem;
+      font-weight: 500;
+      padding-bottom: 1rem;
+    }
+
+    span {
+      font-size: 1.4rem;
+    }
+
+    .chip{
+      padding-bottom: 3rem;
+    }
+    
+    .price {
+      margin: 1rem 0 1rem;
+      font-size: 1.8rem;
+    }
+
+    .buy {
+      width: 4vw;
+      font-size: 12px;
+      line-height: 1.33337;
+      font-weight: 400;
+      padding: 5px 2px;
+      cursor: pointer;
+      display: inline-block;
+      text-align: center;
+      border-radius: 980px;
+      background: #0071e3;
+      color: #fff;
+    }
+
+    .link {
+      padding: 2rem 0 4rem;
+      font-size: 1.5rem;
+      list-style: none;
+      color: #0071e3;
+
+      .fa-chevron-right{
+        font-size: 1rem;
+      }
+
+      border-bottom: 1px solid #d2d2d7;
+      width: 80%;
+    }
+
+    .icon {
+      padding-top: 5rem;
+      font-size: 2.5rem;
+      font-weight: 500;
+    }
+  }
+
+  .box {
+    min-height: 80vh;
+    width: 220px;
+    height: 140px;
+
+    .image {
+      padding: 0 4rem;
+      width: 250px;
+      height: 190px;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
 }
