@@ -38,7 +38,7 @@
 }
 .header .logo {
   padding: 0.2rem;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
   color: #f5f5f7;
   text-decoration: none;
@@ -49,7 +49,7 @@
 
 #menu-btn {
   font-size: 2.5rem;
-  color: rgb(212, 175, 55);
+  color: #f5f5f7;
   display: none;
   cursor: pointer;
 }
@@ -62,9 +62,9 @@
   font-weight: 500;
   padding: 0.5rem 1rem;
   border-radius: 8px;
-  border: 2px solid rgb(212, 175, 55);
+  border: 2px solid #f5f5f7;
   cursor: pointer;
-  color: rgb(212, 175, 55);
+  color: #f5f5f7;
 }
 .nav-item-booking a:hover {
   color: white;
@@ -72,117 +72,84 @@
 }
 
 .footer {
-  background: white;
+  padding: 0;
+  background: #f5f5f7;
+  font-size: 1.3rem;
+}
+.footer .footer-content {
+  max-width: 980px;
+  width: 95vw;
+  margin: 0 auto;
+}
+.footer ul {
+  list-style: none;
 }
 .footer .box-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 1.5rem;
-}
-.footer .box-container .box {
-  padding: 1rem 1rem;
-}
-.footer .box-container .box .logo {
-  font-size: 3rem;
-  font-weight: 600;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  color: rgb(212, 175, 55);
-}
-@media (min-width: 297.98px) and (max-width: 1046.98px) {
-  .footer .box-container .box .logo {
-    font-size: 2.3rem;
-    font-weight: 600;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    color: rgb(212, 175, 55);
-  }
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5rem;
 }
 .footer .box-container .box h3 {
-  font-size: 2.2rem;
-  color: rgb(212, 175, 55);
+  color: rgb(3, 3, 5);
   padding: 1rem 0;
+  font-size: 1.3rem;
 }
-.footer .box-container .box p {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: rgb(55, 20, 1);
-  padding: 1rem 0;
-  line-height: 2;
-}
-.footer .box-container .box p i {
-  font-size: 2.5rem;
-  padding-right: 1rem;
-  color: rgb(55, 20, 1);
-}
-.footer .box-container .box .share {
-  padding-top: 1rem;
-}
-.footer .box-container .box .share a {
-  height: 4.5rem;
-  width: 4.5rem;
-  line-height: 4rem;
-  font-size: 3rem;
-  color: rgb(55, 20, 1);
-  margin-right: 0.5rem;
-}
-.footer .box-container .box .share a:hover {
-  color: rgb(212, 175, 55);
-}
-.footer .box-container .box .links {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: rgb(55, 20, 1);
-  padding: 1rem 0;
-  display: block;
-}
-.footer .box-container .box .links:hover {
-  color: rgb(212, 175, 55);
-}
-.footer .box-container .box .links:hover i {
-  padding-right: 2rem;
-}
-.footer .box-container .box .links:hover i {
-  padding-right: 1rem;
-  color: rgb(212, 175, 55);
-}
-.footer .box-container .box form .email {
-  widows: 100%;
-  border: 1px solid rgb(55, 20, 1);
-  border-radius: 1rem;
-  background: none;
-  font-size: 2rem;
-  color: rgb(212, 175, 55);
+.footer .box-container .box ul li {
   margin-bottom: 1rem;
-  padding: 0.5rem 2rem;
 }
-.footer .box-container .box .btn-subscribe {
-  font-size: 2rem;
-  font-weight: 400;
-  padding: 0.5rem 2rem;
-  border-radius: 1rem;
-  background-color: rgba(0, 0, 0, 0.5);
-  border: 2px solid rgb(212, 175, 55);
-  cursor: pointer;
-  color: rgb(212, 175, 55);
+.footer .box-container .box ul a {
+  color: rgb(3, 3, 5);
 }
-.footer .box-container .box .btn-subscribe:hover {
-  color: white;
-  border: 2px solid white;
+.footer .box-container .box ul a:hover {
+  border-bottom: 1px solid rgb(3, 3, 5);
 }
-
-.copyrights {
-  background: rgba(17, 17, 17, 0.7);
-  opacity: 0.7;
-  text-align: center;
-  font-size: 1.2rem;
+.footer .footer-shop {
+  width: 100%;
+}
+.footer .footer-shop a {
+  color: #0066CC;
+}
+.footer .footer-shop a:hover {
+  border-bottom: 1px solid #0066CC;
+}
+.footer .divider {
+  padding-top: 1rem;
+  border-bottom: 1px solid rgb(182, 182, 182);
+}
+.footer .legal {
+  padding-bottom: 2rem;
+}
+.footer .legal .copyrights {
+  opacity: 0.9;
+  font-size: 1.3rem;
   font-weight: 500;
-  padding: 1rem 2rem;
+  padding: 1rem 0;
 }
-.copyrights p {
-  color: white;
+.footer .legal .copyrights p {
+  color: rgb(71, 71, 71);
+}
+.footer .legal ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-weight: 500;
+}
+.footer .legal ul li {
+  padding-right: 1rem;
+  border-right: 1px solid rgb(182, 182, 182);
+}
+.footer .legal ul a {
+  color: rgb(3, 3, 5);
+}
+.footer .legal ul li:last-child {
+  border-right: none;
 }
 
+@media (max-width: 840px) {
+  .box-container {
+    background-color: aqua;
+  }
+}
 .about {
   display: flex;
   align-items: center;
@@ -798,29 +765,40 @@ textarea {
 }
 
 .gallery .box-container {
-  -moz-columns: 3 25rem;
-       columns: 3 25rem;
+  -moz-columns: 2 40rem;
+       columns: 2 40rem;
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
 }
 .gallery .box-container .box-gallery {
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   -moz-column-break-inside: avoid;
        break-inside: avoid;
 }
 .gallery .box-container .box-gallery img {
   width: 100%;
-  border-radius: 0.5rem;
-  margin-bottom: 1rem;
-}
-.gallery .box-container .box-gallery img:hover {
-  transform: scale(1.1);
+  margin-bottom: 0.8rem;
 }
 
 section {
-  padding: 3rem 9%;
-  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem 1rem;
+  font-size: 1rem;
   font-weight: 400;
+}
+section .box-gallery ul li {
+  position: relative;
+  top: 12rem;
+  left: 0%;
+  bottom: 0%;
+  list-style: none;
+  display: inline;
+}
+section .box-gallery ul li a {
+  padding: 1rem;
+  font-size: 1.3rem;
+  color: #06c;
+  letter-spacing: inherit;
 }
 
 .border {
@@ -946,6 +924,8 @@ body {
     display: inline-block;
   }
   .header {
+    display: flex;
+    justify-content: space-between;
     padding: 2rem;
   }
 }
@@ -960,9 +940,10 @@ body {
     top: 99%;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.9);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    height: 100vh;
   }
   .header .navbar.active {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -971,7 +952,8 @@ body {
     padding: 0 30px;
   }
   .header .navbar li {
-    margin: 2rem;
+    margin: 4rem;
+    border-bottom: 0.1rem solid white;
     font-size: 2rem;
     display: block;
   }

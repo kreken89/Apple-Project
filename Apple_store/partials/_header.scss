@@ -12,10 +12,6 @@
     align-items: center;
     padding:1.5rem 9%;
 
-    // &:hover {
-    //     background: rgba(0, 0, 0, 0.9);
-    // }
-
     .navbar li {
         font-size: 1.7rem;
         font-weight: 400;
@@ -46,7 +42,7 @@
 
     .logo {
         padding: 0.2rem;
-        font-size: 2.5rem;
+        font-size: 3rem;
         font-weight: 700;
         color: #f5f5f7;
         text-decoration: none;
@@ -59,7 +55,7 @@
 
 #menu-btn {
     font-size: 2.5rem;
-    color: $gold-color;
+    color: #f5f5f7;;
     display: none;
     cursor: pointer;
 }
@@ -72,9 +68,9 @@
         font-weight: 500;
         padding: 0.5rem 1rem;
         border-radius: 8px;
-        border: 2px solid $gold-color;
+        border: 2px solid #f5f5f7;;
         cursor: pointer;
-        color: $gold-color;
+        color: #f5f5f7;
 
         &:hover {
             color: white;
