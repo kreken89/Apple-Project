@@ -22,14 +22,16 @@
   display: flex;
   flex-wrap: wrap;
 //   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  padding: 0 5rem;
 
   .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding:1rem 1rem 2rem 1rem;
     // margin-bottom: 20rem;
     .box {
       padding-top: 3rem;
@@ -38,7 +40,7 @@
     h3 {
       font-size: 3rem;
       font-weight: 500;
-      padding-bottom: 1rem;
+    //   padding:4rem 1rem 2rem 1rem;
     }
 
     span {
