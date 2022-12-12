@@ -71,77 +71,80 @@
   border: 2px solid white;
 }
 
-.footer {
+footer {
   padding: 0;
   background: #f5f5f7;
   font-size: 1.3rem;
 }
-.footer .footer-content {
+footer .footer-content {
   max-width: 980px;
   width: 95vw;
   margin: 0 auto;
 }
-.footer ul {
+footer ul {
   list-style: none;
 }
-.footer .box-container {
+footer .box-container {
   display: flex;
   justify-content: space-between;
   padding-bottom: 5rem;
 }
-.footer .box-container .box h3 {
+footer .box-container .box h3 {
   color: rgb(3, 3, 5);
   padding: 1rem 0;
   font-size: 1.3rem;
 }
-.footer .box-container .box ul li {
+footer .box-container .box ul li {
   margin-bottom: 1rem;
 }
-.footer .box-container .box ul a {
+footer .box-container .box ul a {
   color: rgb(3, 3, 5);
 }
-.footer .box-container .box ul a:hover {
+footer .box-container .box ul a:hover {
   border-bottom: 1px solid rgb(3, 3, 5);
 }
-.footer .footer-shop {
+footer .footer-shop {
   width: 100%;
 }
-.footer .footer-shop a {
+footer .footer-shop a {
   color: #0066CC;
 }
-.footer .footer-shop a:hover {
+footer .footer-shop a:hover {
   border-bottom: 1px solid #0066CC;
 }
-.footer .divider {
+footer .divider {
   padding-top: 1rem;
   border-bottom: 1px solid rgb(182, 182, 182);
 }
-.footer .legal {
+footer .legal {
   padding-bottom: 2rem;
 }
-.footer .legal .copyrights {
+footer .legal .copyrights {
   opacity: 0.9;
   font-size: 1.3rem;
   font-weight: 500;
   padding: 1rem 0;
 }
-.footer .legal .copyrights p {
+footer .legal .copyrights p {
   color: rgb(71, 71, 71);
 }
-.footer .legal ul {
+footer .legal ul {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   font-weight: 500;
 }
-.footer .legal ul li {
+footer .legal ul li {
   padding-right: 1rem;
   border-right: 1px solid rgb(182, 182, 182);
 }
-.footer .legal ul a {
+footer .legal ul a {
   color: rgb(3, 3, 5);
 }
-.footer .legal ul li:last-child {
+footer .legal ul a:hover {
+  border-bottom: 1px solid #0066CC;
+}
+footer .legal ul li:last-child {
   border-right: none;
 }
 
