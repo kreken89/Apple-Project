@@ -535,7 +535,7 @@
   justify-content: center;
 }
 .presentcard .content {
-  margin-top: 20vw;
+  margin-top: 30rem;
   display: flex;
   flex-direction: column;
   align-items: center;
