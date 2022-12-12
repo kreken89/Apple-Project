@@ -22,7 +22,7 @@
   display: flex;
   flex-wrap: wrap;
 //   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   padding: 0 5rem;
 
@@ -92,19 +92,14 @@
   }
 
   .box {
-    min-height: 80vh;
+    min-height: 20vh;
     width: 220px;
     height: 140px;
 
-    .image {
-      padding: 0 4rem;
-      width: 250px;
-      height: 190px;
-
-      img {
-        height: 100%;
-        width: 100%;
-      }
+    img {
+      width: 230px;
+      height: 220px;
     }
+    
   }
 }
