@@ -233,38 +233,123 @@
   font-weight: bold;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1300px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
+/*
+// OWL CAROUSEL AUTOPLAY
 .owl-item {
   width: 10vw;
   margin-right: 0px;
 }
-
+// Code to hide the dots
 .owl-theme .owl-dots .owl-dot {
   display: none !important;
 }
 
-.owl-stage-outer .owl-stage {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  transform: translate3d(0px, 0px, 0px);
-  transition: all 0.25s ease 0s;
-  width: 100%;
-}
-.owl-stage-outer .owl-stage .item {
-  display: flex;
-  justify-content: center;
-  flex-direction: space-around;
-  width: 100%;
-  height: auto;
-}
-@media (min-width: 297.98px) and (max-width: 767.98px) {
-  .owl-stage-outer .owl-stage img {
-    width: auto;
-    height: auto;
+.owl-stage-outer {
+  .owl-stage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transform: translate3d(0px, 0px, 0px);
+    transition: all 0.25s ease 0s;
+    width: 100%;
+
+    .item {
+      display: flex;
+      justify-content: center;
+      flex-direction: space-around;
+      width: 100%;
+      height: auto;
+    }
+    @media (min-width: 297.98px) and (max-width: 767.98px) {
+      img {
+        width: auto;
+        height: auto;
+      }
+    }
   }
 }
-
+*/
 .heading {
   text-align: center;
   margin-bottom: 2rem;
