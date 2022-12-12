@@ -38,7 +38,7 @@
 }
 .header .logo {
   padding: 0.2rem;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
   color: #f5f5f7;
   text-decoration: none;
@@ -49,7 +49,7 @@
 
 #menu-btn {
   font-size: 2.5rem;
-  color: rgb(212, 175, 55);
+  color: #f5f5f7;
   display: none;
   cursor: pointer;
 }
@@ -62,9 +62,9 @@
   font-weight: 500;
   padding: 0.5rem 1rem;
   border-radius: 8px;
-  border: 2px solid rgb(212, 175, 55);
+  border: 2px solid #f5f5f7;
   cursor: pointer;
-  color: rgb(212, 175, 55);
+  color: #f5f5f7;
 }
 .nav-item-booking a:hover {
   color: white;
@@ -680,29 +680,40 @@ textarea {
 }
 
 .gallery .box-container {
-  -moz-columns: 3 25rem;
-       columns: 3 25rem;
+  -moz-columns: 2 40rem;
+       columns: 2 40rem;
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
 }
 .gallery .box-container .box-gallery {
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   -moz-column-break-inside: avoid;
        break-inside: avoid;
 }
 .gallery .box-container .box-gallery img {
   width: 100%;
-  border-radius: 0.5rem;
-  margin-bottom: 1rem;
-}
-.gallery .box-container .box-gallery img:hover {
-  transform: scale(1.1);
+  margin-bottom: 0.8rem;
 }
 
 section {
-  padding: 3rem 9%;
-  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem 1rem;
+  font-size: 1rem;
   font-weight: 400;
+}
+section .box-gallery ul li {
+  position: relative;
+  top: 12rem;
+  left: 0%;
+  bottom: 0%;
+  list-style: none;
+  display: inline;
+}
+section .box-gallery ul li a {
+  padding: 1rem;
+  font-size: 1.3rem;
+  color: #06c;
+  letter-spacing: inherit;
 }
 
 .border {
@@ -828,6 +839,8 @@ body {
     display: inline-block;
   }
   .header {
+    display: flex;
+    justify-content: space-between;
     padding: 2rem;
   }
 }
@@ -842,9 +855,10 @@ body {
     top: 99%;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.9);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    height: 100vh;
   }
   .header .navbar.active {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -853,7 +867,8 @@ body {
     padding: 0 30px;
   }
   .header .navbar li {
-    margin: 2rem;
+    margin: 4rem;
+    border-bottom: 0.1rem solid white;
     font-size: 2rem;
     display: block;
   }

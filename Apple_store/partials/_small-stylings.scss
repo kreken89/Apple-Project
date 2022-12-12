@@ -1,51 +1,70 @@
 // Sections
 section {
-    padding: 3rem 9%;
-    font-size: 1.5rem;
-    font-weight: 400;
+  text-align: center;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+
+  .box-gallery {
+    ul li {
+      position: relative;
+      top: 12rem;
+      left: 0%;
+      bottom: 0%;
+      list-style: none;
+      display: inline;
+
+      a {
+        padding: 1rem;
+        font-size: 1.3rem;
+        color: #06c;
+        letter-spacing: inherit;
+      }
+    }
+  }
 }
 // Borders
 .border {
-    margin: 0 30vw 3rem;
-    border-bottom: 2px solid $gold-color;
+  margin: 0 30vw 3rem;
+  border-bottom: 2px solid $gold-color;
 }
 
 .border_two {
-    padding-top: 5rem;
-    margin: 0 40vw 3rem;
-    border-bottom: 2px solid $gold-color;
+  padding-top: 5rem;
+  margin: 0 40vw 3rem;
+  border-bottom: 2px solid $gold-color;
 }
 
 .border_three {
-    padding: 0;
-    margin: 0 40vw 3rem;
-    border-bottom: 2px solid $gold-color;
+  padding: 0;
+  margin: 0 40vw 3rem;
+  border-bottom: 2px solid $gold-color;
 }
 //Button
 .btn {
-    font-size: 2.5rem;
-    font-weight: 500;
-    margin-top: 2rem;
-    padding: 0.7rem 1rem;
-    border-radius: 8px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: 2px solid $gold-color;
-    cursor: pointer;
-    color: $gold-color;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid $gold-color;
+  cursor: pointer;
+  color: $gold-color;
 
-    &:hover {
-        color: white;
-        border: 2px solid white;
-    }
+  &:hover {
+    color: white;
+    border: 2px solid white;
+  }
 }
 //paragraphs
 p {
-    color: $brown;
+  color: $brown;
 }
 
 .p-booking {
-    padding-top: 5rem;
-    color: $light;
-    font-size: 2vw;
-    font-weight: 600;
+  padding-top: 5rem;
+  color: $light;
+  font-size: 2vw;
+  font-weight: 600;
 }
