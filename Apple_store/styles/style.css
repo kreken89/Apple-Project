@@ -349,19 +349,6 @@ img {
   }
 }
 */
-.heading {
-  text-align: center;
-  margin: 5rem;
-}
-.heading span {
-  color: rgb(212, 175, 55);
-  font-size: 2rem;
-}
-.heading h2 {
-  font-size: 4rem;
-  color: rgb(55, 20, 1);
-}
-
 #products {
   min-height: 150vh;
 }
@@ -437,7 +424,7 @@ img {
 }
 
 .home {
-  margin-top: 3rem;
+  margin-top: 8rem;
   background: url(/apple_store/images/home_images/h1.png) no-repeat;
   background-size: cover;
   background-position: center;
@@ -447,13 +434,17 @@ img {
   justify-content: center;
 }
 .home .content {
-  min-width: 30vh;
+  margin-top: -80rem;
   display: flex;
-  margin-top: -50rem;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3rem;
+  padding: 0rem 3rem;
+}
+.home .content p {
+  margin-top: -4rem;
+  font-size: 2.5rem;
+  margin-bottom: 3.5rem;
 }
 .home .content ul li {
   list-style: none;
@@ -466,28 +457,14 @@ img {
   color: #06c;
   letter-spacing: inherit;
 }
-.home .content .logo {
-  padding: 0.2rem;
-  font-size: 5rem;
-  font-weight: 700;
-  color: rgb(212, 175, 55);
-  text-decoration: none;
-}
-@media (min-width: 297.98px) and (max-width: 625px) {
-  .home .content .logo {
-    font-size: 3rem;
-  }
-}
-.home .content .headerlogo {
-  font-family: "Montserrat", "Poppins", sans-serif;
-}
 
 .ipad {
   background: url(/apple_store/images/home_images/h2.png) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
-  min-height: 60vh;
+  height: 60vh;
+  min-width: 30vw;
   align-items: center;
   justify-content: center;
 }
@@ -509,16 +486,13 @@ img {
   color: #06c;
   letter-spacing: inherit;
 }
+
 @media (min-width: 297.98px) and (max-width: 767.98px) {
   .ipad {
-    padding: 3rem 1rem;
-  }
-  .ipad .s1 {
-    font-size: 5vw;
-    margin: 3rem;
+    height: 10vh;
+    min-width: 20vw;
   }
 }
-
 .presentcard {
   background: url(/apple_store/images/home_images/h3.png) no-repeat;
   background-size: cover;
@@ -542,15 +516,6 @@ img {
   font-size: 2rem;
   color: #06c;
   letter-spacing: inherit;
-}
-@media (min-width: 297.98px) and (max-width: 767.98px) {
-  .presentcard {
-    padding: 3rem 1rem;
-  }
-  .presentcard .s1 {
-    font-size: 5vw;
-    margin: 3rem;
-  }
 }
 
 .home_mac {
@@ -779,80 +744,10 @@ textarea {
   flex: 1 1 42rem;
   margin-bottom: 5rem;
 }
-.about .content span {
-  color: rgb(212, 175, 55);
-  font-size: 2rem;
-}
-@media (min-width: 297.98px) and (max-width: 767.98px) {
-  .about .content .price {
-    display: block;
-    margin: 2rem;
-    font-size: 1.5rem;
-  }
-}
-@media (min-width: 767.98px) and (max-width: 1046.98px) {
-  .about .content .price {
-    font-size: 1.6rem;
-  }
-}
-.about .content h2 {
-  color: rgb(55, 20, 1);
-  font-size: 4rem;
-  margin-top: 0.5rem;
-}
-.about .content p {
-  padding: 1rem 0;
-  margin-bottom: 1.5rem;
-  color: rgb(55, 20, 1);
-  font-size: 1.5rem;
-  font-weight: 400;
-}
-.about .content a.btn {
-  font-size: 1.5rem;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.1);
-  border: 2px solid rgb(212, 175, 55);
-  cursor: pointer;
-  color: rgb(212, 175, 55);
-}
-.about .content a.btn:hover {
-  color: rgb(55, 20, 1);
-  border: 2px solid white;
-}
 .about .content .price {
   margin-left: 0;
   font-weight: 600;
   text-decoration: underline;
-}
-
-.content-border-right {
-  border-top: 5px solid rgb(212, 175, 55);
-  border-right: 5px solid rgb(212, 175, 55);
-  padding: 2rem;
-  border-radius: 2rem;
-}
-
-.content-border-left {
-  border-top: 5px solid rgb(212, 175, 55);
-  border-left: 5px solid rgb(212, 175, 55);
-  padding: 2rem;
-  border-radius: 2rem;
-}
-
-.content-border-bottom-left {
-  border-left: 5px solid rgb(212, 175, 55);
-  border-bottom: 5px solid rgb(212, 175, 55);
-  padding: 2rem;
-  border-radius: 2rem;
-}
-
-.content-border-bottom-right {
-  border-right: 5px solid rgb(212, 175, 55);
-  border-bottom: 5px solid rgb(212, 175, 55);
-  padding: 2rem;
-  border-radius: 2rem;
 }
 
 .gallery .box-container {
@@ -869,6 +764,114 @@ textarea {
 .gallery .box-container .box-gallery img {
   width: 100%;
   margin-bottom: 0.8rem;
+}
+
+.gallery-mac .box-container-mac {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+.gallery-mac .box-container-mac .box-gallery-mac {
+  margin-bottom: 0.8rem;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+.gallery-mac .box-container-mac .box-gallery-mac img {
+  width: 45vw;
+  height: 50vh;
+  margin-bottom: 0.8rem;
+}
+
+.gallery-center-image .box-container-center-image {
+  margin-top: 2rem;
+  -moz-columns: 1 80rem;
+       columns: 1 80rem;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+.gallery-center-image .box-container-center-image .box-gallery-center-image {
+  margin-bottom: 0.8rem;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+.gallery-center-image .box-container-center-image .box-gallery-center-image img {
+  width: 100vw;
+  height: 70vh;
+  margin-bottom: 0.8rem;
+}
+
+.gallery-long-image .box-container-long-image {
+  margin-top: 2rem;
+  -moz-columns: 1 80rem;
+       columns: 1 80rem;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+.gallery-long-image .box-container-long-image .box-gallery-long-image {
+  margin-bottom: 0.8rem;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+.gallery-long-image .box-container-long-image .box-gallery-long-image img {
+  width: 90vw;
+  height: 35vh;
+  margin-bottom: 0.8rem;
+}
+
+.mac_info-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 3rem;
+}
+.mac_info-box .mac-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem;
+}
+.mac_info-box .mac-info .fa-box-open,
+.mac_info-box .mac-info .fa-comments {
+  font-size: 5em;
+  margin-bottom: 2rem;
+}
+.mac_info-box .mac-info h4 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  padding: 0 4rem;
+}
+.mac_info-box .mac-info p {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  padding: 0 5rem;
+}
+.mac_info-box .mac-info .link-info {
+  list-style: none;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  padding: 0 5rem;
+}
+
+.big_text {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin: 8rem 0 5rem;
+}
+
+.big_text_xl {
+  font-size: 5.5rem;
+  font-weight: 800;
+  margin: 8rem 0 5rem;
 }
 
 section {
@@ -896,45 +899,6 @@ section .box-gallery ul li a {
   padding-top: 5rem;
   border-bottom: 1px solid #d2d2d7;
   width: 80%;
-}
-
-.border_two {
-  padding-top: 5rem;
-  margin: 0 40vw 3rem;
-  border-bottom: 2px solid rgb(212, 175, 55);
-}
-
-.border_three {
-  padding: 0;
-  margin: 0 40vw 3rem;
-  border-bottom: 2px solid rgb(212, 175, 55);
-}
-
-.btn {
-  font-size: 2.5rem;
-  font-weight: 500;
-  margin-top: 2rem;
-  padding: 0.7rem 1rem;
-  border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border: 2px solid rgb(212, 175, 55);
-  cursor: pointer;
-  color: rgb(212, 175, 55);
-}
-.btn:hover {
-  color: white;
-  border: 2px solid white;
-}
-
-p {
-  color: rgb(55, 20, 1);
-}
-
-.p-booking {
-  padding-top: 5rem;
-  color: rgb(255, 255, 255);
-  font-size: 2vw;
-  font-weight: 600;
 }
 
 * {
