@@ -520,6 +520,7 @@ img {
        column-gap: 1.5rem;
 }
 .gallery .box-container .box-gallery {
+  position: relative;
   margin-bottom: 0.8rem;
   -moz-column-break-inside: avoid;
        break-inside: avoid;
