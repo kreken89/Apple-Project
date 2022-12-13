@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Poppins:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Montserrat:wght@200;300;400;500;600&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Helvetica Neue", sans-serif;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -475,49 +479,15 @@ img {
   letter-spacing: inherit;
 }
 
-.ipad {
+.presentcard {
   background: url(/apple_store/images/home_images/h2.png) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
-  height: 60vh;
-  min-width: 30vw;
+  min-height: 40vh;
   align-items: center;
   justify-content: center;
-}
-.ipad .content {
-  margin-top: 150px;
-  padding-left: 365px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.ipad .content ul li {
-  list-style: none;
-  display: inline;
-}
-.ipad .content ul li a {
-  padding: 1.5rem;
-  margin-bottom: 5rem;
-  font-size: 2rem;
-  color: #06c;
-  letter-spacing: inherit;
-}
-
-@media (min-width: 297.98px) and (max-width: 767.98px) {
-  .ipad {
-    height: 10vh;
-    min-width: 20vw;
-  }
-}
-.presentcard {
-  background: url(/apple_store/images/home_images/h3.png) no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  min-height: 60vh;
-  align-items: center;
-  justify-content: center;
+  margin-top: 2rem;
 }
 .presentcard .content {
   margin-top: 30rem;
@@ -533,6 +503,52 @@ img {
   font-size: 2rem;
   color: #06c;
   letter-spacing: inherit;
+}
+
+.about_ipad {
+  background: url(/apple_store/images/home_images/h3.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  height: 60vh;
+  min-width: 30vw;
+  align-items: center;
+  justify-content: center;
+}
+.about_ipad .content_right {
+  margin-top: 10rem;
+  padding-left: 365px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about_ipad .content_right ul li {
+  list-style: none;
+  display: inline;
+}
+.about_ipad .content_right ul li a {
+  padding: 1.5rem;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  color: #06c;
+  letter-spacing: inherit;
+}
+
+.gallery .box-container {
+  -moz-columns: 2 37rem;
+       columns: 2 37rem;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+.gallery .box-container .box-gallery {
+  position: relative;
+  margin-bottom: 0.8rem;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+.gallery .box-container .box-gallery img {
+  width: 100%;
+  margin-bottom: 0.8rem;
 }
 
 .home_mac {
@@ -775,22 +791,6 @@ textarea {
   text-decoration: underline;
 }
 
-.gallery .box-container {
-  -moz-columns: 2 40rem;
-       columns: 2 40rem;
-  -moz-column-gap: 1.5rem;
-       column-gap: 1.5rem;
-}
-.gallery .box-container .box-gallery {
-  margin-bottom: 0.8rem;
-  -moz-column-break-inside: avoid;
-       break-inside: avoid;
-}
-.gallery .box-container .box-gallery img {
-  width: 100%;
-  margin-bottom: 0.8rem;
-}
-
 .gallery-mac .box-container-mac {
   display: flex;
   flex-direction: row;
@@ -899,6 +899,36 @@ textarea {
   margin: 8rem 0 5rem;
 }
 
+.big_text_x {
+  font-size: 5.5rem;
+  font-weight: 800;
+  margin: 8rem 0 0;
+}
+
+.big_text_xl_light {
+  font-size: 5.5rem;
+  font-weight: 800;
+  color: white;
+}
+
+.text_light {
+  color: white;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0 5rem;
+}
+
+.text_dark {
+  color: black;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0 5rem;
+}
+
 section {
   text-align: center;
   padding: 1rem 1rem;
@@ -924,6 +954,71 @@ section .box-gallery ul li a {
   padding-top: 5rem;
   border-bottom: 1px solid #d2d2d7;
   width: 80%;
+}
+
+.table-headline {
+  font-size: 42px;
+  font-weight: 600;
+}
+
+table {
+  width: 100%;
+  max-width: 980px;
+  margin: 40px auto 0;
+}
+table thead {
+  row-gap: 25px;
+}
+table thead td div {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  border-bottom: 1px solid rgba(131, 131, 131, 0.308);
+}
+table thead td div h4 {
+  padding-top: 10px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #BF4800;
+}
+table thead td div h2 {
+  font-weight: 600;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+table thead td div p {
+  white-space: nowrap;
+  font-size: 16px;
+  color: #1D1D1F;
+}
+table thead td div .price {
+  padding-top: 30px;
+  font-size: 13.5px;
+}
+table thead td div button {
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  background-color: #0071E3;
+  padding: 3px 12px;
+  margin-top: 16px;
+  border-radius: 2.3rem;
+}
+table thead td div a {
+  font-size: 13.5px;
+  color: #0071E3;
+  margin-bottom: 25px;
+}
+table thead td div a:hover {
+  text-decoration: underline;
+}
+table thead td div a i {
+  font-size: 10px;
+}
+table thead td .iphone13 h4, table thead td .iphonese h4 {
+  color: transparent;
 }
 
 * {
