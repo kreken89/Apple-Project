@@ -19,6 +19,10 @@
     min-height: 150vh;
 }
 
+#products_ipad {
+  min-height: 60vh;
+}
+
 .products .box-container {
   display: flex;
   flex-wrap: wrap;
@@ -102,5 +106,22 @@
       height: 220px;
     }
     
+  }
+}
+
+.compare_ipad {
+  font-size: 2rem;
+  display:flex;
+  justify-content:center;
+  margin-left: 2rem;
+  a {
+  
+      &:hover {
+        border-bottom: 1px solid blue;
+  
+      }
+    }
+  .first_text {
+    margin-right: 5rem;
   }
 }

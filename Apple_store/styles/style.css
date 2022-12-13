@@ -353,6 +353,10 @@ img {
   min-height: 150vh;
 }
 
+#products_ipad {
+  min-height: 60vh;
+}
+
 .products .box-container {
   display: flex;
   flex-wrap: wrap;
@@ -421,6 +425,19 @@ img {
 .products .box-container .box img {
   width: 230px;
   height: 220px;
+}
+
+.compare_ipad {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-left: 2rem;
+}
+.compare_ipad a:hover {
+  border-bottom: 1px solid blue;
+}
+.compare_ipad .first_text {
+  margin-right: 5rem;
 }
 
 .home {
@@ -656,6 +673,14 @@ img {
     font-size: 5vw;
     margin: 3rem;
   }
+}
+
+.ipad_text {
+  font-size: 5rem;
+}
+
+.info_ipad {
+  font-weight: 700;
 }
 
 .change_ipad {
