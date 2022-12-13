@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Poppins:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Montserrat:wght@200;300;400;500;600&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Helvetica Neue", sans-serif;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -927,6 +931,70 @@ section .box-gallery ul li a {
   width: 80%;
 }
 
+.table-headline {
+  font-size: 42px;
+  font-weight: 600;
+}
+
+table {
+  width: 100%;
+  max-width: 980px;
+  margin: 40px auto 0;
+}
+table thead {
+  row-gap: 25px;
+}
+table thead td div {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  border-bottom: 1px solid rgba(131, 131, 131, 0.308);
+}
+table thead td div h4 {
+  padding-top: 10px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #BF4800;
+}
+table thead td div h2 {
+  font-weight: 600;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+table thead td div p {
+  white-space: nowrap;
+  font-size: 16px;
+  color: #1D1D1F;
+}
+table thead td div .price {
+  padding-top: 30px;
+  font-size: 13.5px;
+}
+table thead td div button {
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  background-color: #0071E3;
+  padding: 3px 12px;
+  margin-top: 16px;
+  border-radius: 2.3rem;
+}
+table thead td div a {
+  font-size: 13.5px;
+  color: #0071E3;
+  margin-bottom: 25px;
+}
+table thead td div a:hover {
+  text-decoration: underline;
+}
+table thead td div a i {
+  font-size: 10px;
+}
+table thead td .iphone13 h4, table thead td .iphonese h4 {
+  color: transparent;
+}
 * {
   box-sizing: border-box;
   margin: 0;
