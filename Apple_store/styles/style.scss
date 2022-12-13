@@ -8,7 +8,6 @@
 @import '../partials/mixins';
 @import '../partials/header';
 @import '../partials/footer';
-@import '../partials/video';
 @import '../partials/carousel';
 @import '../partials/cards';
 @import '../partials/headings';
@@ -18,13 +17,17 @@
 
 * {
   box-sizing: border-box;
+  font-family: $global-font;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', 'Poppins', sans-serif;
   outline: none;
   border: none;
   text-decoration: none;
   transition: all 0.2s linear;
+
+  ul li{
+    list-style: none;
+  }
 }
 
 html {

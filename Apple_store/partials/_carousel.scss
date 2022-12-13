@@ -1,39 +1,39 @@
 // Slider comments
-.w3-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+// .w3-content {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
 
-  .mySlides {
-    display: flex;
-    width: 40vw;
-    .mySlider {
-      display: flex;
-      justify-content: center;
-    }
-  }
+//   .mySlides {
+//     display: flex;
+//     width: 40vw;
+//     .mySlider {
+//       display: flex;
+//       justify-content: center;
+//     }
+//   }
 
-  span {
-    font-weight: bold;
-  }
-}
+//   span {
+//     font-weight: bold;
+//   }
+// }
 
-* {
-  box-sizing: border-box;
-}
+// * {
+//   box-sizing: border-box;
+// }
 
-body {
-  font-family: Verdana, sans-serif;
-}
+// body {
+//   font-family: Verdana, sans-serif;
+// }
 
-.mySlides {
-  display: none;
-}
+// .mySlides {
+//   display: none;
+// }
 
-img {
-  vertical-align: middle;
-}
+// img {
+//   vertical-align: middle;
+// }
 
 /* Slideshow container */
 .slideshow-container {
@@ -91,44 +91,4 @@ img {
     font-size: 11px
   }
 }
-
-
-
-/*
-// OWL CAROUSEL AUTOPLAY
-.owl-item {
-  width: 10vw;
-  margin-right: 0px;
-}
-// Code to hide the dots
-.owl-theme .owl-dots .owl-dot {
-  display: none !important;
-}
-
-.owl-stage-outer {
-  .owl-stage {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    transform: translate3d(0px, 0px, 0px);
-    transition: all 0.25s ease 0s;
-    width: 100%;
-
-    .item {
-      display: flex;
-      justify-content: center;
-      flex-direction: space-around;
-      width: 100%;
-      height: auto;
-    }
-    @media (min-width: 297.98px) and (max-width: 767.98px) {
-      img {
-        width: auto;
-        height: auto;
-      }
-    }
-  }
-}
-*/
 

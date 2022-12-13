@@ -4,24 +4,6 @@ section {
   padding: 1rem 1rem;
   font-size: 1rem;
   font-weight: 400;
-
-  .box-gallery {
-    ul li {
-      position: relative;
-      top: 12rem;
-      left: 0%;
-      bottom: 0%;
-      list-style: none;
-      display: inline;
-
-      a {
-        padding: 1rem;
-        font-size: 1.3rem;
-        color: #06c;
-        letter-spacing: inherit;
-      }
-    }
-  }
 }
 // Borders
 .border {

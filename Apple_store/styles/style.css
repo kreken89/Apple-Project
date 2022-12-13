@@ -1,10 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Poppins:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Montserrat:wght@200;300;400;500;600&family=Poppins:wght@200;300;400;500;600;700&display=swap");
-* {
-  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Helvetica Neue", sans-serif;
-}
-
 .header {
   position: fixed;
   top: 0;
@@ -153,105 +149,6 @@ footer .legal ul li:last-child {
   border-right: none;
 }
 
-.about {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin-top: 5rem;
-}
-.about .video-container {
-  flex: 1 1 42rem;
-}
-.about .video-container video {
-  border-radius: 1rem;
-  width: 100%;
-}
-.about .video-container .controls {
-  text-align: center;
-  padding: 2rem 0;
-}
-.about .video-container .controls span {
-  display: inline-block;
-  height: 2rem;
-  width: 2rem;
-  border-radius: 50%;
-  background: rgb(212, 175, 55);
-  cursor: pointer;
-  margin: 0.7rem;
-}
-.about .video-container .controls span:hover {
-  background: rgb(1, 1, 84);
-}
-.about .content {
-  flex: 1 1 42rem;
-  margin-bottom: 5rem;
-}
-.about .content span {
-  color: rgb(212, 175, 55);
-  font-size: 2rem;
-}
-.about .content h1 {
-  color: rgb(55, 20, 1);
-  font-size: 4rem;
-  margin-top: 0.5rem;
-}
-.about .content p {
-  padding: 1rem 0;
-  margin-bottom: 1.5rem;
-  color: rgb(55, 20, 1);
-  font-size: 1.5rem;
-  font-weight: 400;
-}
-.about .content a.btn {
-  font-size: 1.5rem;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.1);
-  border: 2px solid rgb(212, 175, 55);
-  cursor: pointer;
-  color: rgb(212, 175, 55);
-}
-.about .content a.btn:hover {
-  color: rgb(55, 20, 1);
-  border: 2px solid white;
-}
-
-.w3-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.w3-content .mySlides {
-  display: flex;
-  width: 40vw;
-}
-.w3-content .mySlides .mySlider {
-  display: flex;
-  justify-content: center;
-}
-.w3-content span {
-  font-weight: bold;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Verdana, sans-serif;
-}
-
-.mySlides {
-  display: none;
-}
-
-img {
-  vertical-align: middle;
-}
-
 /* Slideshow container */
 .slideshow-container {
   max-width: 1300px;
@@ -316,43 +213,6 @@ img {
     font-size: 11px;
   }
 }
-/*
-// OWL CAROUSEL AUTOPLAY
-.owl-item {
-  width: 10vw;
-  margin-right: 0px;
-}
-// Code to hide the dots
-.owl-theme .owl-dots .owl-dot {
-  display: none !important;
-}
-
-.owl-stage-outer {
-  .owl-stage {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    transform: translate3d(0px, 0px, 0px);
-    transition: all 0.25s ease 0s;
-    width: 100%;
-
-    .item {
-      display: flex;
-      justify-content: center;
-      flex-direction: space-around;
-      width: 100%;
-      height: auto;
-    }
-    @media (min-width: 297.98px) and (max-width: 767.98px) {
-      img {
-        width: auto;
-        height: auto;
-      }
-    }
-  }
-}
-*/
 #products {
   min-height: 150vh;
 }
@@ -484,7 +344,7 @@ img {
   background-size: cover;
   background-position: center;
   display: flex;
-  min-height: 40vh;
+  min-height: 57vh;
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
@@ -510,7 +370,7 @@ img {
   background-size: cover;
   background-position: center;
   display: flex;
-  height: 60vh;
+  height: 58vh;
   min-width: 30vw;
   align-items: center;
   justify-content: center;
@@ -537,18 +397,140 @@ img {
 .gallery .box-container {
   -moz-columns: 2 37rem;
        columns: 2 37rem;
-  -moz-column-gap: 1.5rem;
-       column-gap: 1.5rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
 }
-.gallery .box-container .box-gallery {
-  position: relative;
-  margin-bottom: 0.8rem;
-  -moz-column-break-inside: avoid;
-       break-inside: avoid;
+.gallery .box-container .box-gallery1 {
+  background: url(/apple_store/images/home_images/h4.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 48vh;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 3rem;
 }
-.gallery .box-container .box-gallery img {
-  width: 100%;
-  margin-bottom: 0.8rem;
+.gallery .box-container .box-gallery1 ul li {
+  list-style: none;
+  display: inline;
+}
+.gallery .box-container .box-gallery1 ul li a {
+  padding: 1rem;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  color: #06c;
+  letter-spacing: inherit;
+}
+.gallery .box-container .box-gallery2 {
+  background: url(/apple_store/images/home_images/h5.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 48vh;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 3rem;
+}
+.gallery .box-container .box-gallery2 ul li {
+  list-style: none;
+  display: inline;
+}
+.gallery .box-container .box-gallery2 ul li a {
+  padding: 1rem;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  color: #06c;
+  letter-spacing: inherit;
+}
+.gallery .box-container .box-gallery3 {
+  background: url(/apple_store/images/home_images/h6.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 48vh;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 3rem;
+}
+.gallery .box-container .box-gallery3 ul li {
+  list-style: none;
+  display: inline;
+}
+.gallery .box-container .box-gallery3 ul li a {
+  padding: 1rem;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  color: #06c;
+  letter-spacing: inherit;
+}
+.gallery .box-container .box-gallery4 {
+  background: url(/apple_store/images/home_images/h7.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 48vh;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 3rem;
+}
+.gallery .box-container .box-gallery4 ul li {
+  list-style: none;
+  display: inline;
+}
+.gallery .box-container .box-gallery4 ul li a {
+  padding: 1rem;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  color: #06c;
+  letter-spacing: inherit;
+}
+.gallery .box-container .box-gallery5 {
+  background: url(/apple_store/images/home_images/h8.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 48vh;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+}
+.gallery .box-container .box-gallery5 ul li {
+  list-style: none;
+  display: inline;
+}
+.gallery .box-container .box-gallery5 ul li a {
+  padding: 1rem;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  color: #06c;
+  letter-spacing: inherit;
+}
+.gallery .box-container .box-gallery6 {
+  background: url(/apple_store/images/home_images/h9.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 48vh;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 3rem;
+}
+.gallery .box-container .box-gallery6 ul li {
+  list-style: none;
+  display: inline;
+}
+.gallery .box-container .box-gallery6 ul li a {
+  padding: 1rem;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  color: #06c;
+  letter-spacing: inherit;
 }
 
 .home_mac {
@@ -899,6 +881,26 @@ textarea {
   margin: 8rem 0 5rem;
 }
 
+.big_text_x_light {
+  font-size: 4.5rem;
+  font-weight: 400;
+  margin: 4.5rem 0 -1rem;
+  color: white;
+}
+
+.big_text_x_dark {
+  font-size: 4.5rem;
+  font-weight: 400;
+  margin: 4.5rem 0 -1rem;
+}
+
+.red {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: red;
+}
+
 .big_text_x {
   font-size: 5.5rem;
   font-weight: 800;
@@ -915,16 +917,16 @@ textarea {
   color: white;
   font-size: 2rem;
   font-weight: 300;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
   padding: 0 5rem;
 }
 
 .text_dark {
   color: black;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 300;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
   padding: 0 5rem;
 }
@@ -934,20 +936,6 @@ section {
   padding: 1rem 1rem;
   font-size: 1rem;
   font-weight: 400;
-}
-section .box-gallery ul li {
-  position: relative;
-  top: 12rem;
-  left: 0%;
-  bottom: 0%;
-  list-style: none;
-  display: inline;
-}
-section .box-gallery ul li a {
-  padding: 1rem;
-  font-size: 1.3rem;
-  color: #06c;
-  letter-spacing: inherit;
 }
 
 .border {
@@ -1023,13 +1011,16 @@ table thead td .iphone13 h4, table thead td .iphonese h4 {
 
 * {
   box-sizing: border-box;
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Helvetica Neue", sans-serif;
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", "Poppins", sans-serif;
   outline: none;
   border: none;
   text-decoration: none;
   transition: all 0.2s linear;
+}
+* ul li {
+  list-style: none;
 }
 
 html {
