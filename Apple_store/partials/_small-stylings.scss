@@ -30,34 +30,9 @@ section {
   width: 80%;
 }
 
-.border_two {
-  padding-top: 5rem;
-  margin: 0 40vw 3rem;
-  border-bottom: 2px solid $gold-color;
-}
+// Buying button Köp
 
-.border_three {
-  padding: 0;
-  margin: 0 40vw 3rem;
-  border-bottom: 2px solid $gold-color;
-}
-//Button
-.btn {
-  font-size: 2.5rem;
-  font-weight: 500;
-  margin-top: 2rem;
-  padding: 0.7rem 1rem;
-  border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border: 2px solid $gold-color;
-  cursor: pointer;
-  color: $gold-color;
 
-  &:hover {
-    color: white;
-    border: 2px solid white;
-  }
-}
 //paragraphs
 p {
   color: $brown;
