@@ -149,11 +149,6 @@ footer .legal ul li:last-child {
   border-right: none;
 }
 
-@media (max-width: 840px) {
-  .box-container {
-    background-color: aqua;
-  }
-}
 .about {
   display: flex;
   align-items: center;
@@ -356,7 +351,7 @@ img {
 */
 .heading {
   text-align: center;
-  margin-bottom: 2rem;
+  margin: 5rem;
 }
 .heading span {
   color: rgb(212, 175, 55);
@@ -367,48 +362,78 @@ img {
   color: rgb(55, 20, 1);
 }
 
-.destination .box-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-  gap: 1.5rem;
+#products {
+  min-height: 150vh;
 }
-.destination .box-container .box {
-  border-radius: 1rem;
-  overflow: hidden;
-  box-shadow: 5px 9px 8px #dddcdc;
+
+.products .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5rem;
 }
-.destination .box-container .box:hover img {
-  transform: scale(1.1);
+.products .box-container .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem 2rem 1rem;
 }
-.destination .box-container .box .image {
-  height: 20rem;
-  overflow: hidden;
-  width: 100%;
+.products .box-container .content .box {
+  padding-top: 3rem;
 }
-.destination .box-container .box .image img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.products .box-container .content h3 {
+  font-size: 3rem;
+  font-weight: 500;
 }
-.destination .box-container .box .content {
-  padding: 2rem;
+.products .box-container .content span {
+  font-size: 1.4rem;
+}
+.products .box-container .content .chip {
+  padding-bottom: 3rem;
+}
+.products .box-container .content .price {
+  margin: 1rem 0 1rem;
+  font-size: 1.8rem;
+}
+.products .box-container .content .buy {
+  width: 4vw;
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  padding: 5px 2px;
+  cursor: pointer;
+  display: inline-block;
   text-align: center;
+  border-radius: 980px;
+  background: #0071e3;
+  color: #fff;
 }
-.destination .box-container .box .content h3 {
-  font-size: 2rem;
-  color: rgb(55, 20, 1);
+.products .box-container .content .link {
+  padding: 2rem 0 4rem;
+  font-size: 1.5rem;
+  list-style: none;
+  color: #0071e3;
+  border-bottom: 1px solid #d2d2d7;
+  width: 80%;
 }
-.destination .box-container .box .content p {
-  padding-bottom: 1rem;
+.products .box-container .content .link .fa-chevron-right {
+  font-size: 1rem;
 }
-.destination .box-container .box .content a {
-  color: rgb(55, 20, 1);
-  font-weight: 700;
-  text-decoration: overline;
+.products .box-container .content .icon {
+  padding-top: 5rem;
+  font-size: 2.5rem;
+  font-weight: 500;
 }
-.destination .box-container .box .content a:hover {
-  color: rgb(212, 175, 55);
+.products .box-container .box {
+  min-height: 20vh;
+  width: 220px;
+  height: 140px;
+}
+.products .box-container .box img {
+  width: 230px;
+  height: 220px;
 }
 
 .home {
@@ -441,43 +466,6 @@ img {
   color: #06c;
   letter-spacing: inherit;
 }
-@media (min-width: 297.98px) and (max-width: 767.98px) {
-  .home .content {
-    padding: 3rem 1rem;
-  }
-  .home .content .form #email-s {
-    display: block;
-    font-size: 1.5rem;
-    font-weight: 600;
-    opacity: 0.5;
-    border-radius: 5px;
-    padding: 0.9rem 1rem;
-    margin-bottom: 1.5rem;
-    width: 50vw;
-  }
-  .home .content .form #party {
-    display: block;
-    font-size: 1.5rem;
-    font-weight: 600;
-    opacity: 0.5;
-    border-radius: 5px;
-    padding: 0.9rem 1rem;
-    width: 50vw;
-  }
-  .home .content .form input[type=text],
-.home .content .form select,
-.home .content .form textarea {
-    display: flex;
-    color: rgb(55, 20, 1);
-    font-weight: 900;
-    opacity: 0.6;
-    width: 50vw;
-    padding: 1rem;
-    border-radius: 0.6rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-}
 .home .content .logo {
   padding: 0.2rem;
   font-size: 5rem;
@@ -492,56 +480,6 @@ img {
 }
 .home .content .headerlogo {
   font-family: "Montserrat", "Poppins", sans-serif;
-}
-.home .content span {
-  font-weight: bold;
-  color: transparent;
-  -webkit-text-stroke: 0.1rem white;
-  font-size: 3vw;
-  display: block;
-}
-.home .content .s1 {
-  font-family: "Bilbo Swash Caps", "Montserrat", "Poppins", sans-serif;
-  font-size: 6vw;
-  color: white;
-  line-break: normal;
-}
-.home .content #email {
-  display: block;
-  font-size: 1.5rem;
-  font-weight: 600;
-  opacity: 0.5;
-  border-radius: 5px;
-  padding: 0.9rem 1rem;
-  margin-bottom: 1.5rem;
-  width: 33vw;
-}
-.home .content #email-s {
-  display: block;
-  font-size: 1.5rem;
-  font-weight: 600;
-  opacity: 0.5;
-  border-radius: 5px;
-  padding: 0.9rem 1rem;
-  margin-bottom: 1.5rem;
-  width: 33vw;
-}
-.home .content #party {
-  display: block;
-  font-size: 1.5rem;
-  font-weight: 600;
-  opacity: 0.5;
-  border-radius: 5px;
-  padding: 0.9rem 1rem;
-  width: 33vw;
-}
-.home .content .p1 {
-  max-width: 60rem;
-  margin: 2rem auto;
-  font-size: 2rem;
-  font-weight: 700;
-  color: whitesmoke;
-  line-height: 1;
 }
 
 .ipad {
@@ -615,8 +553,8 @@ img {
   }
 }
 
-.home_luxury {
-  background: url(/images/p1.jpeg) no-repeat;
+.home_mac {
+  background: url(/Apple_store/images/mac_images/m1.png) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -624,9 +562,63 @@ img {
   align-items: center;
   justify-content: center;
 }
+.home_mac .content {
+  min-width: 30vh;
+  display: flex;
+  margin-top: -35rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+.home_mac .content ul li {
+  list-style: none;
+  display: inline;
+}
+.home_mac .content ul li a {
+  padding: 1.5rem;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  color: #06c;
+  letter-spacing: inherit;
+}
 @media (min-width: 297.98px) and (max-width: 767.98px) {
-  .home_luxury {
+  .home_mac {
     padding: 3rem 10rem;
+  }
+}
+
+.macBook_pro {
+  background: url(/Apple_store/images/mac_images/m2.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  min-height: 60vh;
+  align-items: center;
+  justify-content: center;
+}
+.macBook_pro .content {
+  margin-top: -5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.macBook_pro .content ul li {
+  list-style: none;
+  display: inline;
+}
+.macBook_pro .content ul li a {
+  font-size: 2rem;
+  color: #06c;
+  letter-spacing: inherit;
+}
+@media (min-width: 297.98px) and (max-width: 767.98px) {
+  .macBook_pro {
+    padding: 3rem 1rem;
+  }
+  .macBook_pro .s1 {
+    font-size: 5vw;
+    margin: 3rem;
   }
 }
 
@@ -806,8 +798,9 @@ section .box-gallery ul li a {
 }
 
 .border {
-  margin: 0 30vw 3rem;
-  border-bottom: 2px solid rgb(212, 175, 55);
+  padding-top: 5rem;
+  border-bottom: 1px solid #d2d2d7;
+  width: 80%;
 }
 
 .border_two {
@@ -871,11 +864,6 @@ body {
 }
 
 @media (min-width: 992.98px) {
-  .destination .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-    gap: 1.5rem;
-  }
   html {
     font-size: 55%;
   }
