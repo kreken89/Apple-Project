@@ -1,5 +1,6 @@
 // Variables
-$fonts-logo: 'Montserrat', 'Poppins', sans-serif;
+$fonts-logo: 'Roboto','Montserrat', 'Poppins', sans-serif;
+$global-font: 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
 $blue: rgb(1, 1, 84);
 $brown: rgb(55, 20, 1);
 $light: rgb(255, 255, 255);
@@ -7,3 +8,6 @@ $black: rgb(3, 3, 5);
 $gold-color: rgb(212, 175, 55);
 $bg-color: rgb(255, 255, 254);
 $black-bg: rgba(17, 17, 17, 0.7);
+*{
+    font-family: $global-font;
+}
