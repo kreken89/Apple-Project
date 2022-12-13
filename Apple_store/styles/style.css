@@ -462,49 +462,15 @@ img {
   letter-spacing: inherit;
 }
 
-.ipad {
+.presentcard {
   background: url(/apple_store/images/home_images/h2.png) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
-  height: 60vh;
-  min-width: 30vw;
+  min-height: 40vh;
   align-items: center;
   justify-content: center;
-}
-.ipad .content {
-  margin-top: 150px;
-  padding-left: 365px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.ipad .content ul li {
-  list-style: none;
-  display: inline;
-}
-.ipad .content ul li a {
-  padding: 1.5rem;
-  margin-bottom: 5rem;
-  font-size: 2rem;
-  color: #06c;
-  letter-spacing: inherit;
-}
-
-@media (min-width: 297.98px) and (max-width: 767.98px) {
-  .ipad {
-    height: 10vh;
-    min-width: 20vw;
-  }
-}
-.presentcard {
-  background: url(/apple_store/images/home_images/h3.png) no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  min-height: 60vh;
-  align-items: center;
-  justify-content: center;
+  margin-top: 2rem;
 }
 .presentcard .content {
   margin-top: 30rem;
@@ -520,6 +486,51 @@ img {
   font-size: 2rem;
   color: #06c;
   letter-spacing: inherit;
+}
+
+.about_ipad {
+  background: url(/apple_store/images/home_images/h3.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  height: 60vh;
+  min-width: 30vw;
+  align-items: center;
+  justify-content: center;
+}
+.about_ipad .content_right {
+  margin-top: 10rem;
+  padding-left: 365px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about_ipad .content_right ul li {
+  list-style: none;
+  display: inline;
+}
+.about_ipad .content_right ul li a {
+  padding: 1.5rem;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  color: #06c;
+  letter-spacing: inherit;
+}
+
+.gallery .box-container {
+  -moz-columns: 2 37rem;
+       columns: 2 37rem;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+.gallery .box-container .box-gallery {
+  margin-bottom: 0.8rem;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+.gallery .box-container .box-gallery img {
+  width: 100%;
+  margin-bottom: 0.8rem;
 }
 
 .home_mac {
@@ -754,22 +765,6 @@ textarea {
   text-decoration: underline;
 }
 
-.gallery .box-container {
-  -moz-columns: 2 40rem;
-       columns: 2 40rem;
-  -moz-column-gap: 1.5rem;
-       column-gap: 1.5rem;
-}
-.gallery .box-container .box-gallery {
-  margin-bottom: 0.8rem;
-  -moz-column-break-inside: avoid;
-       break-inside: avoid;
-}
-.gallery .box-container .box-gallery img {
-  width: 100%;
-  margin-bottom: 0.8rem;
-}
-
 .gallery-mac .box-container-mac {
   display: flex;
   flex-direction: row;
@@ -876,6 +871,36 @@ textarea {
   font-size: 5.5rem;
   font-weight: 800;
   margin: 8rem 0 5rem;
+}
+
+.big_text_x {
+  font-size: 5.5rem;
+  font-weight: 800;
+  margin: 8rem 0 0;
+}
+
+.big_text_xl_light {
+  font-size: 5.5rem;
+  font-weight: 800;
+  color: white;
+}
+
+.text_light {
+  color: white;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0 5rem;
+}
+
+.text_dark {
+  color: black;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0 5rem;
 }
 
 section {
