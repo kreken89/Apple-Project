@@ -1116,8 +1116,8 @@ ul li a:hover {
 }
 
 .presentcard_mac {
-  -moz-columns: 2;
-       columns: 2;
+  -moz-columns: 2 37rem;
+       columns: 2 37rem;
   -moz-column-gap: 0;
        column-gap: 0;
 }
@@ -1129,8 +1129,7 @@ ul li a:hover {
   flex-direction: column;
   min-height: 48vh;
   align-items: center;
-  justify-content: flex-start;
-  margin-bottom: 3rem;
+  justify-content: center;
 }
 .presentcard_mac .content_left ul li {
   list-style: none;
@@ -1143,6 +1142,10 @@ ul li a:hover {
   color: #06c;
   letter-spacing: inherit;
 }
+.presentcard_mac .content_left .logo {
+  font-size: 7rem;
+  color: white;
+}
 .presentcard_mac .content_right {
   background: url(/apple_store/images/mac_images/m3.1.png) no-repeat;
   background-size: cover;
@@ -1152,7 +1155,6 @@ ul li a:hover {
   min-height: 48vh;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 3rem;
 }
 .presentcard_mac .content_right ul li {
   list-style: none;
