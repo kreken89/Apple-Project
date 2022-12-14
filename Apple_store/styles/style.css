@@ -968,11 +968,11 @@ ul li a:hover {
 }
 
 @media screen and (max-width: 960px) {
-  .table-container {
+  .phone-table {
     flex-wrap: wrap;
     width: 600px;
   }
-  .table-container .col .thead {
+  .phone-table .col .thead {
     width: 220px;
   }
 }
