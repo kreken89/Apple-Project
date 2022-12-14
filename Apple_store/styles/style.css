@@ -363,35 +363,6 @@ footer .legal ul li:last-child {
   letter-spacing: inherit;
 }
 
-.about_ipad {
-  background: url(/apple_store/images/home_images/h3.png) no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  height: 58vh;
-  min-width: 30vw;
-  align-items: center;
-  justify-content: center;
-}
-.about_ipad .content_right {
-  margin-top: 10rem;
-  padding-left: 365px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.about_ipad .content_right ul li {
-  list-style: none;
-  display: inline;
-}
-.about_ipad .content_right ul li a {
-  padding: 1.5rem;
-  margin-bottom: 5rem;
-  font-size: 2rem;
-  color: #06c;
-  letter-spacing: inherit;
-}
-
 .home_mac {
   background: url(/Apple_store/images/mac_images/m1.png) no-repeat;
   background-size: cover;
@@ -461,41 +432,33 @@ footer .legal ul li:last-child {
   }
 }
 
-.home_ipad {
-  background: url(/Apple_store/images/ipad_images/i1.png) no-repeat;
+.about_ipad {
+  background: url(/apple_store/images/home_images/h3.png) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
-  min-height: 80vh;
+  height: 58vh;
+  min-width: 30vw;
   align-items: center;
   justify-content: center;
-  margin-top: 7rem;
 }
-.home_ipad .content {
-  min-width: 30vh;
+.about_ipad .content_right {
+  margin-top: 10rem;
+  padding-left: 365px;
   display: flex;
-  margin-top: 35rem;
-  margin-left: 50rem;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 3rem;
 }
-.home_ipad .content ul li {
+.about_ipad .content_right ul li {
   list-style: none;
   display: inline;
 }
-.home_ipad .content ul li a {
+.about_ipad .content_right ul li a {
   padding: 1.5rem;
   margin-bottom: 5rem;
   font-size: 2rem;
   color: #06c;
   letter-spacing: inherit;
-}
-@media (min-width: 297.98px) and (max-width: 767.98px) {
-  .home_ipad {
-    padding: 3rem 10rem;
-  }
 }
 
 .ipad {
@@ -532,16 +495,42 @@ footer .legal ul li:last-child {
   }
 }
 
-.ipad_text {
-  font-size: 5rem;
+.change_ipad_text {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  max-height: 40vh;
+  align-items: center;
+  justify-content: center;
 }
-
-.info_ipad {
-  font-weight: 700;
+.change_ipad_text .content_text {
+  margin-top: -5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 60%;
+}
+.change_ipad_text .content_text ul li {
+  list-style: none;
+  display: inline;
+}
+.change_ipad_text .content_text ul li a {
+  font-size: 2rem;
+  color: #06c;
+  letter-spacing: inherit;
+}
+@media (min-width: 297.98px) and (max-width: 767.98px) {
+  .change_ipad_text {
+    padding: 3rem 1rem;
+  }
+  .change_ipad_text .s1 {
+    font-size: 5vw;
+    margin: 3rem;
+  }
 }
 
 .change_ipad {
-  background: url(/Apple_store/images/ipad_images/i4.png) no-repeat;
+  background: url(/Apple_store/images/ipad_images/i44.png) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -572,6 +561,14 @@ footer .legal ul li:last-child {
     font-size: 5vw;
     margin: 3rem;
   }
+}
+
+.ipad_text {
+  font-size: 5rem;
+}
+
+.info_ipad {
+  font-weight: 700;
 }
 
 .home_reference {

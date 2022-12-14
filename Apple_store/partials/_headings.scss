@@ -69,39 +69,6 @@
   }
 }
 
-// Home section Ipad
-.about_ipad {
-  background: url(/apple_store/images/home_images/h3.png) no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  height: 58vh;
-  min-width: 30vw;
-  align-items: center;
-  justify-content: center;
-
-  .content_right {
-    margin-top: 10rem;
-    padding-left: 365px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    ul li {
-      list-style: none;
-      display: inline;
-
-      a {
-        padding: 1.5rem;
-        margin-bottom: 5rem;
-        font-size: 2rem;
-        color: #06c;
-        letter-spacing: inherit;
-      }
-    }
-  }
-}
-
 // Mac homepage section home_mac
 
 .home_mac {
@@ -179,27 +146,25 @@
   }
 }
 
-// iPad home img
 
-.home_ipad {
-  background: url(/Apple_store/images/ipad_images/i1.png) no-repeat;
+
+// Home section Ipad - white image
+.about_ipad {
+  background: url(/apple_store/images/home_images/h3.png) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
-  min-height: 80vh;
+  height: 58vh;
+  min-width: 30vw;
   align-items: center;
   justify-content: center;
-  margin-top: 7rem;
 
-  .content {
-    min-width: 30vh;
+  .content_right {
+    margin-top: 10rem;
+    padding-left: 365px;
     display: flex;
-    margin-top: 35rem;
-    margin-left: 50rem;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 3rem;
 
     ul li {
       list-style: none;
@@ -214,13 +179,9 @@
       }
     }
   }
-
-  @media (min-width: 297.98px) and (max-width: 767.98px) {
-    padding: 3rem 10rem;
-  }
 }
 
-//iPad pro img
+//iPad pro img - purple image
 .ipad {
   background: url(/Apple_store/images/ipad_images/i2.png) no-repeat;
   background-size: cover;
@@ -258,65 +219,56 @@
   }
 }
 
-//Ipad text
-.ipad_text {
-  font-size: 5rem;
+// Change iPad text
+.change_ipad_text {
+  // background: red;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  max-height: 40vh;
+  align-items: center;
+  justify-content: center;
+
+  .content_text {
+    margin-top: -5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 60%;
+
+
+    ul li {
+      list-style: none;
+      display: inline;
+
+      a {
+        font-size: 2rem;
+        color: #06c;
+        letter-spacing: inherit;
+      }
+    }
+  }
+
+  @media (min-width: 297.98px) and (max-width: 767.98px) {
+    padding: 3rem 1rem;
+
+    .s1 {
+      font-size: 5vw;
+      margin: 3rem;
+    }
+  }
 }
 
-//Info ipad text
-.info_ipad {
-  font-weight: 700;
-}
-
-// About presentcard iPad
-// .presentcard_ipad {
-//   background: url(/Apple_store/images/ipad_images/i3.png) no-repeat;
-//   background-size: cover;
-//   background-position: center;
-//   display: flex;
-//   min-height: 60vh;
-//   align-items: center;
-//   justify-content: center;
-//   // min-block-size: 50rem;
-
-//   .content {
-//     margin-top: 30rem;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-
-//     ul li {
-//       list-style: none;
-//       display: inline;
-
-//       a {
-
-//         font-size: 2rem;
-//         color: #06c;
-//         letter-spacing: inherit;
-//       }
-//     }
-//   }
-
-//   @media (min-width: 297.98px) and (max-width: 767.98px) {
-//     padding: 3rem 1rem;
-
-//     .s1 {
-//       font-size: 5vw;
-//       margin: 3rem;
-//     }
-//   }
-// }
-
-//Change ipad img
+//Change ipad img - 2 ipad image - white picture
 .change_ipad {
-  background: url(/Apple_store/images/ipad_images/i4.png) no-repeat;
+  background: url(/Apple_store/images/ipad_images/i44.png) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
   min-height: 60vh;
   align-items: center;
   justify-content: center;
+
 
   .content {
     margin-top: 30rem;
@@ -346,15 +298,18 @@
   }
 }
 
-// .home_ipad {
-//   background: url(/Apple_store/images/ipad_images/i1.png) no-repeat;
-//   background-size: cover;
-//   background-position: center;
-//   display: flex;
-//   min-height: 80vh;
-//   align-items: center;
-//   justify-content: center;
-// }
+
+
+//Ipad text
+.ipad_text {
+  font-size: 5rem;
+}
+
+//Info ipad text
+.info_ipad {
+  font-weight: 700;
+}
+
 
 // Iphone home img
 
