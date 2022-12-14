@@ -159,15 +159,15 @@
 }
 
 .red{
-  margin: 2rem 0;
+  margin-top: 2rem;
   font-size: 1.5rem;
   text-transform: uppercase;
   color: red;
 }
 
 .big_text_x {
-  font-size: 5.5rem;
-  font-weight: 800;
+  font-size: 6rem;
+  font-weight: 500;
   margin: 8rem 0 0;
 }
 
@@ -181,17 +181,35 @@
 
 .text_light {
   color: white;
-  font-size: 2rem;
+  font-size: 2.3rem;
+  font-weight: 350;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 0 5rem;
+}
+
+.text_light_y{
+  color: white;
+  font-size: 3rem;
   font-weight: 300;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   margin-bottom: 2rem;
   padding: 0 5rem;
 }
 
 .text_dark{
   color: black;
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 2.3rem;
+  font-weight: 350;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 0 5rem;
+}
+
+.text_dark_y{
+  color: black;
+  font-size: 3rem;
+  font-weight: 350;
   margin-top: 1rem;
   margin-bottom: 2rem;
   padding: 0 5rem;

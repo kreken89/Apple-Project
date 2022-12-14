@@ -303,12 +303,12 @@ footer .legal ul li:last-child {
 
 .home {
   margin-top: 8rem;
-  background: url(/apple_store/images/home_images/h1.png) no-repeat;
+  background: url(/apple_store/images/home_images/h1.1.png) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
-  min-height: 70vh;
+  min-height: 50vh;
   align-items: center;
   justify-content: center;
 }
@@ -754,15 +754,15 @@ textarea {
 }
 
 .red {
-  margin: 2rem 0;
+  margin-top: 2rem;
   font-size: 1.5rem;
   text-transform: uppercase;
   color: red;
 }
 
 .big_text_x {
-  font-size: 5.5rem;
-  font-weight: 800;
+  font-size: 6rem;
+  font-weight: 500;
   margin: 8rem 0 0;
 }
 
@@ -774,17 +774,35 @@ textarea {
 
 .text_light {
   color: white;
-  font-size: 2rem;
+  font-size: 2.3rem;
+  font-weight: 350;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 0 5rem;
+}
+
+.text_light_y {
+  color: white;
+  font-size: 3rem;
   font-weight: 300;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   margin-bottom: 2rem;
   padding: 0 5rem;
 }
 
 .text_dark {
   color: black;
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 2.3rem;
+  font-weight: 350;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 0 5rem;
+}
+
+.text_dark_y {
+  color: black;
+  font-size: 3rem;
+  font-weight: 350;
   margin-top: 1rem;
   margin-bottom: 2rem;
   padding: 0 5rem;
@@ -801,6 +819,13 @@ section {
   padding-top: 5rem;
   border-bottom: 1px solid #d2d2d7;
   width: 80%;
+}
+
+ul li a .fa-chevron-right {
+  font-size: 1.4rem;
+}
+ul li a:hover {
+  text-decoration: underline;
 }
 
 .table-headline {
