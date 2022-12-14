@@ -159,7 +159,7 @@
 // presentcard aside boxes
 
 .presentcard_mac {
-  columns: 2;
+  columns: 2 37rem;
   column-gap: 0;
 
   .content_left{
@@ -170,8 +170,8 @@
     flex-direction: column;
     min-height: 48vh;
     align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 3rem;
+    justify-content: center;
+    // margin-bottom: 3rem;
   
     ul li {
       list-style: none;
@@ -185,6 +185,11 @@
         letter-spacing: inherit;
       }
     }
+
+    .logo{
+      font-size: 7rem;
+      color: white;
+    }
   }
 
   .content_right{
@@ -196,7 +201,7 @@
     min-height: 48vh;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 3rem;
+    // margin-bottom: 3rem;
   
     ul li {
       list-style: none;
