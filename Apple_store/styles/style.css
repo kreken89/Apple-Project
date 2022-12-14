@@ -616,14 +616,82 @@ footer .legal ul li:last-child {
   justify-content: center;
 }
 
-.home_contact {
-  background: url(/images/p8.jpeg) no-repeat;
-  background-size: cover;
-  background-position: center;
+.big-box {
+  padding-top: 50px;
+}
+.big-box .fancy-rainbow {
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 48px;
+  font-weight: bolder;
+  background: -webkit-linear-gradient(45deg, #2ca2b4, #5598de 24%, #7f87ff 45%, #f65aad 76%, #ec3d43);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.big-box .fancy-purple {
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 48px;
+  font-weight: bolder;
+  background: -webkit-linear-gradient(#fdb6ff, #9c1cf1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.big-box .a-list {
+  padding: 20px;
+}
+.big-box .a-list button {
+  font-size: 17px;
+  padding: 8px 16px;
+  border-radius: 2.5rem;
+  background-color: #0071E3;
+  color: white;
+}
+.big-box .a-list a {
+  margin-left: 20px;
+  font-size: 21px;
+  font-weight: 500;
+  color: #0071E3;
+}
+
+.split-box {
+  background-color: #FBFBFD;
+  padding-top: 12px;
   display: flex;
-  min-height: 80vh;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.split-box .fancy-blue {
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 48px;
+  font-weight: bolder;
+  background: -webkit-linear-gradient(90deg, #1e3791 0%, #2948b1 40%, #3153c6 55%, #214fe7 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.split-box .a-list {
+  padding: 20px;
+}
+.split-box .a-list button {
+  font-size: 17px;
+  padding: 8px 16px;
+  border-radius: 2.5rem;
+  background-color: #0071E3;
+  color: white;
+}
+.split-box .a-list a {
+  margin-left: 20px;
+  font-size: 21px;
+  font-weight: 500;
+  color: #0071E3;
 }
 
 input[type=text],
@@ -864,6 +932,24 @@ ul li a .fa-chevron-right {
 }
 ul li a:hover {
   text-decoration: underline;
+}
+
+.table ul {
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 80px auto 100px;
+  font-size: 20px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.table ul li a {
+  color: #0071E3;
+}
+.table ul li a i {
+  padding-left: 10px;
+  font-size: 15px;
 }
 
 .table-headline {
