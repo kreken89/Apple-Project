@@ -302,18 +302,17 @@ footer .legal ul li:last-child {
 }
 
 .home {
-  margin-top: 8rem;
-  background: url(/apple_store/images/home_images/h1.png) no-repeat;
+  background: url(/apple_store/images/home_images/h1.1.png) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
   min-height: 70vh;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .home .content {
-  margin-top: -80rem;
+  margin-top: 0rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -363,6 +362,111 @@ footer .legal ul li:last-child {
   letter-spacing: inherit;
 }
 
+.home_mac {
+  margin-top: 8rem;
+  background: url(/Apple_store/images/mac_images/m1.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+  align-items: center;
+  justify-content: flex-start;
+}
+.home_mac .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.home_mac .content h1 {
+  font-size: 5.5rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+.home_mac .content h3 {
+  margin-top: 0.5rem;
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.home_mac .content .price {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+.home_mac .content ul li {
+  list-style: none;
+  display: inline;
+}
+.home_mac .content ul li a {
+  padding: 1rem;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  color: #06c;
+  letter-spacing: inherit;
+}
+@media (min-width: 297.98px) and (max-width: 767.98px) {
+  .home_mac {
+    padding: 3rem 10rem;
+  }
+}
+
+.macBook_pro {
+  background: url(/Apple_store/images/mac_images/m2.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+  align-items: center;
+  justify-content: flex-start;
+}
+.macBook_pro .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.macBook_pro .content h2 {
+  font-size: 5.5rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+.macBook_pro .content h3 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.macBook_pro .content .price {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+.macBook_pro .content ul li {
+  list-style: none;
+  display: inline;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+}
+.macBook_pro .content ul li a {
+  font-size: 2rem;
+  color: #06c;
+  letter-spacing: inherit;
+}
+@media (min-width: 297.98px) and (max-width: 767.98px) {
+  .macBook_pro {
+    padding: 3rem 1rem;
+  }
+  .macBook_pro .s1 {
+    font-size: 5vw;
+    margin: 3rem;
+  }
+}
+
 .about_ipad {
   background: url(/apple_store/images/home_images/h3.png) no-repeat;
   background-size: cover;
@@ -390,112 +494,6 @@ footer .legal ul li:last-child {
   font-size: 2rem;
   color: #06c;
   letter-spacing: inherit;
-}
-
-.home_mac {
-  background: url(/Apple_store/images/mac_images/m1.png) no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  min-height: 80vh;
-  align-items: center;
-  justify-content: center;
-}
-.home_mac .content {
-  min-width: 30vh;
-  display: flex;
-  margin-top: -35rem;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 3rem;
-}
-.home_mac .content ul li {
-  list-style: none;
-  display: inline;
-}
-.home_mac .content ul li a {
-  padding: 1.5rem;
-  margin-bottom: 5rem;
-  font-size: 2rem;
-  color: #06c;
-  letter-spacing: inherit;
-}
-@media (min-width: 297.98px) and (max-width: 767.98px) {
-  .home_mac {
-    padding: 3rem 10rem;
-  }
-}
-
-.macBook_pro {
-  background: url(/Apple_store/images/mac_images/m2.png) no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  min-height: 60vh;
-  align-items: center;
-  justify-content: center;
-}
-.macBook_pro .content {
-  margin-top: -5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.macBook_pro .content ul li {
-  list-style: none;
-  display: inline;
-}
-.macBook_pro .content ul li a {
-  font-size: 2rem;
-  color: #06c;
-  letter-spacing: inherit;
-}
-@media (min-width: 297.98px) and (max-width: 767.98px) {
-  .macBook_pro {
-    padding: 3rem 1rem;
-  }
-  .macBook_pro .s1 {
-    font-size: 5vw;
-    margin: 3rem;
-  }
-}
-
-.home_ipad {
-  background: url(/Apple_store/images/ipad_images/i1.png) no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  min-height: 80vh;
-  align-items: center;
-  justify-content: center;
-  margin-top: 7rem;
-}
-.home_ipad .content {
-  min-width: 30vh;
-  display: flex;
-  margin-top: 35rem;
-  margin-left: 50rem;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 3rem;
-}
-.home_ipad .content ul li {
-  list-style: none;
-  display: inline;
-}
-.home_ipad .content ul li a {
-  padding: 1.5rem;
-  margin-bottom: 5rem;
-  font-size: 2rem;
-  color: #06c;
-  letter-spacing: inherit;
-}
-@media (min-width: 297.98px) and (max-width: 767.98px) {
-  .home_ipad {
-    padding: 3rem 10rem;
-  }
 }
 
 .ipad {
@@ -532,16 +530,42 @@ footer .legal ul li:last-child {
   }
 }
 
-.ipad_text {
-  font-size: 5rem;
+.change_ipad_text {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  max-height: 40vh;
+  align-items: center;
+  justify-content: center;
 }
-
-.info_ipad {
-  font-weight: 700;
+.change_ipad_text .content_text {
+  margin-top: -5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 60%;
+}
+.change_ipad_text .content_text ul li {
+  list-style: none;
+  display: inline;
+}
+.change_ipad_text .content_text ul li a {
+  font-size: 2rem;
+  color: #06c;
+  letter-spacing: inherit;
+}
+@media (min-width: 297.98px) and (max-width: 767.98px) {
+  .change_ipad_text {
+    padding: 3rem 1rem;
+  }
+  .change_ipad_text .s1 {
+    font-size: 5vw;
+    margin: 3rem;
+  }
 }
 
 .change_ipad {
-  background: url(/Apple_store/images/ipad_images/i4.png) no-repeat;
+  background: url(/Apple_store/images/ipad_images/i44.png) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -572,6 +596,14 @@ footer .legal ul li:last-child {
     font-size: 5vw;
     margin: 3rem;
   }
+}
+
+.ipad_text {
+  font-size: 5rem;
+}
+
+.info_ipad {
+  font-weight: 700;
 }
 
 .home_reference {
@@ -625,11 +657,6 @@ textarea {
 .about .content {
   flex: 1 1 42rem;
   margin-bottom: 5rem;
-}
-.about .content .price {
-  margin-left: 0;
-  font-weight: 600;
-  text-decoration: underline;
 }
 
 .gallery-mac .box-container-mac {
@@ -740,6 +767,12 @@ textarea {
   margin: 8rem 0 5rem;
 }
 
+.big_text_xl_0 {
+  font-size: 6rem;
+  font-weight: 500;
+  margin: 0.5rem;
+}
+
 .big_text_x_light {
   font-size: 4.5rem;
   font-weight: 400;
@@ -754,15 +787,20 @@ textarea {
 }
 
 .red {
-  margin: 2rem 0;
-  font-size: 1.5rem;
-  text-transform: uppercase;
+  margin-top: 2rem;
+  font-size: 1.6rem;
   color: red;
 }
 
+.orange {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  color: rgb(255, 115, 0);
+}
+
 .big_text_x {
-  font-size: 5.5rem;
-  font-weight: 800;
+  font-size: 6rem;
+  font-weight: 500;
   margin: 8rem 0 0;
 }
 
@@ -774,17 +812,35 @@ textarea {
 
 .text_light {
   color: white;
-  font-size: 2rem;
+  font-size: 2.3rem;
+  font-weight: 350;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 0 5rem;
+}
+
+.text_light_y {
+  color: white;
+  font-size: 3rem;
   font-weight: 300;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   margin-bottom: 2rem;
   padding: 0 5rem;
 }
 
 .text_dark {
   color: black;
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 2.3rem;
+  font-weight: 350;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 0 5rem;
+}
+
+.text_dark_y {
+  color: black;
+  font-size: 3rem;
+  font-weight: 350;
   margin-top: 1rem;
   margin-bottom: 2rem;
   padding: 0 5rem;
@@ -801,6 +857,13 @@ section {
   padding-top: 5rem;
   border-bottom: 1px solid #d2d2d7;
   width: 80%;
+}
+
+ul li a .fa-chevron-right {
+  font-size: 1.4rem;
+}
+ul li a:hover {
+  text-decoration: underline;
 }
 
 .table-headline {
@@ -1045,6 +1108,57 @@ section {
   display: inline;
 }
 .gallery .box-container .box-gallery6 ul li a {
+  padding: 1rem;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  color: #06c;
+  letter-spacing: inherit;
+}
+
+.presentcard_mac {
+  -moz-columns: 2;
+       columns: 2;
+  -moz-column-gap: 0;
+       column-gap: 0;
+}
+.presentcard_mac .content_left {
+  background: url(/Apple_store/images/mac_images/m3.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 48vh;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 3rem;
+}
+.presentcard_mac .content_left ul li {
+  list-style: none;
+  display: inline;
+}
+.presentcard_mac .content_left ul li a {
+  padding: 1rem;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  color: #06c;
+  letter-spacing: inherit;
+}
+.presentcard_mac .content_right {
+  background: url(/apple_store/images/mac_images/m3.1.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 48vh;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 3rem;
+}
+.presentcard_mac .content_right ul li {
+  list-style: none;
+  display: inline;
+}
+.presentcard_mac .content_right ul li a {
   padding: 1rem;
   margin-bottom: 5rem;
   font-size: 2rem;

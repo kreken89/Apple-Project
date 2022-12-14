@@ -1,17 +1,16 @@
 // Home page section home
 .home {
-  margin-top: 8rem;
-  background: url(/apple_store/images/home_images/h1.png) no-repeat;
+  background: url(/apple_store/images/home_images/h1.1.png) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
   min-height: 70vh;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 
   .content {
-    margin-top: -80rem;
+    margin-top: 0rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,7 +68,130 @@
   }
 }
 
-// Home section Ipad
+// Mac homepage section home_mac
+
+.home_mac {
+  margin-top: 8rem;
+  background: url(/Apple_store/images/mac_images/m1.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+  align-items: center;
+  justify-content: flex-start;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+    h1{
+      font-size: 5.5rem;
+      font-weight: 500;
+      margin-top: .5rem;
+    }
+    h3{
+      margin-top: 0.5rem;
+      font-size: 3.5rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+    }
+
+    .price{
+      font-size: 2rem;
+      font-weight: 200;
+      margin-bottom: .5rem;
+      margin-bottom: 1rem;
+    }
+
+    ul li {
+      list-style: none;
+      display: inline;
+
+      a {
+        padding: 1rem;
+        margin-bottom: 5rem;
+        font-size: 2rem;
+        color: #06c;
+        letter-spacing: inherit;
+      }
+    }
+  }
+
+  @media (min-width: 297.98px) and (max-width: 767.98px) {
+    padding: 3rem 10rem;
+  }
+}
+
+// MacBook Pro section
+
+.macBook_pro {
+  background: url(/Apple_store/images/mac_images/m2.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+  align-items: center;
+  justify-content: flex-start;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+    h2{
+      font-size: 5.5rem;
+      font-weight: 400;
+      margin-top: .5rem;
+    }
+
+    h3{
+      font-size: 3.5rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+    }
+
+    .price{
+      font-size: 2rem;
+      font-weight: 200;
+      margin-bottom: .5rem;
+      margin-bottom: 1rem;
+    }
+
+    ul li {
+      list-style: none;
+      display: inline;
+      padding: .5rem;
+      margin-bottom: 2rem;
+
+      a {
+        font-size: 2rem;
+        color: #06c;
+        letter-spacing: inherit;
+      }
+    }
+  }
+
+  @media (min-width: 297.98px) and (max-width: 767.98px) {
+    padding: 3rem 1rem;
+    .s1 {
+      font-size: 5vw;
+      margin: 3rem;
+    }
+  }
+}
+
+// Mac Presentcard section
+
+// iPad home img
+
+
+// Home section Ipad - white image
 .about_ipad {
   background: url(/apple_store/images/home_images/h3.png) no-repeat;
   background-size: cover;
@@ -102,125 +224,7 @@
   }
 }
 
-// Mac homepage section home_mac
-
-.home_mac {
-  background: url(/Apple_store/images/mac_images/m1.png) no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  min-height: 80vh;
-  align-items: center;
-  justify-content: center;
-
-  .content {
-    min-width: 30vh;
-    display: flex;
-    margin-top: -35rem;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem;
-
-    ul li {
-      list-style: none;
-      display: inline;
-
-      a {
-        padding: 1.5rem;
-        margin-bottom: 5rem;
-        font-size: 2rem;
-        color: #06c;
-        letter-spacing: inherit;
-      }
-    }
-  }
-
-  @media (min-width: 297.98px) and (max-width: 767.98px) {
-    padding: 3rem 10rem;
-  }
-}
-
-// MacBook image
-
-.macBook_pro {
-  background: url(/Apple_store/images/mac_images/m2.png) no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  min-height: 60vh;
-  align-items: center;
-  justify-content: center;
-
-  .content {
-    margin-top: -5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    ul li {
-      list-style: none;
-      display: inline;
-
-      a {
-        font-size: 2rem;
-        color: #06c;
-        letter-spacing: inherit;
-      }
-    }
-  }
-
-  @media (min-width: 297.98px) and (max-width: 767.98px) {
-    padding: 3rem 1rem;
-    .s1 {
-      font-size: 5vw;
-      margin: 3rem;
-    }
-  }
-}
-
-// iPad home img
-
-.home_ipad {
-  background: url(/Apple_store/images/ipad_images/i1.png) no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  min-height: 80vh;
-  align-items: center;
-  justify-content: center;
-  margin-top: 7rem;
-
-  .content {
-    min-width: 30vh;
-    display: flex;
-    margin-top: 35rem;
-    margin-left: 50rem;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem;
-
-    ul li {
-      list-style: none;
-      display: inline;
-
-      a {
-        padding: 1.5rem;
-        margin-bottom: 5rem;
-        font-size: 2rem;
-        color: #06c;
-        letter-spacing: inherit;
-      }
-    }
-  }
-
-  @media (min-width: 297.98px) and (max-width: 767.98px) {
-    padding: 3rem 10rem;
-  }
-}
-
-//iPad pro img
+//iPad pro img - purple image
 .ipad {
   background: url(/Apple_store/images/ipad_images/i2.png) no-repeat;
   background-size: cover;
@@ -258,65 +262,56 @@
   }
 }
 
-//Ipad text
-.ipad_text {
-  font-size: 5rem;
+// Change iPad text
+.change_ipad_text {
+  // background: red;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  max-height: 40vh;
+  align-items: center;
+  justify-content: center;
+
+  .content_text {
+    margin-top: -5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 60%;
+
+
+    ul li {
+      list-style: none;
+      display: inline;
+
+      a {
+        font-size: 2rem;
+        color: #06c;
+        letter-spacing: inherit;
+      }
+    }
+  }
+
+  @media (min-width: 297.98px) and (max-width: 767.98px) {
+    padding: 3rem 1rem;
+
+    .s1 {
+      font-size: 5vw;
+      margin: 3rem;
+    }
+  }
 }
 
-//Info ipad text
-.info_ipad {
-  font-weight: 700;
-}
-
-// About presentcard iPad
-// .presentcard_ipad {
-//   background: url(/Apple_store/images/ipad_images/i3.png) no-repeat;
-//   background-size: cover;
-//   background-position: center;
-//   display: flex;
-//   min-height: 60vh;
-//   align-items: center;
-//   justify-content: center;
-//   // min-block-size: 50rem;
-
-//   .content {
-//     margin-top: 30rem;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-
-//     ul li {
-//       list-style: none;
-//       display: inline;
-
-//       a {
-
-//         font-size: 2rem;
-//         color: #06c;
-//         letter-spacing: inherit;
-//       }
-//     }
-//   }
-
-//   @media (min-width: 297.98px) and (max-width: 767.98px) {
-//     padding: 3rem 1rem;
-
-//     .s1 {
-//       font-size: 5vw;
-//       margin: 3rem;
-//     }
-//   }
-// }
-
-//Change ipad img
+//Change ipad img - 2 ipad image - white picture
 .change_ipad {
-  background: url(/Apple_store/images/ipad_images/i4.png) no-repeat;
+  background: url(/Apple_store/images/ipad_images/i44.png) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
   min-height: 60vh;
   align-items: center;
   justify-content: center;
+
 
   .content {
     margin-top: 30rem;
@@ -346,15 +341,18 @@
   }
 }
 
-// .home_ipad {
-//   background: url(/Apple_store/images/ipad_images/i1.png) no-repeat;
-//   background-size: cover;
-//   background-position: center;
-//   display: flex;
-//   min-height: 80vh;
-//   align-items: center;
-//   justify-content: center;
-// }
+
+
+//Ipad text
+.ipad_text {
+  font-size: 5rem;
+}
+
+//Info ipad text
+.info_ipad {
+  font-weight: 700;
+}
+
 
 // Iphone home img
 

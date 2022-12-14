@@ -12,3 +12,15 @@ section {
   width: 80%;
 }
 
+// Links hover
+
+ul li{
+  a .fa-chevron-right{
+    font-size: 1.4rem;
+  }
+  a:hover {
+    text-decoration: underline;
+
+  }
+}
+

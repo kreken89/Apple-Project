@@ -155,4 +155,61 @@
   }
 }
 
-/////////
+//  Mac page boxes
+// presentcard aside boxes
+
+.presentcard_mac {
+  columns: 2;
+  column-gap: 0;
+
+  .content_left{
+    background: url(/Apple_store/images/mac_images/m3.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 48vh;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 3rem;
+  
+    ul li {
+      list-style: none;
+      display: inline;
+  
+      a {
+        padding: 1rem;
+        margin-bottom: 5rem;
+        font-size: 2rem;
+        color: #06c;
+        letter-spacing: inherit;
+      }
+    }
+  }
+
+  .content_right{
+    background: url(/apple_store/images/mac_images/m3.1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 48vh;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 3rem;
+  
+    ul li {
+      list-style: none;
+      display: inline;
+  
+      a {
+        padding: 1rem;
+        margin-bottom: 5rem;
+        font-size: 2rem;
+        color: #06c;
+        letter-spacing: inherit;
+      }
+    }
+  }
+
+}

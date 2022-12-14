@@ -45,6 +45,7 @@ function carousel() {
 }
 */
 
+//Slideshow for movies on front page
 let slideIndex = 0;
 showSlides();
 
