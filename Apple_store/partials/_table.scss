@@ -1,3 +1,23 @@
+.table{
+    
+    ul{
+        display: flex;
+        width: fit-content;
+        margin: 80px auto 100px;
+        font-size: 20px;
+        column-gap: 40px;
+        li{
+            
+            a{
+                color: #0071E3;
+                i{
+                    padding-left: 10px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
 .table-headline{
     font-size: 36px;
     font-weight: 600;

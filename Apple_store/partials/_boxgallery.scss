@@ -159,10 +159,10 @@
 // presentcard aside boxes
 
 .presentcard_mac {
-  columns: 2;
+  columns: 2 37rem;
   column-gap: 0;
 
-  .content_left{
+  .content_left {
     background: url(/Apple_store/images/mac_images/m3.png) no-repeat;
     background-size: cover;
     background-position: center;
@@ -170,13 +170,13 @@
     flex-direction: column;
     min-height: 48vh;
     align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 3rem;
-  
+    justify-content: center;
+    // margin-bottom: 3rem;
+
     ul li {
       list-style: none;
       display: inline;
-  
+
       a {
         padding: 1rem;
         margin-bottom: 5rem;
@@ -185,9 +185,14 @@
         letter-spacing: inherit;
       }
     }
+
+    .logo {
+      font-size: 7rem;
+      color: white;
+    }
   }
 
-  .content_right{
+  .content_right {
     background: url(/apple_store/images/mac_images/m3.1.png) no-repeat;
     background-size: cover;
     background-position: center;
@@ -196,12 +201,56 @@
     min-height: 48vh;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 3rem;
-  
+    // margin-bottom: 3rem;
+
     ul li {
       list-style: none;
       display: inline;
-  
+
+      a {
+        padding: 1rem;
+        margin-bottom: 5rem;
+        font-size: 2rem;
+        color: #06c;
+        letter-spacing: inherit;
+      }
+    }
+  }
+}
+
+// Mac gallery info boxes image and text
+
+.mac_gallery .mac_box_container {
+  columns: 2 37rem;
+  column-gap: 2rem;
+
+  .mac_gallery1 {
+    background: url(/apple_store/images/mac_images/m4.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 45vh;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 3rem;
+
+    .big_text_x {
+      margin-top: 0;
+      font-size: 4.5rem;
+      font-weight: 500;
+      padding: 1rem;
+    }
+
+    span {
+      margin-top: 1rem;
+      font-size: 3rem;
+    }
+
+    ul li {
+      list-style: none;
+      display: inline;
+
       a {
         padding: 1rem;
         margin-bottom: 5rem;
@@ -212,4 +261,227 @@
     }
   }
 
+  .mac_gallery2 {
+    background: url(/Apple_store/images/mac_images/m5.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 45vh;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 3rem;
+
+    .big_text_x {
+      margin-top: 0;
+      font-size: 4.5rem;
+      font-weight: 500;
+      padding: 1.5rem;
+    }
+
+    span {
+      margin-top: 1rem;
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
+
+    ul li {
+      list-style: none;
+      display: inline;
+
+      a {
+        padding: 1rem;
+        margin-bottom: 5rem;
+        font-size: 2rem;
+        color: #06c;
+        letter-spacing: inherit;
+      }
+    }
+  }
+}
+
+// Mac info about mac
+
+.mac_info_gallery .mac_info_container {
+  columns: 2 37rem;
+  column-gap: 2rem;
+
+  .mac_info_gallery1 {
+    background: url(/apple_store/images/mac_images/m6.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 45vh;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+
+    .big_text_x {
+      margin-top: 0;
+      font-size: 4.5rem;
+      font-weight: 500;
+      padding: 1rem;
+    }
+
+    span {
+      margin-top: 2rem;
+      font-size: 3rem;
+    }
+
+    ul li {
+      list-style: none;
+      display: inline;
+
+      a {
+        padding: 1rem;
+        margin-bottom: 5rem;
+        font-size: 2rem;
+        color: #06c;
+        letter-spacing: inherit;
+      }
+    }
+  }
+
+  .mac_info_gallery2 {
+    background: url(/Apple_store/images/mac_images/m7.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 45vh;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+
+    .big_text_x {
+      margin-top: 0;
+      font-size: 4.5rem;
+      font-weight: 500;
+      padding: 1.5rem;
+    }
+
+    span {
+      margin-top: 1rem;
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
+
+    ul li {
+      list-style: none;
+      display: inline;
+
+      a {
+        padding: 1rem;
+        margin-bottom: 5rem;
+        font-size: 2rem;
+        color: #06c;
+        letter-spacing: inherit;
+      }
+    }
+  }
+}
+
+// Mac big image center page
+.gallery-center-image .box-container-center-image {
+  background: url(/apple_store/images/mac_images/m9.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+  align-items: center;
+  justify-content: flex-start;
+}
+.content {
+  h2 {
+    margin-top: 4rem;
+    font-size: 5rem;
+    font-weight: 450;
+  }
+
+  p {
+    padding: 2rem 15rem;
+    font-size: 2rem;
+  }
+}
+
+.gallery-center-image .box-container-center-image2 {
+  background: url(/apple_store/images/mac_images/m10.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+//One section Mac
+
+.one_mac {
+  columns: 2 27rem;
+  column-gap: 0;
+
+  .content_one_left {
+    background: url(/Apple_store/images/mac_images/m11.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 30vh;
+    align-items: center;
+    justify-content: center;
+    // margin-bottom: 3rem;
+
+    ul li {
+      list-style: none;
+      display: inline;
+
+      a {
+        padding: 1rem;
+        margin-bottom: 5rem;
+        font-size: 2rem;
+        color: #06c;
+        letter-spacing: inherit;
+      }
+    }
+
+    .logo {
+      font-size: 7rem;
+      color: white;
+    }
+  }
+
+  .content_one_right {
+    background: url(/apple_store/images/mac_images/m11.1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 30vh;
+    align-items: center;
+    justify-content: flex-start;
+    // margin-bottom: 3rem;
+
+    ul li {
+      list-style: none;
+      display: inline;
+
+      a {
+        padding: 1rem;
+        margin-bottom: 5rem;
+        font-size: 2rem;
+        color: #06c;
+        letter-spacing: inherit;
+      }
+    }
+  }
 }
