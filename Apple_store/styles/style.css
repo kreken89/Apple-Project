@@ -1073,6 +1073,57 @@ table thead td .iphone13 h4, table thead td .iphonese h4 {
   letter-spacing: inherit;
 }
 
+.presentcard_mac {
+  -moz-columns: 2;
+       columns: 2;
+  -moz-column-gap: 0;
+       column-gap: 0;
+}
+.presentcard_mac .content_left {
+  background: url(/Apple_store/images/mac_images/m3.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 48vh;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 3rem;
+}
+.presentcard_mac .content_left ul li {
+  list-style: none;
+  display: inline;
+}
+.presentcard_mac .content_left ul li a {
+  padding: 1rem;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  color: #06c;
+  letter-spacing: inherit;
+}
+.presentcard_mac .content_right {
+  background: url(/apple_store/images/mac_images/m3.1.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 48vh;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 3rem;
+}
+.presentcard_mac .content_right ul li {
+  list-style: none;
+  display: inline;
+}
+.presentcard_mac .content_right ul li a {
+  padding: 1rem;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  color: #06c;
+  letter-spacing: inherit;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Helvetica Neue", sans-serif;
