@@ -302,18 +302,17 @@ footer .legal ul li:last-child {
 }
 
 .home {
-  margin-top: 8rem;
   background: url(/apple_store/images/home_images/h1.1.png) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
-  min-height: 50vh;
+  min-height: 70vh;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .home .content {
-  margin-top: -80rem;
+  margin-top: 0rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -393,29 +392,46 @@ footer .legal ul li:last-child {
 }
 
 .home_mac {
+  margin-top: 8rem;
   background: url(/Apple_store/images/mac_images/m1.png) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
-  min-height: 80vh;
+  flex-direction: column;
+  min-height: 70vh;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .home_mac .content {
-  min-width: 30vh;
   display: flex;
-  margin-top: -35rem;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3rem;
+  padding: 1rem;
+}
+.home_mac .content h1 {
+  font-size: 5.5rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+.home_mac .content h3 {
+  margin-top: 0.5rem;
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.home_mac .content .price {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 .home_mac .content ul li {
   list-style: none;
   display: inline;
 }
 .home_mac .content ul li a {
-  padding: 1.5rem;
+  padding: 1rem;
   margin-bottom: 5rem;
   font-size: 2rem;
   color: #06c;
@@ -432,19 +448,38 @@ footer .legal ul li:last-child {
   background-size: cover;
   background-position: center;
   display: flex;
+  flex-direction: column;
   min-height: 60vh;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .macBook_pro .content {
-  margin-top: -5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: white;
+}
+.macBook_pro .content h2 {
+  font-size: 5.5rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+.macBook_pro .content h3 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.macBook_pro .content .price {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 .macBook_pro .content ul li {
   list-style: none;
   display: inline;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
 }
 .macBook_pro .content ul li a {
   font-size: 2rem;
@@ -626,11 +661,6 @@ textarea {
   flex: 1 1 42rem;
   margin-bottom: 5rem;
 }
-.about .content .price {
-  margin-left: 0;
-  font-weight: 600;
-  text-decoration: underline;
-}
 
 .gallery-mac .box-container-mac {
   display: flex;
@@ -740,6 +770,12 @@ textarea {
   margin: 8rem 0 5rem;
 }
 
+.big_text_xl_0 {
+  font-size: 6rem;
+  font-weight: 500;
+  margin: 0.5rem;
+}
+
 .big_text_x_light {
   font-size: 4.5rem;
   font-weight: 400;
@@ -755,9 +791,14 @@ textarea {
 
 .red {
   margin-top: 2rem;
-  font-size: 1.5rem;
-  text-transform: uppercase;
+  font-size: 1.6rem;
   color: red;
+}
+
+.orange {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  color: rgb(255, 115, 0);
 }
 
 .big_text_x {
