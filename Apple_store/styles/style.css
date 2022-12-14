@@ -867,19 +867,27 @@ ul li a:hover {
 }
 
 .table-headline {
-  font-size: 42px;
+  font-size: 36px;
   font-weight: 600;
 }
 
-table {
-  width: 100%;
-  max-width: 980px;
+.phone-table {
+  margin-top: 40px;
   margin: 40px auto 0;
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
 }
-table thead {
-  row-gap: 25px;
+.phone-table .col {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
-table thead td div {
+.phone-table .col .thead {
   width: 180px;
   display: flex;
   flex-direction: column;
@@ -887,27 +895,27 @@ table thead td div {
   align-items: center;
   border-bottom: 1px solid rgba(131, 131, 131, 0.308);
 }
-table thead td div h4 {
+.phone-table .col .thead h4 {
   padding-top: 10px;
   font-size: 12px;
   font-weight: 300;
   color: #BF4800;
 }
-table thead td div h2 {
+.phone-table .col .thead h2 {
   font-weight: 600;
   font-size: 20px;
   padding-bottom: 10px;
 }
-table thead td div p {
+.phone-table .col .thead p {
   white-space: nowrap;
   font-size: 16px;
   color: #1D1D1F;
 }
-table thead td div .price {
+.phone-table .col .thead .price {
   padding-top: 30px;
   font-size: 13.5px;
 }
-table thead td div button {
+.phone-table .col .thead button {
   color: white;
   cursor: pointer;
   font-size: 12px;
@@ -916,21 +924,58 @@ table thead td div button {
   margin-top: 16px;
   border-radius: 2.3rem;
 }
-table thead td div a {
+.phone-table .col .thead a {
   font-size: 13.5px;
   color: #0071E3;
   margin-bottom: 25px;
 }
-table thead td div a:hover {
+.phone-table .col .thead a:hover {
   text-decoration: underline;
 }
-table thead td div a i {
+.phone-table .col .thead a i {
   font-size: 10px;
 }
-table thead td .iphone13 h4, table thead td .iphonese h4 {
+.phone-table .col .tbody {
+  color: rgba(29, 29, 31, 0.7411764706);
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(131, 131, 131, 0.308);
+}
+.phone-table .col .tbody h3 {
+  font-size: 16px;
+  margin-bottom: 7px;
+}
+.phone-table .col .tbody p {
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+.phone-table .col .tbody .island-specs {
+  height: 96px;
+}
+.phone-table .col .tbody .chip-specs {
+  height: 77px;
+}
+.phone-table .col .tbody .camera-specs {
+  height: 148px;
+}
+.phone-table .col .tbody div div .spacer {
+  font-weight: 700;
+}
+.phone-table .col3 .thead h4, .phone-table .col4 .thead h4 {
   color: transparent;
 }
 
+@media screen and (max-width: 960px) {
+  .table-container {
+    flex-wrap: wrap;
+    width: 600px;
+  }
+  .table-container .col .thead {
+    width: 220px;
+  }
+}
 .gallery .box-container {
   -moz-columns: 2 37rem;
        columns: 2 37rem;
