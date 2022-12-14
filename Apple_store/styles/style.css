@@ -307,6 +307,7 @@ footer .legal ul li:last-child {
   background-size: cover;
   background-position: center;
   display: flex;
+  flex-direction: column;
   min-height: 70vh;
   align-items: center;
   justify-content: center;
@@ -734,8 +735,8 @@ textarea {
 }
 
 .big_text_xl {
-  font-size: 5.5rem;
-  font-weight: 800;
+  font-size: 6rem;
+  font-weight: 500;
   margin: 8rem 0 5rem;
 }
 
