@@ -521,7 +521,7 @@ footer .legal ul li:last-child {
   background-position: center;
   display: flex;
   flex-direction: row;
-  min-height: 60vh;
+  min-height: 70vh;
   align-items: center;
   justify-content: flex-start;
   margin: 0 5rem;
@@ -533,6 +533,37 @@ footer .legal ul li:last-child {
   justify-content: center;
   align-items: center;
   margin-left: 10rem;
+}
+.ipad .content_about_ipad .big_text_xl_light {
+  font-size: 5.5rem;
+  font-weight: 500;
+  color: white;
+}
+.ipad .content_about_ipad .text_light_y {
+  color: white;
+  font-size: 2.7rem;
+  font-weight: 400;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 0 5rem;
+}
+.ipad .content_about_ipad h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #BF4800;
+}
+.ipad .content_about_ipad .fa-apple {
+  font-size: 5rem;
+}
+.ipad .content_about_ipad .buy_button {
+  color: white;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 300;
+  background-color: #0071E3;
+  padding: 0.8rem 1.7rem;
+  margin-bottom: 1rem;
+  border-radius: 2.3rem;
 }
 .ipad .content_about_ipad ul li {
   list-style: none;
@@ -594,7 +625,7 @@ footer .legal ul li:last-child {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 60vh;
+  min-height: 70vh;
 }
 .change_ipad .content_text {
   display: flex;
@@ -848,6 +879,45 @@ textarea {
   padding: 0 5rem;
 }
 
+.ipad_info-box {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  background: #f5f5f7;
+}
+.ipad_info-box .ipad-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  width: 250px;
+  padding: 10rem 0;
+}
+.ipad_info-box .ipad-info .fa-box-open,
+.ipad_info-box .ipad-info .fa-record-vinyl,
+.ipad_info-box .ipad-info .fa-comments {
+  font-size: 5em;
+  margin-bottom: 2rem;
+}
+.ipad_info-box .ipad-info h4 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.ipad_info-box .ipad-info p {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.ipad_info-box .ipad-info .link-info {
+  list-style: none;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  padding: 0 5rem;
+}
+
 .big_text {
   font-size: 3.5rem;
   font-weight: 600;
@@ -856,6 +926,12 @@ textarea {
 
 .big_text_xl {
   font-size: 6rem;
+  font-weight: 500;
+  padding: 8rem 0 5rem;
+}
+
+.big_text_xl_ipad {
+  font-size: 5.5rem;
   font-weight: 500;
   padding: 8rem 0 5rem;
 }
@@ -911,6 +987,13 @@ textarea {
 
 .price_buy {
   font-size: 2.3rem;
+  font-weight: 300;
+  padding: 1.5rem;
+}
+
+.price_buy_white {
+  color: white;
+  font-size: 2rem;
   font-weight: 300;
   padding: 1.5rem;
 }
