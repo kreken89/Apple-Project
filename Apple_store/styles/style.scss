@@ -21,7 +21,7 @@
   text-decoration: none;
   transition: all 0.2s linear;
 
-  ul li{
+  ul li {
     list-style: none;
   }
 }
@@ -36,59 +36,95 @@ body {
   overflow-x: hidden;
 }
 
-@media (min-width: 992.98px) {
+@media (min-width: 1068.98px) {
   // .destination .box-container {
   //   // @include grid(27rem);
   // }
+
+  .presentcard_mac,
+  .gallery-center-image .box-container-center-image,
+  .gallery-center-image .box-container-center-image2,
+  .one_mac {
+    @include grid(33rem);
+    max-width: 1440px;
+    padding: 1rem;
+    column-gap: 0;
+  }
+
+  .mac_box_container,
+  .mac_info_gallery .mac_info_container {
+    @include grid(33rem);
+    max-width: 1440px;
+    column-gap: 1rem;
+  }
   html {
     font-size: 55%;
   }
-  .header {
-    padding: 1.5rem 2rem;
-  }
-  .home {
-    min-height: 70vh;
-    .content-contact {
-      margin-top: 6rem;
-    }
-  }
-  .about {
+
+  .presentcard {
     .content {
-      h3 {
-        font-size: 3.5rem;
-      }
-
-      p {
-        font-size: 1.8rem;
-      }
+      margin-top: 40rem;
     }
   }
+  // .header {
+  //   padding: 1.5rem 2rem;
+  // }
+  // .home {
+  //   min-height: 70vh;
+  //   .content-contact {
+  //     margin-top: 6rem;
+  //   }
+  // }
+  // .about {
+  //   .content {
+  //     h3 {
+  //       font-size: 3.5rem;
+  //     }
 
-  .w3-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  //     p {
+  //       font-size: 1.8rem;
+  //     }
+  //   }
+  // }
 
-    .mySlider {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .w3-animate-fading {
-      display: flex;
-      align-self: center;
-      width: 45vw;
-    }
-    span {
-      font-weight: bold;
-    }
-  }
+  // .w3-content {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+
+  //   .mySlider {
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: center;
+  //     align-items: center;
+  //   }
+  //   .w3-animate-fading {
+  //     display: flex;
+  //     align-self: center;
+  //     width: 45vw;
+  //   }
+  //   span {
+  //     font-weight: bold;
+  //   }
+  // }
 }
-@media (min-width: 297.98px) and (max-width: 992.98px) {
-  .destination .box-container {
+@media (min-width: 297.98px) and (max-width: 1068.98px) {
+  .presentcard_mac,
+  .gallery-center-image .box-container-center-image,
+  .gallery-center-image .box-container-center-image2,
+  .one_mac {
     @include grid(33rem);
+    max-width: 772px;
+    padding: 1rem;
+    column-gap: 0;
+  }
+
+  .mac_box_container,
+  .mac_info_gallery .mac_info_container {
+    @include grid(33rem);
+    max-width: 760px;
+    column-gap: 1rem;
   }
   html {
     font-size: 50%;
@@ -100,11 +136,11 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 2rem;
-    .logo {
-      @media (min-width: 297.98px) and (max-width: 378.98px) {
-        font-size: 1.9rem;
-      }
-    }
+    // .logo {
+    //   @media (min-width: 297.98px) and (max-width: 378.98px) {
+    //     font-size: 1.9rem;
+    //   }
+    // }
 
     .navbar {
       position: absolute;
@@ -122,8 +158,8 @@ body {
       }
       li {
         margin: 4rem;
-        border-bottom: .1rem solid white;
-        
+        border-bottom: 0.1rem solid white;
+
         font-size: 2rem;
         display: block;
 
@@ -133,56 +169,80 @@ body {
         }
       }
     }
+  }
+  text mac page .content_mac {
+    max-width: 772px;
+    margin: auto;
+    background-color: #fbfbfd;
 
-    .home {
-      min-height: 50vh;
-      .content {
-        #email-s {
-          display: block;
-          font-size: 1.5rem;
-          font-weight: 900;
-          opacity: 0.5;
-          border-radius: 5px;
-          padding: 1rem;
-          margin-bottom: 1.5rem;
-          width: 60vw;
-        }
-
-        #party {
-          display: block;
-          font-size: 1.5rem;
-          font-weight: 600;
-          opacity: 0.5;
-          border-radius: 5px;
-          padding: 1rem;
-          width: 60vw;
-        }
-      }
-
-      input[type='text'],
-      select,
-      textarea {
-        display: flex;
-        color: $brown;
-        font-weight: 900;
-        opacity: 0.6;
-        width: 60vw;
-        padding: 1rem;
-        border-radius: 0.6rem;
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
-      }
+    h2 {
+      margin-top: 4rem;
+      font-size: 5rem;
+      font-weight: 450;
     }
-    .about {
-      .content {
-        h3 {
-          font-size: 3.5rem;
-        }
 
-        p {
-          font-size: 2.3rem;
-        }
-      }
+    p {
+      padding: 2rem 15rem;
+      font-size: 2rem;
     }
   }
+
+  // .home,
+  // .home_mac,
+  // .about_ipad,
+  // .home_support,
+  // .home_watch {
+  //   min-height: 50vh;
+  // }
 }
+
+// .home {
+//   min-height: 50vh;
+//   .content {
+//     #email-s {
+//       display: block;
+//       font-size: 1.5rem;
+//       font-weight: 900;
+//       opacity: 0.5;
+//       border-radius: 5px;
+//       padding: 1rem;
+//       margin-bottom: 1.5rem;
+//       width: 60vw;
+//     }
+
+//     #party {
+//       display: block;
+//       font-size: 1.5rem;
+//       font-weight: 600;
+//       opacity: 0.5;
+//       border-radius: 5px;
+//       padding: 1rem;
+//       width: 60vw;
+//     }
+//   }
+
+//   input[type='text'],
+//   select,
+//   textarea {
+//     display: flex;
+//     color: $brown;
+//     font-weight: 900;
+//     opacity: 0.6;
+//     width: 60vw;
+//     padding: 1rem;
+//     border-radius: 0.6rem;
+//     margin-top: 1.5rem;
+//     margin-bottom: 1.5rem;
+//   }
+// }
+// .about {
+//   .content {
+//     h3 {
+//       font-size: 3.5rem;
+//     }
+
+//     p {
+//       font-size: 2.3rem;
+//     }
+//   }
+// }

@@ -423,7 +423,7 @@ footer .legal ul li:last-child {
   background-position: center;
   display: flex;
   flex-direction: column;
-  min-height: 60vh;
+  min-height: 70vh;
   align-items: center;
   justify-content: flex-start;
 }
@@ -1385,6 +1385,7 @@ ul li a:hover {
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 3rem;
+  margin-left: 1rem;
 }
 .mac_box_container .mac_gallery1 .big_text_x {
   margin-top: 0;
@@ -1417,6 +1418,7 @@ ul li a:hover {
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 3rem;
+  margin-right: 1rem;
 }
 .mac_box_container .mac_gallery2 .big_text_x {
   margin-top: 0;
@@ -1461,6 +1463,7 @@ ul li a:hover {
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 2rem;
+  margin-left: 1rem;
 }
 .mac_info_gallery .mac_info_container .mac_info_gallery1 .big_text_x {
   margin-top: 0;
@@ -1493,6 +1496,7 @@ ul li a:hover {
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 2rem;
+  margin-right: 1rem;
 }
 .mac_info_gallery .mac_info_container .mac_info_gallery2 .big_text_x {
   margin-top: 0;
@@ -1639,51 +1643,56 @@ body {
   overflow-x: hidden;
 }
 
-@media (min-width: 992.98px) {
-  html {
-    font-size: 55%;
-  }
-  .header {
-    padding: 1.5rem 2rem;
-  }
-  .home {
-    min-height: 70vh;
-  }
-  .home .content-contact {
-    margin-top: 6rem;
-  }
-  .about .content h3 {
-    font-size: 3.5rem;
-  }
-  .about .content p {
-    font-size: 1.8rem;
-  }
-  .w3-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .w3-content .mySlider {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .w3-content .w3-animate-fading {
-    display: flex;
-    align-self: center;
-    width: 45vw;
-  }
-  .w3-content span {
-    font-weight: bold;
-  }
-}
-@media (min-width: 297.98px) and (max-width: 992.98px) {
-  .destination .box-container {
+@media (min-width: 1068.98px) {
+  .presentcard_mac,
+.gallery-center-image .box-container-center-image,
+.gallery-center-image .box-container-center-image2,
+.one_mac {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
     gap: 1.5rem;
+    max-width: 1440px;
+    padding: 1rem;
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+  .mac_box_container,
+.mac_info_gallery .mac_info_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+    gap: 1.5rem;
+    max-width: 1440px;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+  }
+  html {
+    font-size: 55%;
+  }
+  .presentcard .content {
+    margin-top: 40rem;
+  }
+}
+@media (min-width: 297.98px) and (max-width: 1068.98px) {
+  .presentcard_mac,
+.gallery-center-image .box-container-center-image,
+.gallery-center-image .box-container-center-image2,
+.one_mac {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+    gap: 1.5rem;
+    max-width: 772px;
+    padding: 1rem;
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+  .mac_box_container,
+.mac_info_gallery .mac_info_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+    gap: 1.5rem;
+    max-width: 760px;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
   }
   html {
     font-size: 50%;
@@ -1696,13 +1705,6 @@ body {
     justify-content: space-between;
     padding: 2rem;
   }
-}
-@media (min-width: 297.98px) and (max-width: 992.98px) and (min-width: 297.98px) and (max-width: 378.98px) {
-  .header .logo {
-    font-size: 1.9rem;
-  }
-}
-@media (min-width: 297.98px) and (max-width: 992.98px) {
   .header .navbar {
     position: absolute;
     top: 99%;
@@ -1729,49 +1731,18 @@ body {
     background: rgba(0, 0, 0, 0.4);
     padding: 0 30px;
   }
-}
-@media (min-width: 297.98px) and (max-width: 992.98px) {
-  .header .home {
-    min-height: 50vh;
+  text mac page .content_mac {
+    max-width: 772px;
+    margin: auto;
+    background-color: #fbfbfd;
   }
-  .header .home .content #email-s {
-    display: block;
-    font-size: 1.5rem;
-    font-weight: 900;
-    opacity: 0.5;
-    border-radius: 5px;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    width: 60vw;
+  text mac page .content_mac h2 {
+    margin-top: 4rem;
+    font-size: 5rem;
+    font-weight: 450;
   }
-  .header .home .content #party {
-    display: block;
-    font-size: 1.5rem;
-    font-weight: 600;
-    opacity: 0.5;
-    border-radius: 5px;
-    padding: 1rem;
-    width: 60vw;
-  }
-  .header .home input[type=text],
-.header .home select,
-.header .home textarea {
-    display: flex;
-    color: rgb(55, 20, 1);
-    font-weight: 900;
-    opacity: 0.6;
-    width: 60vw;
-    padding: 1rem;
-    border-radius: 0.6rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-}
-@media (min-width: 297.98px) and (max-width: 992.98px) {
-  .header .about .content h3 {
-    font-size: 3.5rem;
-  }
-  .header .about .content p {
-    font-size: 2.3rem;
+  text mac page .content_mac p {
+    padding: 2rem 15rem;
+    font-size: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */
