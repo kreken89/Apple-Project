@@ -130,10 +130,11 @@
       font-weight: 300;
       margin-bottom: 1rem;
       padding: 0 5rem;
+      
     }
   }
 }
-// Big text stylings 
+// Big text stylings
 .big_text {
   font-size: 3.5rem;
   font-weight: 600;
@@ -146,10 +147,10 @@
   padding: 8rem 0 5rem;
 }
 // Big text 0.5rem margin
-.big_text_xl_0{
+.big_text_xl_0 {
   font-size: 6rem;
   font-weight: 500;
-  margin: .5rem;
+  margin: 0.5rem;
 }
 
 .big_text_x_light {
@@ -164,14 +165,14 @@
   margin: 4.5rem 0 -1rem;
 }
 
-.red{
+.red {
   margin-top: 2rem;
   font-size: 1.6rem;
-  
+
   color: red;
 }
 
-.orange{
+.orange {
   margin-top: 2rem;
   font-size: 1.8rem;
   color: rgb(255, 115, 0);
@@ -200,7 +201,7 @@
   font-size: 2.3rem;
   font-weight: 300;
   padding: 1.5rem;
-  }
+}
 
 // paragraf text styles
 
@@ -213,7 +214,7 @@
   padding: 0 5rem;
 }
 
-.text_light_y{
+.text_light_y {
   color: white;
   font-size: 3rem;
   font-weight: 300;
@@ -222,7 +223,7 @@
   padding: 0 5rem;
 }
 
-.text_dark{
+.text_dark {
   color: black;
   font-size: 2.3rem;
   font-weight: 350;
@@ -239,7 +240,7 @@
   padding: 0 5rem;
 }
 
-.text_dark_y{
+.text_dark_y {
   color: black;
   font-size: 3rem;
   font-weight: 350;

@@ -302,6 +302,7 @@ footer .legal ul li:last-child {
 }
 
 .home {
+  margin-top: 5rem;
   background: url(/apple_store/images/home_images/h1.1.png) no-repeat;
   background-size: cover;
   background-position: center;
@@ -416,6 +417,7 @@ footer .legal ul li:last-child {
 }
 
 .macBook_pro {
+  margin-top: 5rem;
   background: url(/Apple_store/images/mac_images/m2.png) no-repeat;
   background-size: cover;
   background-position: center;
