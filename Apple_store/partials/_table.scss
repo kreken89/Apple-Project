@@ -1,5 +1,6 @@
 .table{
-    background-color: #FAFAFA;
+    padding-top: 70px;
+    background-color: #ffffff;
     ul{
         display: flex;
         width: fit-content;
@@ -18,12 +19,15 @@
         }
     }
 }
+.mac-wrapper{
+    background-color: #fafafa;
+}
 .table-headline{
     font-size: 36px;
     font-weight: 600;
 }
 
-.phone-table, .mac-table, .ipad-table{
+.phone-table, .mac-table, .ipad-table, .watch-table{
     margin-top: 40px;
     margin: 40px auto 0;
     display: flex;
@@ -35,9 +39,7 @@
         display: flex;
         flex-direction: column;
         row-gap: 20px;
-        .hide{
-            color: transparent;
-        }
+        
         .thead{
             width: 180px;
             display: flex;
@@ -45,7 +47,9 @@
             margin: 0 auto;
             align-items: center;
             border-bottom: 1px solid rgba(131, 131, 131, 0.308);
-            
+            .hide{
+                color: transparent;
+            }
             h4{
                 padding-top: 10px;
                 padding-bottom: 10px;
@@ -101,6 +105,9 @@
             row-gap: 35px;
             padding-bottom: 40px;
             border-bottom: 1px solid rgba(131, 131, 131, 0.308);
+            .hide{
+                color: transparent;
+            }
             h3{
                 font-size: 16px;
                 margin-bottom: 7px;                
@@ -127,7 +134,17 @@
             }
             .mac-speaker-specs{
                 height: 90px;
-            }  
+            }
+            
+            .ekg-specs{
+                height: 73px;
+            }
+            .oxygen-specs{
+                height: 73px;
+            }
+            .temperature-specs{
+                height: 135px;
+            }
             div{
                 div{
                     .spacer{font-weight: 700;}
@@ -147,6 +164,9 @@
     }
     
 }
+.phone-table{
+    background-color: white;
+}
 .ipad-table{
     .col{
         .thead{
@@ -161,20 +181,37 @@
     }
 }
 .mac-table{
+    
     .col{
         .thead{
 
         }
     }
 }
+.watch-table{
+    .col{
+        .thead{
+            width: 250px;
+            .price{padding-top: 5px;
+            }
+            
+        }
+        .tbody{
+            .sos-specs{
+                height: 213px;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 960px){
-    .phone-table{
+    .phone-table, .mac-table, .ipad-table{
         flex-wrap: wrap;
         width: 600px;
         
         .col{
             .thead{
-                width: 220px;
+                
             }
         }
     }
