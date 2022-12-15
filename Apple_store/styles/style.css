@@ -469,11 +469,12 @@ footer .legal ul li:last-child {
 }
 
 .about_ipad {
+  margin-top: 5rem;
   background: url(/apple_store/images/home_images/h3.png) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
-  height: 58vh;
+  height: 80vh;
   min-width: 30vw;
   align-items: center;
   justify-content: center;
@@ -484,6 +485,21 @@ footer .legal ul li:last-child {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.about_ipad .content_right h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #BF4800;
+}
+.about_ipad .content_right .buy_button {
+  color: white;
+  cursor: pointer;
+  font-size: 2.2rem;
+  font-weight: 300;
+  background-color: #0071E3;
+  padding: 1rem 2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 2.3rem;
 }
 .about_ipad .content_right ul li {
   list-style: none;
@@ -535,14 +551,14 @@ footer .legal ul li:last-child {
   background-size: cover;
   background-position: center;
   display: flex;
-  max-height: 40vh;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .change_ipad_text .content_text {
-  margin-top: -5rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   max-width: 60%;
 }
@@ -566,25 +582,26 @@ footer .legal ul li:last-child {
 }
 
 .change_ipad {
-  background: url(/Apple_store/images/ipad_images/i44.png) no-repeat;
+  background: url(/Apple_store/images/ipad_images/i444.png) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
-  min-height: 60vh;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  min-height: 60vh;
 }
-.change_ipad .content {
-  margin-top: 30rem;
+.change_ipad .content_text {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  max-width: 80%;
 }
-.change_ipad .content ul li {
+.change_ipad .content_text ul li {
   list-style: none;
   display: inline;
 }
-.change_ipad .content ul li a {
+.change_ipad .content_text ul li a {
   font-size: 2rem;
   color: #06c;
   letter-spacing: inherit;
@@ -800,6 +817,7 @@ textarea {
   padding: 5rem;
 }
 .mac_info-box .mac-info .fa-box-open,
+.mac_info-box .mac-info .fa-record-vinyl,
 .mac_info-box .mac-info .fa-comments {
   font-size: 5em;
   margin-bottom: 2rem;
@@ -826,14 +844,14 @@ textarea {
 
 .big_text {
   font-size: 3.5rem;
-  font-weight: 800;
+  font-weight: 600;
   margin: 8rem 0 5rem;
 }
 
 .big_text_xl {
   font-size: 6rem;
   font-weight: 500;
-  margin: 8rem 0 5rem;
+  padding: 8rem 0 5rem;
 }
 
 .big_text_xl_0 {
@@ -868,15 +886,27 @@ textarea {
 }
 
 .big_text_x {
-  font-size: 6rem;
+  font-size: 5rem;
+  font-weight: 400;
+  padding: 8rem 0 0;
+}
+
+.big_text_x_ipad {
+  font-size: 7rem;
   font-weight: 500;
-  margin: 8rem 0 0;
+  margin: 1rem 0 0;
 }
 
 .big_text_xl_light {
   font-size: 5.5rem;
   font-weight: 800;
   color: white;
+}
+
+.price_buy {
+  font-size: 2.3rem;
+  font-weight: 300;
+  padding: 1.5rem;
 }
 
 .text_light {
@@ -902,6 +932,14 @@ textarea {
   font-size: 2.3rem;
   font-weight: 350;
   margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 0 5rem;
+}
+
+.text_dark_ipad {
+  color: black;
+  font-size: 3rem;
+  font-weight: 500;
   margin-bottom: 2rem;
   padding: 0 5rem;
 }
@@ -1311,15 +1349,19 @@ ul li a:hover {
   letter-spacing: inherit;
 }
 
-.mac_gallery .mac_box_container {
+.mac_gallery {
+  margin-top: 2rem;
+}
+
+.mac_box_container {
   -moz-columns: 2 37rem;
        columns: 2 37rem;
   -moz-column-gap: 2rem;
        column-gap: 2rem;
-  max-width: 1422px;
+  max-width: 1440px;
   margin: auto;
 }
-.mac_gallery .mac_box_container .mac_gallery1 {
+.mac_box_container .mac_gallery1 {
   background: url(/apple_store/images/mac_images/m4.png) no-repeat;
   background-size: cover;
   background-position: center;
@@ -1330,28 +1372,28 @@ ul li a:hover {
   justify-content: flex-start;
   margin-bottom: 3rem;
 }
-.mac_gallery .mac_box_container .mac_gallery1 .big_text_x {
+.mac_box_container .mac_gallery1 .big_text_x {
   margin-top: 0;
   font-size: 4.5rem;
   font-weight: 500;
   padding: 1rem;
 }
-.mac_gallery .mac_box_container .mac_gallery1 span {
+.mac_box_container .mac_gallery1 span {
   margin-top: 1rem;
   font-size: 3rem;
 }
-.mac_gallery .mac_box_container .mac_gallery1 ul li {
+.mac_box_container .mac_gallery1 ul li {
   list-style: none;
   display: inline;
 }
-.mac_gallery .mac_box_container .mac_gallery1 ul li a {
+.mac_box_container .mac_gallery1 ul li a {
   padding: 1rem;
   margin-bottom: 5rem;
   font-size: 2rem;
   color: #06c;
   letter-spacing: inherit;
 }
-.mac_gallery .mac_box_container .mac_gallery2 {
+.mac_box_container .mac_gallery2 {
   background: url(/Apple_store/images/mac_images/m5.png) no-repeat;
   background-size: cover;
   background-position: center;
@@ -1362,24 +1404,24 @@ ul li a:hover {
   justify-content: flex-start;
   margin-bottom: 3rem;
 }
-.mac_gallery .mac_box_container .mac_gallery2 .big_text_x {
+.mac_box_container .mac_gallery2 .big_text_x {
   margin-top: 0;
   font-size: 4.5rem;
   font-weight: 500;
   padding: 1.5rem;
 }
-.mac_gallery .mac_box_container .mac_gallery2 span {
+.mac_box_container .mac_gallery2 span {
   margin-top: 1rem;
   font-size: 3rem;
 }
-.mac_gallery .mac_box_container .mac_gallery2 p {
+.mac_box_container .mac_gallery2 p {
   font-size: 1.8rem;
 }
-.mac_gallery .mac_box_container .mac_gallery2 ul li {
+.mac_box_container .mac_gallery2 ul li {
   list-style: none;
   display: inline;
 }
-.mac_gallery .mac_box_container .mac_gallery2 ul li a {
+.mac_box_container .mac_gallery2 ul li a {
   padding: 1rem;
   margin-bottom: 5rem;
   font-size: 2rem;
@@ -1591,7 +1633,7 @@ body {
     padding: 1.5rem 2rem;
   }
   .home {
-    min-height: 75vh;
+    min-height: 70vh;
   }
   .home .content-contact {
     margin-top: 6rem;
