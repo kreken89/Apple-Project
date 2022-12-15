@@ -347,7 +347,7 @@ footer .legal ul li:last-child {
   margin-top: 2rem;
 }
 .presentcard .content {
-  margin-top: 30rem;
+  margin-top: 48rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -379,6 +379,7 @@ footer .legal ul li:last-child {
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  margin-top: 0;
 }
 .home_mac .content h1 {
   font-size: 5.5rem;
@@ -916,7 +917,6 @@ textarea {
 
 section {
   text-align: center;
-  padding: 1rem 1rem;
   font-size: 1rem;
   font-weight: 400;
 }
@@ -1233,6 +1233,8 @@ ul li a:hover {
        columns: 2 37rem;
   -moz-column-gap: 0;
        column-gap: 0;
+  max-width: 1440px;
+  margin: auto;
 }
 .presentcard_mac .content_left {
   background: url(/Apple_store/images/mac_images/m3.png) no-repeat;
@@ -1286,6 +1288,8 @@ ul li a:hover {
        columns: 2 37rem;
   -moz-column-gap: 2rem;
        column-gap: 2rem;
+  max-width: 1422px;
+  margin: auto;
 }
 .mac_gallery .mac_box_container .mac_gallery1 {
   background: url(/apple_store/images/mac_images/m4.png) no-repeat;
@@ -1293,7 +1297,7 @@ ul li a:hover {
   background-position: center;
   display: flex;
   flex-direction: column;
-  min-height: 45vh;
+  min-height: 48vh;
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 3rem;
@@ -1325,7 +1329,7 @@ ul li a:hover {
   background-position: center;
   display: flex;
   flex-direction: column;
-  min-height: 45vh;
+  min-height: 48vh;
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 3rem;
@@ -1360,6 +1364,8 @@ ul li a:hover {
        columns: 2 37rem;
   -moz-column-gap: 2rem;
        column-gap: 2rem;
+  max-width: 1440px;
+  margin: auto;
 }
 .mac_info_gallery .mac_info_container .mac_info_gallery1 {
   background: url(/apple_store/images/mac_images/m6.png) no-repeat;
@@ -1435,17 +1441,24 @@ ul li a:hover {
   background-position: center;
   display: flex;
   flex-direction: column;
-  min-height: 50vh;
+  min-height: 60vh;
   align-items: center;
   justify-content: flex-start;
+  max-width: 1440px;
+  margin: auto;
 }
 
-.content h2 {
+.content_mac {
+  max-width: 1440px;
+  margin: auto;
+  background-color: #fbfbfd;
+}
+.content_mac h2 {
   margin-top: 4rem;
   font-size: 5rem;
   font-weight: 450;
 }
-.content p {
+.content_mac p {
   padding: 2rem 15rem;
   font-size: 2rem;
 }
@@ -1459,6 +1472,8 @@ ul li a:hover {
   min-height: 50vh;
   align-items: center;
   justify-content: flex-start;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .one_mac {
@@ -1466,6 +1481,8 @@ ul li a:hover {
        columns: 2 27rem;
   -moz-column-gap: 0;
        column-gap: 0;
+  max-width: 1440px;
+  margin: auto;
 }
 .one_mac .content_one_left {
   background: url(/Apple_store/images/mac_images/m11.png) no-repeat;

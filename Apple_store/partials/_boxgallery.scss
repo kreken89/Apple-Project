@@ -161,6 +161,8 @@
 .presentcard_mac {
   columns: 2 37rem;
   column-gap: 0;
+  max-width: 1440px;
+  margin: auto;
 
   .content_left {
     background: url(/Apple_store/images/mac_images/m3.png) no-repeat;
@@ -223,6 +225,8 @@
 .mac_gallery .mac_box_container {
   columns: 2 37rem;
   column-gap: 2rem;
+  max-width: 1422px;
+  margin: auto;
 
   .mac_gallery1 {
     background: url(/apple_store/images/mac_images/m4.png) no-repeat;
@@ -230,7 +234,7 @@
     background-position: center;
     display: flex;
     flex-direction: column;
-    min-height: 45vh;
+    min-height: 48vh;
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 3rem;
@@ -267,7 +271,7 @@
     background-position: center;
     display: flex;
     flex-direction: column;
-    min-height: 45vh;
+    min-height: 48vh;
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 3rem;
@@ -308,6 +312,8 @@
 .mac_info_gallery .mac_info_container {
   columns: 2 37rem;
   column-gap: 2rem;
+  max-width: 1440px;
+  margin: auto;
 
   .mac_info_gallery1 {
     background: url(/apple_store/images/mac_images/m6.png) no-repeat;
@@ -395,11 +401,18 @@
   background-position: center;
   display: flex;
   flex-direction: column;
-  min-height: 50vh;
+  min-height: 60vh;
   align-items: center;
   justify-content: flex-start;
+  max-width: 1440px;
+  margin: auto;
 }
-.content {
+
+.content_mac {
+  max-width: 1440px;
+  margin: auto;
+  background-color: #fbfbfd;
+
   h2 {
     margin-top: 4rem;
     font-size: 5rem;
@@ -421,14 +434,17 @@
   min-height: 50vh;
   align-items: center;
   justify-content: flex-start;
+  max-width: 1440px;
+  margin: auto;
 }
-
 
 //One section Mac
 
 .one_mac {
   columns: 2 27rem;
   column-gap: 0;
+  max-width: 1440px;
+  margin: auto;
 
   .content_one_left {
     background: url(/Apple_store/images/mac_images/m11.png) no-repeat;
