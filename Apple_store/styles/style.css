@@ -934,6 +934,9 @@ ul li a:hover {
   text-decoration: underline;
 }
 
+.table {
+  background-color: #FAFAFA;
+}
 .table ul {
   display: flex;
   width: -webkit-fit-content;
@@ -957,7 +960,7 @@ ul li a:hover {
   font-weight: 600;
 }
 
-.phone-table {
+.phone-table, .mac-table, .ipad-table {
   margin-top: 40px;
   margin: 40px auto 0;
   display: flex;
@@ -965,7 +968,7 @@ ul li a:hover {
   -moz-column-gap: 50px;
        column-gap: 50px;
 }
-.phone-table .col {
+.phone-table .col, .mac-table .col, .ipad-table .col {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -973,7 +976,10 @@ ul li a:hover {
   flex-direction: column;
   row-gap: 20px;
 }
-.phone-table .col .thead {
+.phone-table .col .hide, .mac-table .col .hide, .ipad-table .col .hide {
+  color: transparent;
+}
+.phone-table .col .thead, .mac-table .col .thead, .ipad-table .col .thead {
   width: 180px;
   display: flex;
   flex-direction: column;
@@ -981,27 +987,29 @@ ul li a:hover {
   align-items: center;
   border-bottom: 1px solid rgba(131, 131, 131, 0.308);
 }
-.phone-table .col .thead h4 {
+.phone-table .col .thead h4, .mac-table .col .thead h4, .ipad-table .col .thead h4 {
   padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 12px;
   font-weight: 300;
   color: #BF4800;
 }
-.phone-table .col .thead h2 {
+.phone-table .col .thead h2, .mac-table .col .thead h2, .ipad-table .col .thead h2 {
   font-weight: 600;
   font-size: 20px;
   padding-bottom: 10px;
 }
-.phone-table .col .thead p {
+.phone-table .col .thead p, .phone-table .col .thead h3, .mac-table .col .thead p, .mac-table .col .thead h3, .ipad-table .col .thead p, .ipad-table .col .thead h3 {
   white-space: nowrap;
-  font-size: 16px;
-  color: #1D1D1F;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(29, 29, 31, 0.6509803922);
 }
-.phone-table .col .thead .price {
+.phone-table .col .thead .price, .mac-table .col .thead .price, .ipad-table .col .thead .price {
   padding-top: 30px;
   font-size: 13.5px;
 }
-.phone-table .col .thead button {
+.phone-table .col .thead button, .mac-table .col .thead button, .ipad-table .col .thead button {
   color: white;
   cursor: pointer;
   font-size: 12px;
@@ -1010,18 +1018,21 @@ ul li a:hover {
   margin-top: 16px;
   border-radius: 2.3rem;
 }
-.phone-table .col .thead a {
+.phone-table .col .thead .mac-table-headline, .mac-table .col .thead .mac-table-headline, .ipad-table .col .thead .mac-table-headline {
+  height: 79px;
+}
+.phone-table .col .thead a, .mac-table .col .thead a, .ipad-table .col .thead a {
   font-size: 13.5px;
   color: #0071E3;
   margin-bottom: 25px;
 }
-.phone-table .col .thead a:hover {
+.phone-table .col .thead a:hover, .mac-table .col .thead a:hover, .ipad-table .col .thead a:hover {
   text-decoration: underline;
 }
-.phone-table .col .thead a i {
+.phone-table .col .thead a i, .mac-table .col .thead a i, .ipad-table .col .thead a i {
   font-size: 10px;
 }
-.phone-table .col .tbody {
+.phone-table .col .tbody, .mac-table .col .tbody, .ipad-table .col .tbody {
   color: rgba(29, 29, 31, 0.7411764706);
   display: flex;
   flex-direction: column;
@@ -1029,28 +1040,44 @@ ul li a:hover {
   padding-bottom: 40px;
   border-bottom: 1px solid rgba(131, 131, 131, 0.308);
 }
-.phone-table .col .tbody h3 {
+.phone-table .col .tbody h3, .mac-table .col .tbody h3, .ipad-table .col .tbody h3 {
   font-size: 16px;
   margin-bottom: 7px;
 }
-.phone-table .col .tbody p {
+.phone-table .col .tbody p, .mac-table .col .tbody p, .ipad-table .col .tbody p {
   font-size: 13px;
   margin-bottom: 3px;
 }
-.phone-table .col .tbody .island-specs {
+.phone-table .col .tbody img, .mac-table .col .tbody img, .ipad-table .col .tbody img {
+  padding-bottom: 10px;
+}
+.phone-table .col .tbody .island-specs, .mac-table .col .tbody .island-specs, .ipad-table .col .tbody .island-specs {
   height: 96px;
 }
-.phone-table .col .tbody .chip-specs {
+.phone-table .col .tbody .chip-specs, .mac-table .col .tbody .chip-specs, .ipad-table .col .tbody .chip-specs {
   height: 77px;
 }
-.phone-table .col .tbody .camera-specs {
+.phone-table .col .tbody .camera-specs, .mac-table .col .tbody .camera-specs, .ipad-table .col .tbody .camera-specs {
   height: 148px;
 }
-.phone-table .col .tbody div div .spacer {
+.phone-table .col .tbody .macChip-specs, .mac-table .col .tbody .macChip-specs, .ipad-table .col .tbody .macChip-specs {
+  height: 76px;
+}
+.phone-table .col .tbody .mac-speaker-specs, .mac-table .col .tbody .mac-speaker-specs, .ipad-table .col .tbody .mac-speaker-specs {
+  height: 90px;
+}
+.phone-table .col .tbody div div .spacer, .mac-table .col .tbody div div .spacer, .ipad-table .col .tbody div div .spacer {
   font-weight: 700;
 }
-.phone-table .col3 .thead h4, .phone-table .col4 .thead h4 {
+.phone-table .col3 .thead h4, .phone-table .col4 .thead h4, .phone-table .col31 .thead h4, .phone-table .col34 .thead h4, .phone-table .col22 .thead h4, .phone-table .col24 .thead h4, .mac-table .col3 .thead h4, .mac-table .col4 .thead h4, .mac-table .col31 .thead h4, .mac-table .col34 .thead h4, .mac-table .col22 .thead h4, .mac-table .col24 .thead h4, .ipad-table .col3 .thead h4, .ipad-table .col4 .thead h4, .ipad-table .col31 .thead h4, .ipad-table .col34 .thead h4, .ipad-table .col22 .thead h4, .ipad-table .col24 .thead h4 {
   color: transparent;
+}
+
+.ipad-table .col .thead h2 {
+  padding-bottom: 0;
+}
+.ipad-table .col .thead h3 {
+  padding-bottom: 10px;
 }
 
 @media screen and (max-width: 960px) {
