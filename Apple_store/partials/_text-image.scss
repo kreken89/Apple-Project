@@ -104,6 +104,7 @@
     padding: 5rem;
 
     .fa-box-open,
+    .fa-record-vinyl,
     .fa-comments {
       font-size: 5em;
       margin-bottom: 2rem;
@@ -182,11 +183,24 @@
   margin: 8rem 0 0;
 }
 
+.big_text_x_ipad {
+  font-size: 7rem;
+  font-weight: 500;
+  margin: 1rem 0 0;
+}
+
 .big_text_xl_light {
   font-size: 5.5rem;
   font-weight: 800;
   color: white;
 }
+
+//price buy
+.price_buy {
+  font-size: 2.3rem;
+  font-weight: 300;
+  padding: 1.5rem;
+  }
 
 // paragraf text styles
 
@@ -213,6 +227,14 @@
   font-size: 2.3rem;
   font-weight: 350;
   margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 0 5rem;
+}
+
+.text_dark_ipad {
+  color: black;
+  font-size: 3rem;
+  font-weight: 500;
   margin-bottom: 2rem;
   padding: 0 5rem;
 }
