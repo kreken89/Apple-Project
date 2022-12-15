@@ -222,10 +222,15 @@
 
 // Mac gallery info boxes image and text
 
-.mac_gallery .mac_box_container {
+.mac_gallery{
+  margin-top: 2rem;
+}
+
+.mac_box_container {
   columns: 2 37rem;
   column-gap: 2rem;
   max-width: 1440px;
+  
   margin: auto;
 
   .mac_gallery1 {

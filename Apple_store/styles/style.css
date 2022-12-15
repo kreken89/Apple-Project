@@ -844,14 +844,14 @@ textarea {
 
 .big_text {
   font-size: 3.5rem;
-  font-weight: 800;
+  font-weight: 600;
   margin: 8rem 0 5rem;
 }
 
 .big_text_xl {
   font-size: 6rem;
   font-weight: 500;
-  margin: 8rem 0 5rem;
+  padding: 8rem 0 5rem;
 }
 
 .big_text_xl_0 {
@@ -886,9 +886,9 @@ textarea {
 }
 
 .big_text_x {
-  font-size: 6rem;
-  font-weight: 500;
-  margin: 8rem 0 0;
+  font-size: 5rem;
+  font-weight: 400;
+  padding: 8rem 0 0;
 }
 
 .big_text_x_ipad {
@@ -974,6 +974,7 @@ ul li a:hover {
 
 .table {
   background-color: #FAFAFA;
+  padding-bottom: 2rem;
 }
 .table ul {
   display: flex;
@@ -1321,7 +1322,11 @@ ul li a:hover {
   letter-spacing: inherit;
 }
 
-.mac_gallery .mac_box_container {
+.mac_gallery {
+  margin-top: 2rem;
+}
+
+.mac_box_container {
   -moz-columns: 2 37rem;
        columns: 2 37rem;
   -moz-column-gap: 2rem;
@@ -1329,7 +1334,7 @@ ul li a:hover {
   max-width: 1440px;
   margin: auto;
 }
-.mac_gallery .mac_box_container .mac_gallery1 {
+.mac_box_container .mac_gallery1 {
   background: url(/apple_store/images/mac_images/m4.png) no-repeat;
   background-size: cover;
   background-position: center;
@@ -1340,28 +1345,28 @@ ul li a:hover {
   justify-content: flex-start;
   margin-bottom: 3rem;
 }
-.mac_gallery .mac_box_container .mac_gallery1 .big_text_x {
+.mac_box_container .mac_gallery1 .big_text_x {
   margin-top: 0;
   font-size: 4.5rem;
   font-weight: 500;
   padding: 1rem;
 }
-.mac_gallery .mac_box_container .mac_gallery1 span {
+.mac_box_container .mac_gallery1 span {
   margin-top: 1rem;
   font-size: 3rem;
 }
-.mac_gallery .mac_box_container .mac_gallery1 ul li {
+.mac_box_container .mac_gallery1 ul li {
   list-style: none;
   display: inline;
 }
-.mac_gallery .mac_box_container .mac_gallery1 ul li a {
+.mac_box_container .mac_gallery1 ul li a {
   padding: 1rem;
   margin-bottom: 5rem;
   font-size: 2rem;
   color: #06c;
   letter-spacing: inherit;
 }
-.mac_gallery .mac_box_container .mac_gallery2 {
+.mac_box_container .mac_gallery2 {
   background: url(/Apple_store/images/mac_images/m5.png) no-repeat;
   background-size: cover;
   background-position: center;
@@ -1372,24 +1377,24 @@ ul li a:hover {
   justify-content: flex-start;
   margin-bottom: 3rem;
 }
-.mac_gallery .mac_box_container .mac_gallery2 .big_text_x {
+.mac_box_container .mac_gallery2 .big_text_x {
   margin-top: 0;
   font-size: 4.5rem;
   font-weight: 500;
   padding: 1.5rem;
 }
-.mac_gallery .mac_box_container .mac_gallery2 span {
+.mac_box_container .mac_gallery2 span {
   margin-top: 1rem;
   font-size: 3rem;
 }
-.mac_gallery .mac_box_container .mac_gallery2 p {
+.mac_box_container .mac_gallery2 p {
   font-size: 1.8rem;
 }
-.mac_gallery .mac_box_container .mac_gallery2 ul li {
+.mac_box_container .mac_gallery2 ul li {
   list-style: none;
   display: inline;
 }
-.mac_gallery .mac_box_container .mac_gallery2 ul li a {
+.mac_box_container .mac_gallery2 ul li a {
   padding: 1rem;
   margin-bottom: 5rem;
   font-size: 2rem;
