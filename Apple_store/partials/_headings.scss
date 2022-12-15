@@ -254,7 +254,7 @@
   background-position: center;
   display: flex;
   flex-direction: row;
-  min-height: 60vh;
+  min-height: 70vh;
   align-items: center;
   justify-content: flex-start;
   margin: 0 5rem;
@@ -266,6 +266,42 @@
     justify-content: center;
     align-items: center;
     margin-left:10rem;
+
+  .big_text_xl_light {
+    font-size: 5.5rem;
+    font-weight: 500;
+    color: white;
+    }
+  
+  .text_light_y {
+    color: white;
+    font-size: 2.7rem;
+    font-weight: 400;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 0 5rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #BF4800;
+  }
+
+  .fa-apple{
+    font-size: 5rem;
+  } 
+
+  .buy_button {
+    color: white;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 300;
+    background-color: #0071E3;
+    padding: 0.8rem 1.7rem;
+    margin-bottom: 1rem;
+    border-radius: 2.3rem;
+  }
 
     ul li {
       list-style: none;
@@ -338,7 +374,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 60vh;
+  min-height: 70vh;
   // justify-content: flex-start;
 
 
@@ -363,6 +399,7 @@
 
   @media (min-width: 297.98px) and (max-width: 767.98px) {
     padding: 3rem 1rem;
+    
 
     .s1 {
       font-size: 5vw;
