@@ -201,7 +201,7 @@
   background-size: cover;
   background-position: center;
   display: flex;
-  height: 80vh;
+  height: 70vh;
   min-width: 30vw;
   align-items: center;
   justify-content: center;
@@ -254,15 +254,19 @@
   background-size: cover;
   background-position: center;
   display: flex;
+  flex-direction: row;
   min-height: 60vh;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  margin: 0 5rem;
 
-  .content {
+  .content_about_ipad {
     margin-top: -5rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    margin-left:10rem;
 
     ul li {
       list-style: none;
