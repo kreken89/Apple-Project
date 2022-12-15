@@ -1644,6 +1644,9 @@ body {
 }
 
 @media (min-width: 1068.98px) {
+  html {
+    font-size: 55%;
+  }
   .presentcard_mac,
 .gallery-center-image .box-container-center-image,
 .gallery-center-image .box-container-center-image2,
@@ -1664,9 +1667,6 @@ body {
     max-width: 1440px;
     -moz-column-gap: 1rem;
          column-gap: 1rem;
-  }
-  html {
-    font-size: 55%;
   }
   .presentcard .content {
     margin-top: 40rem;
@@ -1695,7 +1695,7 @@ body {
          column-gap: 1rem;
   }
   html {
-    font-size: 50%;
+    font-size: 45%;
   }
   #menu-btn {
     display: inline-block;
