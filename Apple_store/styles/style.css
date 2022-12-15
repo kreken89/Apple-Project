@@ -843,6 +843,14 @@ textarea {
   margin-bottom: 1rem;
   padding: 0 5rem;
 }
+.mac_info-box .mac-info .link-info a {
+  padding: 1rem;
+  color: #06c;
+  letter-spacing: inherit;
+}
+.mac_info-box .mac-info .link-info .fa-chevron-right {
+  font-size: 1.5rem;
+}
 
 .big_text {
   font-size: 3.5rem;

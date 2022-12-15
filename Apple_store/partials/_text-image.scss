@@ -130,8 +130,16 @@
       font-weight: 300;
       margin-bottom: 1rem;
       padding: 0 5rem;
-      
+      a{
+        padding: 1rem;
+        color: #06c;
+        letter-spacing: inherit;
+      }
+      .fa-chevron-right{
+        font-size: 1.5rem;
+      }
     }
+    
   }
 }
 // Big text stylings
