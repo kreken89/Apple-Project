@@ -468,11 +468,12 @@ footer .legal ul li:last-child {
 }
 
 .about_ipad {
+  margin-top: 5rem;
   background: url(/apple_store/images/home_images/h3.png) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
-  height: 58vh;
+  height: 80vh;
   min-width: 30vw;
   align-items: center;
   justify-content: center;
@@ -483,6 +484,21 @@ footer .legal ul li:last-child {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.about_ipad .content_right h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #BF4800;
+}
+.about_ipad .content_right .buy_button {
+  color: white;
+  cursor: pointer;
+  font-size: 2.2rem;
+  font-weight: 300;
+  background-color: #0071E3;
+  padding: 1rem 2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 2.3rem;
 }
 .about_ipad .content_right ul li {
   list-style: none;
@@ -534,12 +550,12 @@ footer .legal ul li:last-child {
   background-size: cover;
   background-position: center;
   display: flex;
-  max-height: 40vh;
+  max-height: 70vh;
   align-items: center;
   justify-content: center;
 }
 .change_ipad_text .content_text {
-  margin-top: -5rem;
+  margin-top: -3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -799,6 +815,7 @@ textarea {
   padding: 5rem;
 }
 .mac_info-box .mac-info .fa-box-open,
+.mac_info-box .mac-info .fa-record-vinyl,
 .mac_info-box .mac-info .fa-comments {
   font-size: 5em;
   margin-bottom: 2rem;
@@ -872,10 +889,22 @@ textarea {
   margin: 8rem 0 0;
 }
 
+.big_text_x_ipad {
+  font-size: 7rem;
+  font-weight: 500;
+  margin: 1rem 0 0;
+}
+
 .big_text_xl_light {
   font-size: 5.5rem;
   font-weight: 800;
   color: white;
+}
+
+.price_buy {
+  font-size: 2.3rem;
+  font-weight: 300;
+  padding: 1.5rem;
 }
 
 .text_light {
@@ -901,6 +930,14 @@ textarea {
   font-size: 2.3rem;
   font-weight: 350;
   margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 0 5rem;
+}
+
+.text_dark_ipad {
+  color: black;
+  font-size: 3rem;
+  font-weight: 500;
   margin-bottom: 2rem;
   padding: 0 5rem;
 }
