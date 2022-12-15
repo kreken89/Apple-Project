@@ -289,14 +289,16 @@
   background-size: cover;
   background-position: center;
   display: flex;
-  max-height: 70vh;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  // min-height: 40vh;
 
   .content_text {
-    margin-top: -3rem;
+    // margin-top: -3rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     max-width: 60%;
 
@@ -325,20 +327,22 @@
 
 //Change ipad img - 2 ipad image - white picture
 .change_ipad {
-  background: url(/Apple_store/images/ipad_images/i44.png) no-repeat;
+  background: url(/Apple_store/images/ipad_images/i444.png) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
-  min-height: 60vh;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  min-height: 60vh;
+  // justify-content: flex-start;
 
 
-  .content {
-    margin-top: 30rem;
+  .content_text {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
+    max-width: 80%;
 
     ul li {
       list-style: none;
