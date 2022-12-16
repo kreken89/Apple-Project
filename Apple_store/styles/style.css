@@ -470,7 +470,6 @@ footer .legal ul li:last-child {
 }
 
 .about_ipad {
-  margin-top: 5rem;
   background: url(/apple_store/images/home_images/h3.png) no-repeat;
   background-size: cover;
   background-position: center;
@@ -523,7 +522,6 @@ footer .legal ul li:last-child {
   min-height: 70vh;
   align-items: center;
   justify-content: flex-start;
-  margin: 0 5rem;
 }
 .ipad .content_about_ipad {
   margin-top: -5rem;
@@ -531,7 +529,7 @@ footer .legal ul li:last-child {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 10rem;
+  margin-left: 15rem;
 }
 .ipad .content_about_ipad .big_text_xl_light {
   font-size: 5.5rem;
@@ -625,6 +623,8 @@ footer .legal ul li:last-child {
   flex-direction: column;
   align-items: center;
   min-height: 70vh;
+  max-width: 1440px;
+  margin: auto;
 }
 .change_ipad .content_text {
   display: flex;
@@ -768,7 +768,6 @@ textarea {
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
-  margin-top: 5rem;
 }
 .about .img-container {
   flex: 1 1 42rem;
@@ -924,6 +923,45 @@ textarea {
   margin-bottom: 1rem;
 }
 .ipad_info-box .ipad-info .link-info {
+  list-style: none;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  padding: 0 5rem;
+}
+
+.watch_info-box {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  background: #ffffff;
+}
+.watch_info-box .watch-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  width: 250px;
+  padding: 10rem 0;
+}
+.watch_info-box .watch-info .fa-box-open,
+.watch_info-box .watch-info .fa-record-vinyl,
+.watch_info-box .watch-info .fa-comments {
+  font-size: 5em;
+  margin-bottom: 2rem;
+}
+.watch_info-box .watch-info h4 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.watch_info-box .watch-info p {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.watch_info-box .watch-info .link-info {
   list-style: none;
   font-size: 2rem;
   font-weight: 300;

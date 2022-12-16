@@ -196,7 +196,7 @@
 
 // Home section Ipad - white image
 .about_ipad {
-  margin-top: 5rem;
+  // margin-top: 5rem;
   background: url(/apple_store/images/home_images/h3.png) no-repeat;
   background-size: cover;
   background-position: center;
@@ -257,7 +257,6 @@
   min-height: 70vh;
   align-items: center;
   justify-content: flex-start;
-  margin: 0 5rem;
 
   .content_about_ipad {
     margin-top: -5rem;
@@ -265,7 +264,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left:10rem;
+    margin-left:15rem;
 
   .big_text_xl_light {
     font-size: 5.5rem;
@@ -375,6 +374,8 @@
   flex-direction: column;
   align-items: center;
   min-height: 70vh;
+  max-width: 1440px;
+  margin: auto;
   // justify-content: flex-start;
 
 
