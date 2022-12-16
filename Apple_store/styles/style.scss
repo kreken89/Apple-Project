@@ -34,17 +34,13 @@ html {
 body {
   background: $bg-color;
   overflow-x: hidden;
-
 }
-.body-ipad, .body-iphone{
+.body-ipad,
+.body-iphone {
   background: #f5f5f7;
 }
 
-
 @media (min-width: 1068.98px) {
-  // .destination .box-container {
-  //   // @include grid(27rem);
-  // }
   html {
     font-size: 55%;
   }
@@ -71,48 +67,6 @@ body {
       margin-top: 40rem;
     }
   }
-  // .header {
-  //   padding: 1.5rem 2rem;
-  // }
-  // .home {
-  //   min-height: 70vh;
-  //   .content-contact {
-  //     margin-top: 6rem;
-  //   }
-  // }
-  // .about {
-  //   .content {
-  //     h3 {
-  //       font-size: 3.5rem;
-  //     }
-
-  //     p {
-  //       font-size: 1.8rem;
-  //     }
-  //   }
-  // }
-
-  // .w3-content {
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: center;
-  //   align-items: center;
-
-  //   .mySlider {
-  //     display: flex;
-  //     flex-direction: column;
-  //     justify-content: center;
-  //     align-items: center;
-  //   }
-  //   .w3-animate-fading {
-  //     display: flex;
-  //     align-self: center;
-  //     width: 45vw;
-  //   }
-  //   span {
-  //     font-weight: bold;
-  //   }
-  // }
 }
 @media (min-width: 297.98px) and (max-width: 1068.98px) {
   .presentcard_mac,
@@ -140,11 +94,12 @@ body {
   .header {
     display: flex;
     justify-content: space-between;
+    background: rgba(0, 0, 0, 0.8);
     padding: 2rem;
-    // .logo {
-    //   @media (min-width: 297.98px) and (max-width: 378.98px) {
-    //     font-size: 1.9rem;
-    //   }
+
+    // &.activ-header {
+    //   background: rgba(0, 0, 0, 1);
+      
     // }
 
     .navbar {
@@ -157,25 +112,25 @@ body {
       height: 100vh;
 
       &.active {
+        border-top: 1px solid #696868;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(0, 0, 0, 1);
         padding: 0 30px;
       }
       li {
-        margin: 4rem;
-        border-bottom: 0.1rem solid white;
-
+        margin: 4rem auto;
+        border-bottom: 1px solid #696868;
+        padding-left: 0;
         font-size: 2rem;
         display: block;
-
-        &:hover {
-          background: rgba(0, 0, 0, 0.4);
-          padding: 0 30px;
+        max-width: 60%;
+        a {
+          padding-left: 0;
         }
       }
     }
   }
-  text mac page .content_mac {
+  text .mac_page .content_mac {
     max-width: 772px;
     margin: auto;
     background-color: #fbfbfd;
@@ -191,63 +146,4 @@ body {
       font-size: 2rem;
     }
   }
-
-  // .home,
-  // .home_mac,
-  // .about_ipad,
-  // .home_support,
-  // .home_watch {
-  //   min-height: 50vh;
-  // }
 }
-
-// .home {
-//   min-height: 50vh;
-//   .content {
-//     #email-s {
-//       display: block;
-//       font-size: 1.5rem;
-//       font-weight: 900;
-//       opacity: 0.5;
-//       border-radius: 5px;
-//       padding: 1rem;
-//       margin-bottom: 1.5rem;
-//       width: 60vw;
-//     }
-
-//     #party {
-//       display: block;
-//       font-size: 1.5rem;
-//       font-weight: 600;
-//       opacity: 0.5;
-//       border-radius: 5px;
-//       padding: 1rem;
-//       width: 60vw;
-//     }
-//   }
-
-//   input[type='text'],
-//   select,
-//   textarea {
-//     display: flex;
-//     color: $brown;
-//     font-weight: 900;
-//     opacity: 0.6;
-//     width: 60vw;
-//     padding: 1rem;
-//     border-radius: 0.6rem;
-//     margin-top: 1.5rem;
-//     margin-bottom: 1.5rem;
-//   }
-// }
-// .about {
-//   .content {
-//     h3 {
-//       font-size: 3.5rem;
-//     }
-
-//     p {
-//       font-size: 2.3rem;
-//     }
-//   }
-// }
