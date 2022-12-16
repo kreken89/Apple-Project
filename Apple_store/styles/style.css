@@ -1,8 +1,10 @@
 .header {
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 5;
+  height: 48px;
   background: rgba(0, 0, 0, 0.8);
   display: flex;
   flex-direction: row;
@@ -13,24 +15,16 @@
 .header .navbar li {
   font-size: 1.7rem;
   font-weight: 400;
-  color: rgb(212, 175, 55);
   display: inline-block;
   margin: 0 1rem;
 }
 .header .navbar li a {
-  color: #f5f5f7;
+  color: #cdcdcd;
   padding: 0 2.5rem;
   text-decoration: none;
 }
 .header .navbar li a:hover {
   color: white;
-}
-.header .navbar {
-  display: flex;
-  padding-left: 20px;
-}
-.header .nav-items {
-  padding: 0 1.5rem;
 }
 .header .logo {
   padding: 0.2rem;
@@ -1773,7 +1767,8 @@ body {
   overflow-x: hidden;
 }
 
-.body-ipad, .body-iphone {
+.body-ipad,
+.body-iphone {
   background: #f5f5f7;
 }
 
@@ -1836,6 +1831,7 @@ body {
   .header {
     display: flex;
     justify-content: space-between;
+    background: rgba(0, 0, 0, 0.8);
     padding: 2rem;
   }
   .header .navbar {
@@ -1849,32 +1845,34 @@ body {
     height: 100vh;
   }
   .header .navbar.active {
+    border-top: 1px solid #696868;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    background: rgba(0, 0, 0, 0.8);
+    background: rgb(0, 0, 0);
     padding: 0 30px;
   }
   .header .navbar li {
-    margin: 4rem;
-    border-bottom: 0.1rem solid white;
+    margin: 4rem auto;
+    border-bottom: 1px solid #696868;
+    padding-left: 0;
     font-size: 2rem;
     display: block;
+    max-width: 60%;
   }
-  .header .navbar li:hover {
-    background: rgba(0, 0, 0, 0.4);
-    padding: 0 30px;
+  .header .navbar li a {
+    padding-left: 0;
   }
-  text mac page .content_mac {
+  text .mac_page .content_mac {
     max-width: 772px;
     margin: auto;
     background-color: #fbfbfd;
   }
-  text mac page .content_mac h2 {
+  text .mac_page .content_mac h2 {
     margin-top: 4rem;
     font-size: 5rem;
     font-weight: 450;
   }
-  text mac page .content_mac p {
+  text .mac_page .content_mac p {
     padding: 2rem 15rem;
     font-size: 2rem;
   }
