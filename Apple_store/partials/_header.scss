@@ -19,6 +19,7 @@
         font-weight: 400;
         display: inline-block;
         margin: 0 1rem;
+        z-index: 100;
 
         a {
             color: #cdcdcd;
@@ -30,6 +31,9 @@
             }
         }
     }
+
+
+
     .logo {
         padding: 0.2rem;
         font-size: 3rem;
@@ -48,6 +52,22 @@
     color: #f5f5f7;;
     display: none;
     cursor: pointer;
+}
+
+.nav_items_xmark{
+    display: flex;
+    justify-content: flex-start;
+    gap: 47%;
+    // padding-left: 2rem;
+    // padding-top: 2rem;
+    padding: 1.5rem 2rem 5rem;
+    width: 100%;
+
+    i{
+        font-size: 3.5rem;
+    }
+
+    border-bottom: 1px solid #cdcdcd;
 }
 
 .nav-item-booking {

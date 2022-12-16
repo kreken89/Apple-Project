@@ -94,7 +94,7 @@ body {
   .header {
     display: flex;
     justify-content: space-between;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, .8);
     padding: 2rem;
 
     // &.activ-header {
@@ -104,7 +104,7 @@ body {
 
     .navbar {
       position: absolute;
-      top: 99%;
+      top: 0;
       left: 0;
       right: 0;
       background: rgba(0, 0, 0, 0.9);
@@ -115,16 +115,20 @@ body {
         border-top: 1px solid #696868;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         background: rgba(0, 0, 0, 1);
-        padding: 0 30px;
+        // padding: 0 30px;
       }
       li {
         margin: 4rem auto;
         border-bottom: 1px solid #696868;
-        padding-left: 0;
+        // padding-top: 5rem;
+        // padding-left: 0;
+        padding:1.5rem 0;
         font-size: 2rem;
         display: block;
-        max-width: 60%;
+        max-width: 80%;
         a {
+          font-size: 3.5rem;
+          font-weight: 300;
           padding-left: 0;
         }
       }

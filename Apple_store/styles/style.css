@@ -17,6 +17,7 @@
   font-weight: 400;
   display: inline-block;
   margin: 0 1rem;
+  z-index: 100;
 }
 .header .navbar li a {
   color: #cdcdcd;
@@ -42,6 +43,18 @@
   color: #f5f5f7;
   display: none;
   cursor: pointer;
+}
+
+.nav_items_xmark {
+  display: flex;
+  justify-content: flex-start;
+  gap: 47%;
+  padding: 1.5rem 2rem 5rem;
+  width: 100%;
+  border-bottom: 1px solid #cdcdcd;
+}
+.nav_items_xmark i {
+  font-size: 3.5rem;
 }
 
 .nav-item-booking {
@@ -1837,7 +1850,7 @@ body {
   }
   .header .navbar {
     position: absolute;
-    top: 99%;
+    top: 0;
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.9);
@@ -1850,17 +1863,18 @@ body {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     background: rgb(0, 0, 0);
-    padding: 0 30px;
   }
   .header .navbar li {
     margin: 4rem auto;
     border-bottom: 1px solid #696868;
-    padding-left: 0;
+    padding: 1.5rem 0;
     font-size: 2rem;
     display: block;
-    max-width: 60%;
+    max-width: 80%;
   }
   .header .navbar li a {
+    font-size: 3.5rem;
+    font-weight: 300;
     padding-left: 0;
   }
   text .mac_page .content_mac {
