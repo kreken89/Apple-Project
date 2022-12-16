@@ -90,22 +90,22 @@
     padding: 1rem;
     margin-top: 0;
 
-    h1{
+    h1 {
       font-size: 5.5rem;
       font-weight: 500;
-      margin-top: .5rem;
+      margin-top: 0.5rem;
     }
-    h3{
+    h3 {
       margin-top: 0.5rem;
       font-size: 3.5rem;
       font-weight: 400;
       margin-bottom: 2rem;
     }
 
-    .price{
+    .price {
       font-size: 2rem;
       font-weight: 200;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
       margin-bottom: 1rem;
     }
 
@@ -147,29 +147,29 @@
     align-items: center;
     color: white;
 
-    h2{
+    h2 {
       font-size: 5.5rem;
       font-weight: 400;
-      margin-top: .5rem;
+      margin-top: 0.5rem;
     }
 
-    h3{
+    h3 {
       font-size: 3.5rem;
       font-weight: 400;
       margin-bottom: 2rem;
     }
 
-    .price{
+    .price {
       font-size: 2rem;
       font-weight: 200;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
       margin-bottom: 1rem;
     }
 
     ul li {
       list-style: none;
       display: inline;
-      padding: .5rem;
+      padding: 0.5rem;
       margin-bottom: 2rem;
 
       a {
@@ -193,7 +193,6 @@
 
 // iPad home img
 
-
 // Home section Ipad - white image
 .about_ipad {
   margin-top: 5rem;
@@ -205,7 +204,7 @@
   min-width: 30vw;
   align-items: center;
   justify-content: center;
-  
+
   .content_right {
     margin-top: 10rem;
     padding-left: 365px;
@@ -214,23 +213,21 @@
     justify-content: center;
 
     h4 {
-        font-size: 1.5rem;
-        font-weight: 400;
-        color: #BF4800;
-      }
-
-    .buy_button{
-      color: white;
-        cursor: pointer;
-        font-size: 2.2rem;
-        font-weight: 300;
-        background-color: #0071E3;
-        padding: 1rem 2rem;
-        margin-bottom: 1.5rem;
-        border-radius: 2.3rem;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #bf4800;
     }
 
-    
+    .buy_button {
+      color: white;
+      cursor: pointer;
+      font-size: 2.2rem;
+      font-weight: 300;
+      background-color: #0071e3;
+      padding: 1rem 2rem;
+      margin-bottom: 1.5rem;
+      border-radius: 2.3rem;
+    }
 
     ul li {
       list-style: none;
@@ -264,43 +261,43 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left:15rem;
+    margin-left: 15rem;
 
-  .big_text_xl_light {
-    font-size: 5.5rem;
-    font-weight: 500;
-    color: white;
+    .big_text_xl_light {
+      font-size: 5.5rem;
+      font-weight: 500;
+      color: white;
     }
-  
-  .text_light_y {
-    color: white;
-    font-size: 2.7rem;
-    font-weight: 400;
-    margin-top: 1.5rem;
-    margin-bottom: 2rem;
-    padding: 0 5rem;
-  }
 
-  h4 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #BF4800;
-  }
+    .text_light_y {
+      color: white;
+      font-size: 2.7rem;
+      font-weight: 400;
+      margin-top: 1.5rem;
+      margin-bottom: 2rem;
+      padding: 0 5rem;
+    }
 
-  .fa-apple{
-    font-size: 5rem;
-  } 
+    h4 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #bf4800;
+    }
 
-  .buy_button {
-    color: white;
-    cursor: pointer;
-    font-size: 1.8rem;
-    font-weight: 300;
-    background-color: #0071E3;
-    padding: 0.8rem 1.7rem;
-    margin-bottom: 1rem;
-    border-radius: 2.3rem;
-  }
+    .fa-apple {
+      font-size: 5rem;
+    }
+
+    .buy_button {
+      color: white;
+      cursor: pointer;
+      font-size: 1.8rem;
+      font-weight: 300;
+      background-color: #0071e3;
+      padding: 0.8rem 1.7rem;
+      margin-bottom: 1rem;
+      border-radius: 2.3rem;
+    }
 
     ul li {
       list-style: none;
@@ -342,7 +339,6 @@
     align-items: center;
     max-width: 60%;
 
-
     ul li {
       list-style: none;
       display: inline;
@@ -378,7 +374,6 @@
   margin: auto;
   // justify-content: flex-start;
 
-
   .content_text {
     display: flex;
     flex-direction: column;
@@ -400,7 +395,6 @@
 
   @media (min-width: 297.98px) and (max-width: 767.98px) {
     padding: 3rem 1rem;
-    
 
     .s1 {
       font-size: 5vw;
@@ -408,8 +402,6 @@
     }
   }
 }
-
-
 
 //Ipad text
 .ipad_text {
@@ -420,7 +412,6 @@
 .info_ipad {
   font-weight: 700;
 }
-
 
 // Iphone home img
 
@@ -438,85 +429,242 @@
 .big-box {
   padding-top: 50px;
   background-color: #ffffff;
-  .fancy-rainbow{
+  .fancy-rainbow {
     margin: 0 auto;
     width: fit-content;
-    font-size: 48px; font-weight: bolder;
-    background: -webkit-linear-gradient(45deg,#2ca2b4,#5598de 24%,#7f87ff 45%,#f65aad 76%,#ec3d43);
+    font-size: 48px;
+    font-weight: bolder;
+    background: -webkit-linear-gradient(
+      45deg,
+      #2ca2b4,
+      #5598de 24%,
+      #7f87ff 45%,
+      #f65aad 76%,
+      #ec3d43
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
   }
-  .fancy-purple{
+  .fancy-purple {
     margin: 0 auto;
     width: fit-content;
-    font-size: 48px; font-weight: bolder;
-    background: -webkit-linear-gradient(#fdb6ff,#9c1cf1);
+    font-size: 48px;
+    font-weight: bolder;
+    background: -webkit-linear-gradient(#fdb6ff, #9c1cf1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  .a-list{
+  .a-list {
     padding: 20px;
-    button{
+    button {
       font-size: 17px;
       padding: 8px 16px;
       border-radius: 2.5rem;
-      background-color: #0071E3;
+      background-color: #0071e3;
       color: white;
     }
-    a{
+    a {
       margin-left: 20px;
       font-size: 21px;
       font-weight: 500;
-      color:#0071E3;
+      color: #0071e3;
     }
   }
 }
-.split-box{
-  background-color: #FBFBFD;
+.split-box {
+  background-color: #fbfbfd;
   padding-top: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 50px;
-  .fancy-blue{
+  .fancy-blue {
     margin: 0 auto;
     width: fit-content;
     font-size: 48px;
     font-weight: bolder;
-    background: -webkit-linear-gradient(90deg,#1e3791 0%,#2948b1 40%,#3153c6 55%,#214fe7 60%);
+    background: -webkit-linear-gradient(
+      90deg,
+      #1e3791 0%,
+      #2948b1 40%,
+      #3153c6 55%,
+      #214fe7 60%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  .a-list{
+  .a-list {
     padding: 20px;
-    button{
+    button {
       font-size: 17px;
       padding: 8px 16px;
       border-radius: 2.5rem;
-      background-color: #0071E3;
+      background-color: #0071e3;
       color: white;
     }
-    a{
+    a {
       margin-left: 20px;
       font-size: 21px;
       font-weight: 500;
-      color:#0071E3;
+      color: #0071e3;
     }
   }
 }
 
 //Contact form
-input[type='text'],
-select,
-textarea {
+// input[type='text'],
+// select,
+// textarea {
+//   display: flex;
+//   color: $brown;
+//   font-weight: 900;
+//   opacity: 0.6;
+//   width: 33vw;
+//   padding: 1rem;
+//   border-radius: 0.6rem;
+//   margin-top: 1.5rem;
+//   margin-bottom: 1.5rem;
+// }
+
+// Support home page
+
+.home_support {
+  background: url(/Apple_store/images/support_images/s1.png) no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
-  color: $brown;
-  font-weight: 900;
-  opacity: 0.6;
-  width: 33vw;
-  padding: 1rem;
-  border-radius: 0.6rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  flex-direction: row;
+  min-height: 40vh;
+  align-items: center;
+  justify-content: center;
+
+  .content_support {
+    h1 {
+      color: white;
+      font-size: 5.5rem;
+      font-weight: 500;
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+// Support image section nav
+
+.support_img_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 15vh;
+
+  .img_nav_support {
+    display: flex;
+
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 8rem;
+      width: 200px;
+      height: 200px;
+      color: black;
+    }
+
+    span {
+      font-size: 2.5rem;
+      font-weight: 300;
+    }
+  }
+}
+
+// Suport page link nav
+
+.support_link_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+
+  .img_link_support {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #7b7b7b;
+    border-bottom: 1px solid #7b7b7b;
+    font-weight: 100;
+    width: 100%;
+
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 8rem;
+      width: 200px;
+      height: 200px;
+      color: black;
+    }
+
+    span {
+      font-size: 2.5rem;
+      font-weight: 300;
+    }
+
+    .img_link_navix {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-self: center;
+      border-left: 1px solid #7b7b7b;
+      border-right: 1px solid #7b7b7b;
+      height: 60%;
+      margin: 2rem;
+    }
+
+    .link_nav {
+      font-size: 1.8rem;
+      font-weight: 300;
+    }
+  }
+}
+
+// Suport page Search section
+
+.support_search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+
+  .search-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    
+    .form_search{
+      display: flex;
+      border: 1px solid #7b7b7b;
+      min-width: 50%;
+      margin: auto;
+      padding: 1rem;
+    }
+
+    h3{
+      font-size: 4rem;
+      font-weight: 300;
+      padding-bottom: 1rem;
+    }
+
+    input{
+      font-size: 3rem;
+      font-weight: 100;
+    }
+
+    .fa-search{
+      font-size: 3rem;
+      color: #515050;
+      background: none;
+    }
+  }
 }

@@ -497,14 +497,14 @@ footer .legal ul li:last-child {
 .about_ipad .content_right h4 {
   font-size: 1.5rem;
   font-weight: 400;
-  color: #BF4800;
+  color: #bf4800;
 }
 .about_ipad .content_right .buy_button {
   color: white;
   cursor: pointer;
   font-size: 2.2rem;
   font-weight: 300;
-  background-color: #0071E3;
+  background-color: #0071e3;
   padding: 1rem 2rem;
   margin-bottom: 1.5rem;
   border-radius: 2.3rem;
@@ -555,7 +555,7 @@ footer .legal ul li:last-child {
 .ipad .content_about_ipad h4 {
   font-size: 1.5rem;
   font-weight: 400;
-  color: #BF4800;
+  color: #bf4800;
 }
 .ipad .content_about_ipad .fa-apple {
   font-size: 5rem;
@@ -565,7 +565,7 @@ footer .legal ul li:last-child {
   cursor: pointer;
   font-size: 1.8rem;
   font-weight: 300;
-  background-color: #0071E3;
+  background-color: #0071e3;
   padding: 0.8rem 1.7rem;
   margin-bottom: 1rem;
   border-radius: 2.3rem;
@@ -711,18 +711,18 @@ footer .legal ul li:last-child {
   font-size: 17px;
   padding: 8px 16px;
   border-radius: 2.5rem;
-  background-color: #0071E3;
+  background-color: #0071e3;
   color: white;
 }
 .big-box .a-list a {
   margin-left: 20px;
   font-size: 21px;
   font-weight: 500;
-  color: #0071E3;
+  color: #0071e3;
 }
 
 .split-box {
-  background-color: #FBFBFD;
+  background-color: #fbfbfd;
   padding-top: 12px;
   display: flex;
   justify-content: center;
@@ -747,28 +747,133 @@ footer .legal ul li:last-child {
   font-size: 17px;
   padding: 8px 16px;
   border-radius: 2.5rem;
-  background-color: #0071E3;
+  background-color: #0071e3;
   color: white;
 }
 .split-box .a-list a {
   margin-left: 20px;
   font-size: 21px;
   font-weight: 500;
-  color: #0071E3;
+  color: #0071e3;
 }
 
-input[type=text],
-select,
-textarea {
+.home_support {
+  background: url(/Apple_store/images/support_images/s1.png) no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
-  color: rgb(55, 20, 1);
-  font-weight: 900;
-  opacity: 0.6;
-  width: 33vw;
+  flex-direction: row;
+  min-height: 40vh;
+  align-items: center;
+  justify-content: center;
+}
+.home_support .content_support h1 {
+  color: white;
+  font-size: 5.5rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.support_img_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 15vh;
+}
+.support_img_nav .img_nav_support {
+  display: flex;
+}
+.support_img_nav .img_nav_support a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 8rem;
+  width: 200px;
+  height: 200px;
+  color: black;
+}
+.support_img_nav .img_nav_support span {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.support_link_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+}
+.support_link_nav .img_link_support {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #7b7b7b;
+  border-bottom: 1px solid #7b7b7b;
+  font-weight: 100;
+  width: 100%;
+}
+.support_link_nav .img_link_support a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 8rem;
+  width: 200px;
+  height: 200px;
+  color: black;
+}
+.support_link_nav .img_link_support span {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+.support_link_nav .img_link_support .img_link_navix {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  border-left: 1px solid #7b7b7b;
+  border-right: 1px solid #7b7b7b;
+  height: 60%;
+  margin: 2rem;
+}
+.support_link_nav .img_link_support .link_nav {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.support_search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+}
+.support_search .search-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.support_search .search-container .form_search {
+  display: flex;
+  border: 1px solid #7b7b7b;
+  min-width: 50%;
+  margin: auto;
   padding: 1rem;
-  border-radius: 0.6rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+}
+.support_search .search-container h3 {
+  font-size: 4rem;
+  font-weight: 300;
+  padding-bottom: 1rem;
+}
+.support_search .search-container input {
+  font-size: 3rem;
+  font-weight: 100;
+}
+.support_search .search-container .fa-search {
+  font-size: 3rem;
+  color: #515050;
+  background: none;
 }
 
 .about {
