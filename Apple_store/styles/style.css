@@ -1790,6 +1790,9 @@ body {
   html {
     font-size: 55%;
   }
+  .nav_items_xmark {
+    display: none;
+  }
   .presentcard_mac,
 .gallery-center-image .box-container-center-image,
 .gallery-center-image .box-container-center-image2,
