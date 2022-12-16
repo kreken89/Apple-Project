@@ -34,7 +34,12 @@ html {
 body {
   background: $bg-color;
   overflow-x: hidden;
+
 }
+.body-ipad, .body-iphone{
+  background: #f5f5f7;
+}
+
 
 @media (min-width: 1068.98px) {
   // .destination .box-container {
@@ -50,7 +55,7 @@ body {
   .one_mac {
     @include grid(33rem);
     max-width: 1440px;
-    padding: 1rem;
+    //padding: 1rem;
     column-gap: 0;
   }
 
@@ -58,7 +63,7 @@ body {
   .mac_info_gallery .mac_info_container {
     @include grid(33rem);
     max-width: 1440px;
-    column-gap: 1rem;
+    column-gap: 2rem;
   }
 
   .presentcard {

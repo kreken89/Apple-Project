@@ -69,7 +69,7 @@
 
 footer {
   padding: 0;
-  margin-top: 0;
+  margin-top: 3rem;
   background: #f5f5f7;
   font-size: 1.3rem;
 }
@@ -672,6 +672,7 @@ footer .legal ul li:last-child {
 
 .big-box {
   padding-top: 50px;
+  background-color: #ffffff;
 }
 .big-box .fancy-rainbow {
   margin: 0 auto;
@@ -840,17 +841,18 @@ textarea {
 }
 
 .mac_info-box {
+  max-width: 1440px;
+  margin: 3rem auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  margin: 3rem;
 }
 .mac_info-box .mac-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5rem;
+  padding: 5rem 0;
 }
 .mac_info-box .mac-info .fa-box-open,
 .mac_info-box .mac-info .fa-record-vinyl,
@@ -884,6 +886,10 @@ textarea {
 }
 .mac_info-box .mac-info .link-info .fa-chevron-right {
   font-size: 1.5rem;
+}
+
+.grey_info_background {
+  background-color: #f5f5f7;
 }
 
 .ipad_info-box {
@@ -1069,7 +1075,10 @@ ul li a:hover {
 }
 
 .table {
+  max-width: 1440px;
+  margin: 3rem auto;
   padding-top: 70px;
+  padding-bottom: 70px;
   background-color: #ffffff;
 }
 .table ul {
@@ -1228,6 +1237,9 @@ ul li a:hover {
   background-color: white;
 }
 
+.ipad-table {
+  background: #ffffff;
+}
 .ipad-table .col .thead h2 {
   padding-bottom: 0;
 }
@@ -1467,7 +1479,6 @@ ul li a:hover {
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 3rem;
-  margin-left: 1rem;
 }
 .mac_box_container .mac_gallery1 .big_text_x {
   margin-top: 0;
@@ -1500,7 +1511,6 @@ ul li a:hover {
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 3rem;
-  margin-right: 1rem;
 }
 .mac_box_container .mac_gallery2 .big_text_x {
   margin-top: 0;
@@ -1725,6 +1735,10 @@ body {
   overflow-x: hidden;
 }
 
+.body-ipad, .body-iphone {
+  background: #f5f5f7;
+}
+
 @media (min-width: 1068.98px) {
   html {
     font-size: 55%;
@@ -1737,7 +1751,6 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
     gap: 1.5rem;
     max-width: 1440px;
-    padding: 1rem;
     -moz-column-gap: 0;
          column-gap: 0;
   }
@@ -1747,8 +1760,8 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
     gap: 1.5rem;
     max-width: 1440px;
-    -moz-column-gap: 1rem;
-         column-gap: 1rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
   }
   .presentcard .content {
     margin-top: 40rem;
