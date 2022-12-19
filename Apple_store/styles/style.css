@@ -892,6 +892,48 @@ footer .legal ul li:last-child {
   background: none;
 }
 
+.get_support {
+  background: url(/Apple_store/images/support_images/s5.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 35vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.get_support .content_get_support {
+  margin-top: -5rem;
+  text-align: left;
+  margin-left: 10rem;
+}
+.get_support .content_get_support p {
+  text-align: left;
+  padding: 0;
+}
+.get_support .content_get_support .big_text_xl_light {
+  font-size: 5rem;
+  font-weight: 350;
+  color: white;
+}
+.get_support .content_get_support .text_light_y {
+  color: white;
+  font-size: 2rem;
+  font-weight: 200;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+.get_support .content_get_support ul li {
+  list-style: none;
+  display: inline;
+}
+.get_support .content_get_support ul li a {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgb(127, 179, 231);
+  letter-spacing: inherit;
+}
+
 .about {
   display: flex;
   align-items: center;
