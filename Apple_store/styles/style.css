@@ -49,29 +49,51 @@
   display: flex;
   justify-content: flex-start;
   gap: 47%;
-  padding: 1.5rem 2rem 5rem;
+  padding: 1.5rem 2rem 1rem;
   width: 100%;
-  border-bottom: 1px solid #cdcdcd;
 }
 .nav_items_xmark i {
   font-size: 3.5rem;
 }
 
-.nav-item-booking {
-  list-style: none;
+#nav_search {
+  display: none;
 }
-.nav-item-booking a {
-  font-size: 1.7rem;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  border: 2px solid #f5f5f7;
-  cursor: pointer;
-  color: #f5f5f7;
+
+.mob_nav_search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #cdcdcd;
+  padding-bottom: 2rem;
 }
-.nav-item-booking a:hover {
-  color: white;
-  border: 2px solid white;
+.mob_nav_search .search-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.mob_nav_search .search-container .form_search {
+  display: flex;
+  border: 1px solid #282828;
+  border-radius: 1rem;
+  min-width: 80%;
+  margin: auto;
+  background-color: #282828;
+}
+.mob_nav_search .search-container input {
+  padding-left: 1rem;
+  color: #6e6e73;
+  background-color: #282828;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+.mob_nav_search .search-container .fa-search {
+  padding: 1rem 1rem;
+  font-size: 2rem;
+  color: #787878;
+  background-color: #282828;
 }
 
 footer {
@@ -1981,32 +2003,14 @@ body {
   }
 }
 @media (min-width: 297.98px) and (max-width: 1068.98px) {
-  .presentcard_mac,
-.gallery-center-image .box-container-center-image,
-.gallery-center-image .box-container-center-image2,
-.one_mac {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
-    gap: 1.5rem;
-    max-width: 772px;
-    padding: 1rem;
-    -moz-column-gap: 0;
-         column-gap: 0;
-  }
-  .mac_box_container,
-.mac_info_gallery .mac_info_container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
-    gap: 1.5rem;
-    max-width: 760px;
-    -moz-column-gap: 1rem;
-         column-gap: 1rem;
-  }
   html {
-    font-size: 45%;
+    font-size: 60%;
   }
   #menu-btn {
     display: inline-block;
+  }
+  #nav_search {
+    display: block;
   }
   .header {
     display: flex;
@@ -2031,7 +2035,7 @@ body {
     background: rgb(0, 0, 0);
   }
   .header .navbar li {
-    margin: 4rem auto;
+    margin: auto;
     border-bottom: 1px solid #696868;
     padding: 1.5rem 0;
     font-size: 2rem;
@@ -2039,22 +2043,52 @@ body {
     max-width: 80%;
   }
   .header .navbar li a {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 300;
     padding-left: 0;
   }
-  text .mac_page .content_mac {
-    max-width: 772px;
-    margin: auto;
-    background-color: #fbfbfd;
+  .home {
+    min-height: 50vh;
   }
-  text .mac_page .content_mac h2 {
-    margin-top: 4rem;
-    font-size: 5rem;
-    font-weight: 450;
+  .home .big_text_xl {
+    font-size: 6rem;
+    font-weight: 500;
+    padding: 3rem 0 5rem;
   }
-  text .mac_page .content_mac p {
-    padding: 2rem 15rem;
+  .presentcard {
+    min-height: 40vh;
+  }
+  .presentcard .content {
+    margin-top: 30rem;
+  }
+}
+@media (min-width: 297.98px) and (max-width: 1068.98px) and (min-width: 297.98px) and (max-width: 768.98px) {
+  .about_ipad {
+    height: 40vh;
+  }
+  .about_ipad .content_right {
+    margin: 0;
+    padding-left: 300px;
+    padding-right: 0;
+  }
+  .big_text_x {
+    padding: 0;
+  }
+  .text_dark_y {
     font-size: 2rem;
+    padding: 0;
+  }
+  .gallery .box-container {
+    -moz-columns: 2 37rem;
+         columns: 2 37rem;
+  }
+  .gallery .box-container .box-gallery1,
+.gallery .box-container .box-gallery2,
+.gallery .box-container .box-gallery3,
+.gallery .box-container .box-gallery4,
+.gallery .box-container .box-gallery5,
+.gallery .box-container .box-gallery6 {
+    min-height: 40vh;
+    margin-bottom: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
