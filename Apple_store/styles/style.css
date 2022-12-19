@@ -2056,7 +2056,7 @@ body {
     padding: 3rem 0 5rem;
   }
   .presentcard {
-    min-height: 40vh;
+    min-height: 50vh;
   }
   .presentcard .content {
     margin-top: 30rem;
@@ -2090,5 +2090,35 @@ body {
 .gallery .box-container .box-gallery6 {
     min-height: 40vh;
     margin-bottom: 1rem;
+  }
+}
+@media (min-width: 297.98px) and (max-width: 1068.98px) and (min-width: 297.98px) and (max-width: 557.98px) {
+  html {
+    font-size: 50%;
+  }
+  .home {
+    min-height: 40vh;
+  }
+  .home .big_text_xl {
+    font-size: 6rem;
+    font-weight: 500;
+    padding: 3rem 0 5rem;
+  }
+  .presentcard .content {
+    font-size: 40%;
+    margin-top: 30rem;
+  }
+  .presentcard .big_text_xl_light {
+    font-size: 4rem;
+  }
+  .presentcard .text_light_y {
+    font-size: 2.5rem;
+  }
+  .about_ipad {
+    height: 40vh;
+  }
+  .about_ipad .content_right {
+    margin: 0;
+    padding-right: 5rem;
   }
 }/*# sourceMappingURL=style.css.map */
