@@ -430,11 +430,12 @@
 }
 .split-box{
   background-color: #FBFBFD;
-  padding-top: 12px;
+  margin-top: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 50px;
+  
   .fancy-blue{
     margin: 0 auto;
     width: fit-content;
@@ -459,6 +460,24 @@
       font-weight: 500;
       color:#0071E3;
     }
+  }
+}
+@media screen and (max-width: 1360px){
+  .watch-big-box{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+@media screen and (max-width: 950px) {
+  .big-watch-2{
+    width: 270px;
+  }
+  
+}
+@media screen and (max-width: 1060px) {
+  .big-watch-3{
+    width: 310px;
   }
 }
 
