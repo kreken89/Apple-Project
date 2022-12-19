@@ -45,7 +45,7 @@ body {
     font-size: 55%;
   }
 
-  .nav_items_xmark{
+  .nav_items_xmark {
     display: none;
   }
 
@@ -73,38 +73,20 @@ body {
   }
 }
 @media (min-width: 297.98px) and (max-width: 1068.98px) {
-  .presentcard_mac,
-  .gallery-center-image .box-container-center-image,
-  .gallery-center-image .box-container-center-image2,
-  .one_mac {
-    @include grid(33rem);
-    max-width: 772px;
-    padding: 1rem;
-    column-gap: 0;
-  }
-
-  .mac_box_container,
-  .mac_info_gallery .mac_info_container {
-    @include grid(33rem);
-    max-width: 760px;
-    column-gap: 1rem;
-  }
   html {
-    font-size: 45%;
+    font-size: 60%;
   }
   #menu-btn {
     display: inline-block;
   }
+  #nav_search {
+    display: block;
+  }
   .header {
     display: flex;
     justify-content: space-between;
-    background: rgba(0, 0, 0, .8);
+    background: rgba(0, 0, 0, 0.8);
     padding: 2rem;
-
-    // &.activ-header {
-    //   background: rgba(0, 0, 0, 1);
-      
-    // }
 
     .navbar {
       position: absolute;
@@ -119,39 +101,73 @@ body {
         border-top: 1px solid #696868;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         background: rgba(0, 0, 0, 1);
-        // padding: 0 30px;
       }
       li {
-        margin: 4rem auto;
+        margin: auto;
         border-bottom: 1px solid #696868;
-        // padding-top: 5rem;
-        // padding-left: 0;
-        padding:1.5rem 0;
+        padding: 1.5rem 0;
         font-size: 2rem;
         display: block;
         max-width: 80%;
         a {
-          font-size: 3.5rem;
+          font-size: 2.5rem;
           font-weight: 300;
           padding-left: 0;
         }
       }
     }
   }
-  text .mac_page .content_mac {
-    max-width: 772px;
-    margin: auto;
-    background-color: #fbfbfd;
 
-    h2 {
-      margin-top: 4rem;
-      font-size: 5rem;
-      font-weight: 450;
+  // Home page media
+
+  .home {
+    min-height: 50vh;
+    .big_text_xl {
+      font-size: 6rem;
+      font-weight: 500;
+      padding: 3rem 0 5rem;
+    }
+  }
+
+  .presentcard {
+    min-height: 40vh;
+    .content {
+      margin-top: 30rem;
+    }
+  }
+
+  @media (min-width: 297.98px) and (max-width: 768.98px) {
+    // About Ipad
+    .about_ipad {
+      height: 40vh;
+      .content_right {
+        margin: 0;
+        padding-left: 300px;
+        padding-right: 0;
+      }
+    }
+    .big_text_x {
+      padding: 0;
+    }
+    .text_dark_y {
+      font-size: 2rem;
+      padding: 0;
     }
 
-    p {
-      padding: 2rem 15rem;
-      font-size: 2rem;
+    // Boxar first page
+    .gallery .box-container {
+      columns: 2 37rem;
+      
+
+      .box-gallery1,
+      .box-gallery2,
+      .box-gallery3,
+      .box-gallery4,
+      .box-gallery5,
+      .box-gallery6 {
+        min-height: 40vh;
+        margin-bottom: 1rem;
+      }
     }
   }
 }
