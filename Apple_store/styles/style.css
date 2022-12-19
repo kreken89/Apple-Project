@@ -799,15 +799,18 @@ footer .legal ul li:last-child {
 }
 .support_img_nav .img_nav_support {
   display: flex;
+  gap: 8rem;
 }
 .support_img_nav .img_nav_support a {
+  color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-size: 8rem;
-  width: 200px;
-  height: 200px;
-  color: black;
+}
+.support_img_nav .img_nav_support a img {
+  align-self: center;
+  margin: 3rem;
 }
 .support_img_nav .img_nav_support span {
   font-size: 2.5rem;
@@ -824,39 +827,56 @@ footer .legal ul li:last-child {
 .support_link_nav .img_link_support {
   display: flex;
   justify-content: center;
-  border-top: 1px solid #7b7b7b;
-  border-bottom: 1px solid #7b7b7b;
+  border-top: 1px solid rgba(123, 123, 123, 0.2);
+  border-bottom: 1px solid rgba(123, 123, 123, 0.2);
   font-weight: 100;
   width: 100%;
 }
 .support_link_nav .img_link_support a {
+  margin: 5rem 0;
+  padding: 0 5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  row-gap: 3rem;
   font-size: 8rem;
-  width: 200px;
-  height: 200px;
-  color: black;
+  color: #0070c9;
+}
+.support_link_nav .img_link_support a img {
+  align-self: center;
+}
+.support_link_nav .img_link_support .img_link_navx {
+  border-left: 1px solid rgba(123, 123, 123, 0.2);
+  border-right: 1px solid rgba(123, 123, 123, 0.2);
 }
 .support_link_nav .img_link_support span {
   font-size: 2.5rem;
   font-weight: 300;
-}
-.support_link_nav .img_link_support .img_link_navix {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-self: center;
-  border-left: 1px solid #7b7b7b;
-  border-right: 1px solid #7b7b7b;
-  height: 60%;
-  margin: 2rem;
 }
 .support_link_nav .img_link_support .link_nav {
   font-size: 1.8rem;
   font-weight: 300;
 }
 
+@media (max-width: 700px) {
+  .img_link_support {
+    flex-direction: column;
+  }
+  .img_link_support a {
+    margin: 1rem 1rem;
+    width: 75vw;
+    align-self: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .img_link_support .img_link_navx {
+    flex-direction: column;
+    padding-top: 50px;
+    /*  border: 1px 1px 1px 1px solid#7b7b7b33; */
+    /* border-top: 1px solid#7b7b7b33;
+    border-bottom: 1px solid#7b7b7b33; */
+  }
+}
 .support_search {
   display: flex;
   flex-direction: row;
