@@ -869,6 +869,8 @@ footer .legal ul li:last-child {
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid #7b7b7b;
 }
 .support_search .search-container .form_search {
   display: flex;
@@ -1115,6 +1117,9 @@ footer .legal ul li:last-child {
   padding: 1rem;
   width: 250px;
   padding: 10rem 0;
+}
+.watch_info-box .watch-info .fa-chevron-right {
+  font-size: 1.5rem;
 }
 .watch_info-box .watch-info .fa-box-open,
 .watch_info-box .watch-info .fa-record-vinyl,
