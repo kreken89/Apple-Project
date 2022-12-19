@@ -129,63 +129,67 @@
 }
 
 // MacBook Pro section
+.dark {
+  min-height: 60vh;
+  background-color: black;
 
-.macBook_pro {
-  margin-top: 5rem;
-  background: url(/Apple_store/images/mac_images/m2.png) no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  min-height: 70vh;
-  align-items: center;
-  justify-content: flex-start;
-
-  .content {
+  .macBook_pro {
+    margin-top: 1rem;
+    background: url(/Apple_store/images/mac_images/m2.png) no-repeat;
+    background-size: contain;
+    background-position: bottom;
     display: flex;
     flex-direction: column;
+    min-height: 55vh;
     align-items: center;
-    color: white;
+    justify-content: flex-start;
 
-    h2 {
-      font-size: 5.5rem;
-      font-weight: 400;
-      margin-top: 0.5rem;
-    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
 
-    h3 {
-      font-size: 3.5rem;
-      font-weight: 400;
-      margin-bottom: 2rem;
-    }
+      h2 {
+        font-size: 5.5rem;
+        font-weight: 400;
+        margin-top: 0.5rem;
+      }
 
-    .price {
-      font-size: 2rem;
-      font-weight: 200;
-      margin-bottom: 0.5rem;
-      margin-bottom: 1rem;
-    }
+      h3 {
+        font-size: 3.5rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+      }
 
-    ul li {
-      list-style: none;
-      display: inline;
-      padding: 0.5rem;
-      margin-bottom: 2rem;
-
-      a {
+      .price {
         font-size: 2rem;
-        color: #06c;
-        letter-spacing: inherit;
+        font-weight: 200;
+        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      ul li {
+        list-style: none;
+        display: inline;
+        padding: 0.5rem;
+        margin-bottom: 2rem;
+
+        a {
+          font-size: 2rem;
+          color: #06c;
+          letter-spacing: inherit;
+        }
       }
     }
-  }
 
-  @media (min-width: 297.98px) and (max-width: 767.98px) {
-    padding: 3rem 1rem;
-    .s1 {
-      font-size: 5vw;
-      margin: 3rem;
-    }
+    // @media (min-width: 297.98px) and (max-width: 767.98px) {
+    //   padding: 3rem 1rem;
+    //   .s1 {
+    //     font-size: 5vw;
+    //     margin: 3rem;
+    //   }
+    // }
   }
 }
 
@@ -471,14 +475,14 @@
     }
   }
 }
-.split-box{
-  background-color: #FBFBFD;
+.split-box {
+  background-color: #fbfbfd;
   padding-top: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 50px;
-  .fancy-blue{
+  .fancy-blue {
     margin: 0 auto;
     width: fit-content;
     font-size: 48px;
@@ -510,21 +514,19 @@
     }
   }
 }
-@media screen and (max-width: 1360px){
-  .watch-big-box{
+@media screen and (max-width: 1360px) {
+  .watch-big-box {
     display: flex;
     flex-direction: column;
   }
-  
 }
 @media screen and (max-width: 950px) {
-  .big-watch-2{
+  .big-watch-2 {
     width: 270px;
   }
-  
 }
 @media screen and (max-width: 1060px) {
-  .big-watch-3{
+  .big-watch-3 {
     width: 310px;
   }
 }
@@ -654,13 +656,13 @@
   align-items: center;
   min-height: 10vh;
 
-  .search-container{
+  .search-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    
-    .form_search{
+
+    .form_search {
       display: flex;
       border: 1px solid #7b7b7b;
       min-width: 50%;
@@ -668,18 +670,18 @@
       padding: 1rem;
     }
 
-    h3{
+    h3 {
       font-size: 4rem;
       font-weight: 300;
       padding-bottom: 1rem;
     }
 
-    input{
+    input {
       font-size: 3rem;
       font-weight: 100;
     }
 
-    .fa-search{
+    .fa-search {
       font-size: 3rem;
       color: #515050;
       background: none;
@@ -703,11 +705,10 @@
     text-align: left;
     margin-left: 10rem;
 
-    p{
+    p {
       text-align: left;
-      padding:0;
+      padding: 0;
     }
-    
 
     .big_text_xl_light {
       font-size: 5rem;

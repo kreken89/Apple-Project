@@ -47,6 +47,7 @@
 
 .nav_items_xmark {
   display: flex;
+  display: none;
   justify-content: flex-start;
   gap: 47%;
   padding: 1.5rem 2rem 1rem;
@@ -479,58 +480,53 @@ footer .legal ul li:last-child {
   }
 }
 
-.macBook_pro {
-  margin-top: 5rem;
+.dark {
+  min-height: 60vh;
+  background-color: black;
+}
+.dark .macBook_pro {
+  margin-top: 1rem;
   background: url(/Apple_store/images/mac_images/m2.png) no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: bottom;
   display: flex;
   flex-direction: column;
-  min-height: 70vh;
+  min-height: 55vh;
   align-items: center;
   justify-content: flex-start;
 }
-.macBook_pro .content {
+.dark .macBook_pro .content {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
 }
-.macBook_pro .content h2 {
+.dark .macBook_pro .content h2 {
   font-size: 5.5rem;
   font-weight: 400;
   margin-top: 0.5rem;
 }
-.macBook_pro .content h3 {
+.dark .macBook_pro .content h3 {
   font-size: 3.5rem;
   font-weight: 400;
   margin-bottom: 2rem;
 }
-.macBook_pro .content .price {
+.dark .macBook_pro .content .price {
   font-size: 2rem;
   font-weight: 200;
   margin-bottom: 0.5rem;
   margin-bottom: 1rem;
 }
-.macBook_pro .content ul li {
+.dark .macBook_pro .content ul li {
   list-style: none;
   display: inline;
   padding: 0.5rem;
   margin-bottom: 2rem;
 }
-.macBook_pro .content ul li a {
+.dark .macBook_pro .content ul li a {
   font-size: 2rem;
   color: #06c;
   letter-spacing: inherit;
-}
-@media (min-width: 297.98px) and (max-width: 767.98px) {
-  .macBook_pro {
-    padding: 3rem 1rem;
-  }
-  .macBook_pro .s1 {
-    font-size: 5vw;
-    margin: 3rem;
-  }
 }
 
 .about_ipad {
@@ -779,7 +775,7 @@ footer .legal ul li:last-child {
 }
 
 .split-box {
-  background-color: #FBFBFD;
+  background-color: #fbfbfd;
   padding-top: 12px;
   display: flex;
   justify-content: center;
@@ -1062,7 +1058,7 @@ footer .legal ul li:last-child {
        break-inside: avoid;
 }
 .gallery-long-image .box-container-long-image .box-gallery-long-image img {
-  width: 90vw;
+  width: 100vw;
   height: 35vh;
   margin-bottom: 0.8rem;
 }
@@ -1767,10 +1763,14 @@ ul li a:hover {
   color: #06c;
   letter-spacing: inherit;
 }
-.mac_box_container .mac_gallery2 {
+.mac_box_container .gallery2 {
+  min-height: 48vh;
+  background-color: #f2f2f2;
+}
+.mac_box_container .gallery2 .mac_gallery2 {
   background: url(/Apple_store/images/mac_images/m5.png) no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: bottom;
   display: flex;
   flex-direction: column;
   min-height: 48vh;
@@ -1778,24 +1778,24 @@ ul li a:hover {
   justify-content: flex-start;
   margin-bottom: 3rem;
 }
-.mac_box_container .mac_gallery2 .big_text_x {
+.mac_box_container .gallery2 .mac_gallery2 .big_text_x {
   margin-top: 0;
   font-size: 4.5rem;
   font-weight: 500;
   padding: 1.5rem;
 }
-.mac_box_container .mac_gallery2 span {
+.mac_box_container .gallery2 .mac_gallery2 span {
   margin-top: 1rem;
   font-size: 3rem;
 }
-.mac_box_container .mac_gallery2 p {
+.mac_box_container .gallery2 .mac_gallery2 p {
   font-size: 1.8rem;
 }
-.mac_box_container .mac_gallery2 ul li {
+.mac_box_container .gallery2 .mac_gallery2 ul li {
   list-style: none;
   display: inline;
 }
-.mac_box_container .mac_gallery2 ul li a {
+.mac_box_container .gallery2 .mac_gallery2 ul li a {
   padding: 1rem;
   margin-bottom: 5rem;
   font-size: 2rem;
@@ -1900,7 +1900,6 @@ ul li a:hover {
   background-color: #fbfbfd;
 }
 .content_mac h2 {
-  margin-top: 4rem;
   font-size: 5rem;
   font-weight: 450;
 }
@@ -2006,32 +2005,51 @@ body {
   background: #f5f5f7;
 }
 
-@media (min-width: 1068.98px) {
-  .nav_items_xmark {
-    display: none;
+@media (min-width: 279.98px) and (max-width: 2559.98px) {
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
   }
-  .presentcard_mac,
-.gallery-center-image .box-container-center-image,
-.gallery-center-image .box-container-center-image2,
-.one_mac {
+  .home_mac {
+    min-height: 70vh;
+  }
+  .home_mac .big_text_xl_0 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  .home_mac .content {
+    padding: 0;
+  }
+  .presentcard_mac {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
     max-width: 1440px;
     -moz-column-gap: 0;
          column-gap: 0;
   }
-  .mac_box_container,
-.mac_info_gallery .mac_info_container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
-    gap: 1.5rem;
-    max-width: 1440px;
-    -moz-column-gap: 2rem;
-         column-gap: 2rem;
+}
+@media (min-width: 279.98px) and (max-width: 2559.98px) and (min-width: 279.98px) and (max-width: 1439.98px) {
+  html {
+    font-size: 60%;
   }
-  .presentcard .content {
-    margin-top: 40rem;
+  .nav_items_xmark {
+    display: none;
+  }
+  .dark {
+    min-height: 45vh;
+  }
+  .dark .macBook_pro {
+    min-height: 48vh;
+  }
+  .presentcard_mac {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    max-width: 1340px;
+    min-height: 555px;
+    -moz-column-gap: 0;
+         column-gap: 0;
   }
 }
 @media (min-width: 297.98px) and (max-width: 1068.98px) {
@@ -2043,6 +2061,17 @@ body {
   }
   #nav_search {
     display: block;
+  }
+  .nav_items_xmark {
+    display: block;
+    display: flex;
+    justify-content: flex-start;
+    gap: 47%;
+    padding: 1.5rem 2rem 1rem;
+    width: 100%;
+  }
+  .nav_items_xmark i {
+    font-size: 3.5rem;
   }
   .header {
     display: flex;
@@ -2093,8 +2122,70 @@ body {
   .presentcard .content {
     margin-top: 30rem;
   }
+  .home_mac {
+    min-height: 60vh;
+  }
+  .home_mac .big_text_xl_0 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  .home_mac .content {
+    padding: 0;
+  }
+  .dark {
+    min-height: 40vh;
+    background-color: black;
+  }
+  .macBook_pro {
+    margin-top: 3rem;
+    min-height: 45vh;
+    background-size: auto;
+    background-position: bottom;
+    display: block;
+  }
+  .presentcard_mac {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    max-width: 736px;
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+  .gallery2 {
+    min-height: 48vh;
+    background-color: #696868;
+  }
+  .mac_box_container,
+.mac_info-box,
+.mac_info_gallery {
+    -moz-columns: 2 25rem;
+         columns: 2 25rem;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+    max-width: 736px;
+    margin: auto;
+  }
+  .content_gallery-center-image,
+.one_mac {
+    max-width: 736px;
+    margin: auto;
+  }
+  .gallery-center-image {
+    max-width: 736px;
+    margin: auto;
+  }
+  .gallery-center-image .box-container-center-image {
+    min-height: 48vh;
+    background-size: cover;
+  }
 }
 @media (min-width: 297.98px) and (max-width: 1068.98px) and (min-width: 297.98px) and (max-width: 768.98px) {
+  #menu-btn {
+    display: inline-block;
+  }
+  #nav_search {
+    display: block;
+  }
   .about_ipad {
     height: 40vh;
   }
@@ -2122,6 +2213,31 @@ body {
 .gallery .box-container .box-gallery6 {
     min-height: 40vh;
     margin-bottom: 1rem;
+  }
+  .home_mac {
+    min-height: 40vh;
+    margin-bottom: 3rem;
+    background-size: contain;
+    background-position: bottom;
+    display: block;
+  }
+  .home_mac .big_text_xl_0 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  .home_mac .content {
+    padding: 0;
+  }
+  .dark {
+    min-height: 40vh;
+    background-color: black;
+  }
+  .dark .macBook_pro {
+    margin-top: 3rem;
+    min-height: 40vh;
+    background-size: contain;
+    background-position: bottom;
+    display: block;
   }
 }
 @media (min-width: 297.98px) and (max-width: 1068.98px) and (min-width: 297.98px) and (max-width: 557.98px) {
@@ -2216,32 +2332,5 @@ body {
 .gallery .box-container .box-gallery6 {
     min-height: 30vh;
     margin-bottom: 1rem;
-  }
-}
-@media (min-width: 297.98px) and (max-width: 1068.98px) {
-  .home_mac {
-    min-height: 50vh;
-  }
-  .home_mac .big_text_xl_0 {
-    font-size: 4rem;
-    font-weight: 500;
-  }
-  .home_mac .content {
-    padding: 0;
-  }
-}
-@media (min-width: 297.98px) and (max-width: 1068.98px) {
-  .dark {
-    min-height: 40vh;
-    background-color: black;
-  }
-}
-@media (min-width: 297.98px) and (max-width: 1068.98px) {
-  .macBook_pro {
-    margin-top: 3rem;
-    min-height: 40vh;
-    background-size: auto;
-    background-position: bottom;
-    display: block;
   }
 }/*# sourceMappingURL=style.css.map */

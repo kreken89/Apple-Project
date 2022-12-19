@@ -52,6 +52,7 @@
 
 .nav_items_xmark {
   display: flex;
+  display: none;
   justify-content: flex-start;
   gap: 47%;
   // padding-left: 2rem;
@@ -85,8 +86,8 @@
 
 // Mobile navbar search function
 
-#nav_search{
-    display: none;
+#nav_search {
+  display: none;
 }
 
 .mob_nav_search {
@@ -94,7 +95,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  
 
   .search-container {
     display: flex;

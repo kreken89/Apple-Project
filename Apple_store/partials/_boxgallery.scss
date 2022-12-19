@@ -218,7 +218,6 @@
       }
     }
   }
-
 }
 
 // Mac gallery info boxes image and text
@@ -244,7 +243,6 @@
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 3rem;
-    
 
     .big_text_x {
       margin-top: 0;
@@ -272,44 +270,48 @@
     }
   }
 
-  .mac_gallery2 {
-    background: url(/Apple_store/images/mac_images/m5.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
+  .gallery2 {
     min-height: 48vh;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 3rem;
-    
+    background-color: #f2f2f2;
 
-    .big_text_x {
-      margin-top: 0;
-      font-size: 4.5rem;
-      font-weight: 500;
-      padding: 1.5rem;
-    }
+    .mac_gallery2 {
+      background: url(/Apple_store/images/mac_images/m5.png) no-repeat;
+      background-size: contain;
+      background-position: bottom;
+      display: flex;
+      flex-direction: column;
+      min-height: 48vh;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 3rem;
 
-    span {
-      margin-top: 1rem;
-      font-size: 3rem;
-    }
+      .big_text_x {
+        margin-top: 0;
+        font-size: 4.5rem;
+        font-weight: 500;
+        padding: 1.5rem;
+      }
 
-    p {
-      font-size: 1.8rem;
-    }
+      span {
+        margin-top: 1rem;
+        font-size: 3rem;
+      }
 
-    ul li {
-      list-style: none;
-      display: inline;
+      p {
+        font-size: 1.8rem;
+      }
 
-      a {
-        padding: 1rem;
-        margin-bottom: 5rem;
-        font-size: 2rem;
-        color: #06c;
-        letter-spacing: inherit;
+      ul li {
+        list-style: none;
+        display: inline;
+
+        a {
+          padding: 1rem;
+          margin-bottom: 5rem;
+          font-size: 2rem;
+          color: #06c;
+          letter-spacing: inherit;
+        }
       }
     }
   }
@@ -423,7 +425,7 @@
   background-color: #fbfbfd;
 
   h2 {
-    margin-top: 4rem;
+    // margin-top: 4rem;
     font-size: 5rem;
     font-weight: 450;
   }
@@ -510,7 +512,6 @@
     }
   }
 }
-
 
 // ipad gallery info boxes
 // .ipad_gallery {
