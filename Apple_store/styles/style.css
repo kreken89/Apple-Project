@@ -679,7 +679,7 @@ footer .legal ul li:last-child {
 }
 
 .big-box {
-  padding-top: 50px;
+  padding-top: 70px;
   background-color: #ffffff;
 }
 .big-box .fancy-rainbow {
@@ -722,8 +722,8 @@ footer .legal ul li:last-child {
 }
 
 .split-box {
-  background-color: #fbfbfd;
-  padding-top: 12px;
+  background-color: #FBFBFD;
+  margin-top: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -757,6 +757,22 @@ footer .legal ul li:last-child {
   color: #0071e3;
 }
 
+@media screen and (max-width: 1360px) {
+  .watch-big-box {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 950px) {
+  .big-watch-2 {
+    width: 270px;
+  }
+}
+@media screen and (max-width: 1060px) {
+  .big-watch-3 {
+    width: 310px;
+  }
+}
 .home_support {
   background: url(/Apple_store/images/support_images/s1.png) no-repeat;
   background-size: cover;
