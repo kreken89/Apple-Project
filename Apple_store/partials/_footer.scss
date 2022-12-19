@@ -1,92 +1,125 @@
-// Footer 
+// Footer
 footer {
-    padding: 0;
-    margin-top: 3rem;
-    background: #f5f5f7;
-    font-size: 1.3rem;
-    .footer-content{
-        max-width: 980px; width: 95vw;
-        margin: 0 auto;
-    }
-    ul{
-        list-style: none;
-    }
-    .box-container {
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 5rem;
-        .box {
-            h3 {
-                color: $black;
-                padding: 1rem 0;
-                font-size: 1.3rem;
-            }
-            ul{
-                li{
-                    margin-bottom: 1rem; 
-                }
-                a{
-                    color: $black;
-                    &:hover{
-                        border-bottom: 1px solid $black;
-                        
-                    } 
-                }
-            } 
+  padding: 0;
+  margin-top: 3rem;
+  background: #f5f5f7;
+  font-size: 1.3rem;
+  .footer-content {
+    max-width: 980px;
+    width: 95vw;
+    margin: 0 auto;
+  }
+  ul {
+    list-style: none;
+  }
+  .box-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+    .box {
+      h3 {
+        color: $black;
+        padding: 1rem 0;
+        font-size: 1.3rem;
+      }
+      ul {
+        li {
+          margin-bottom: 1rem;
         }
-    }
-    .footer-shop{
-        width: 100%;
-        
-        a{
-            color: #0066CC;
-            &:hover{
-                border-bottom: 1px solid #0066CC;
-                
-            }
+        a {
+          color: $black;
+          &:hover {
+            border-bottom: 1px solid $black;
+          }
         }
+      }
     }
-    .divider{
-        padding-top: 1rem;
-        border-bottom: 1px solid rgb(182, 182, 182);
+  }
+  .footer-shop {
+    width: 100%;
+
+    a {
+      color: #0066cc;
+      &:hover {
+        border-bottom: 1px solid #0066cc;
+      }
     }
-    .legal{
-        padding-bottom: 2rem;
-        .copyrights {
-            opacity: 0.9;
-            font-size: 1.3rem;
-            font-weight: 500;
-            padding: 1rem 0;
-            p {
-                color: rgb(71, 71, 71);
-            }
+  }
+  .divider {
+    padding-top: 1rem;
+    border-bottom: 1px solid rgb(182, 182, 182);
+  }
+  .legal {
+    padding-bottom: 2rem;
+    .copyrights {
+      opacity: 0.9;
+      font-size: 1.3rem;
+      font-weight: 500;
+      padding: 1rem 0;
+      p {
+        color: rgb(71, 71, 71);
+      }
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-weight: 500;
+      li {
+        padding-right: 1rem;
+        border-right: 1px solid rgb(182, 182, 182);
+      }
+      a {
+        color: $black;
+        &:hover {
+          border-bottom: 1px solid #0066cc;
         }
-        ul{
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            font-weight: 500;
-            li{
-                padding-right: 1rem;
-                border-right: 1px solid rgb(182, 182, 182);
-            }
-            a{
-                color: $black;
-                &:hover{
-                    border-bottom: 1px solid #0066CC;
-                    
-                }
-            }
-            li:last-child{
-                border-right: none;
-            }
-        }
+      }
+      li:last-child {
+        border-right: none;
+      }
     }
+  }
 }
-// @media (max-width: 840px) {
-//     .box-container{
-//         //skapa layout för mobile
-//         background-color: aqua;
-//     }
-    
-// }
+// Media footer tablet mobil
+@media (min-width: 297.98px) and (max-width: 768.98px) {
+  .footer-content {
+    .box-container {
+      @include grid(20rem);
+
+      .box {
+        h3 {
+          font-size: 2rem;
+        }
+        li a {
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+  footer .footer-shop{
+    font-size: 1.8rem;
+    a{
+      font-weight: 500;
+    }
+  }
+
+  .legal {
+    .copyrights {
+      font-size: 2.5rem;
+      p {
+        font-size: 1.8rem;
+      }
+    }
+    ul {
+      font-size: 1.5rem;
+      font-weight: 600;
+      li {
+        font-size: 1.5rem;
+      }
+      a {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
