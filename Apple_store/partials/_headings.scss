@@ -674,6 +674,8 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    padding-bottom: 5rem;
+    border-bottom: 1px solid #7b7b7b;
     
     .form_search{
       display: flex;
@@ -698,6 +700,56 @@
       font-size: 3rem;
       color: #515050;
       background: none;
+    }
+  }
+}
+
+//Support img - Girl with tablet
+.get_support {
+  background: url(/Apple_store/images/support_images/s5.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 35vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  .content_get_support {
+    margin-top: -5rem;
+    text-align: left;
+    margin-left: 10rem;
+
+    p{
+      text-align: left;
+      padding:0;
+    }
+    
+
+    .big_text_xl_light {
+      font-size: 5rem;
+      font-weight: 350;
+      color: white;
+    }
+
+    .text_light_y {
+      color: white;
+      font-size: 2rem;
+      font-weight: 200;
+      margin-top: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    ul li {
+      list-style: none;
+      display: inline;
+
+      a {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: rgb(127, 179, 231);
+        letter-spacing: inherit;
+      }
     }
   }
 }
