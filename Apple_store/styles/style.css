@@ -133,10 +133,10 @@ footer .footer-shop {
   width: 100%;
 }
 footer .footer-shop a {
-  color: #0066CC;
+  color: #0066cc;
 }
 footer .footer-shop a:hover {
-  border-bottom: 1px solid #0066CC;
+  border-bottom: 1px solid #0066cc;
 }
 footer .divider {
   padding-top: 1rem;
@@ -168,12 +168,47 @@ footer .legal ul a {
   color: rgb(3, 3, 5);
 }
 footer .legal ul a:hover {
-  border-bottom: 1px solid #0066CC;
+  border-bottom: 1px solid #0066cc;
 }
 footer .legal ul li:last-child {
   border-right: none;
 }
 
+@media (min-width: 297.98px) and (max-width: 768.98px) {
+  .footer-content .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+  }
+  .footer-content .box-container .box h3 {
+    font-size: 2rem;
+  }
+  .footer-content .box-container .box li a {
+    font-size: 1.7rem;
+  }
+  footer .footer-shop {
+    font-size: 1.8rem;
+  }
+  footer .footer-shop a {
+    font-weight: 500;
+  }
+  .legal .copyrights {
+    font-size: 2.5rem;
+  }
+  .legal .copyrights p {
+    font-size: 1.8rem;
+  }
+  .legal ul {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .legal ul li {
+    font-size: 1.5rem;
+  }
+  .legal ul a {
+    font-size: 1.5rem;
+  }
+}
 /* Slideshow container */
 .slideshow-container {
   max-width: 1300px;
@@ -1997,9 +2032,6 @@ body {
 }
 
 @media (min-width: 1068.98px) {
-  html {
-    font-size: 55%;
-  }
   .nav_items_xmark {
     display: none;
   }
@@ -2081,7 +2113,7 @@ body {
     padding: 3rem 0 5rem;
   }
   .presentcard {
-    min-height: 50vh;
+    min-height: 40vh;
   }
   .presentcard .content {
     margin-top: 30rem;
@@ -2140,10 +2172,101 @@ body {
     font-size: 2.5rem;
   }
   .about_ipad {
+    margin-top: 3rem;
     height: 40vh;
+    background-size: auto;
+    background-position: bottom;
+    display: block;
   }
   .about_ipad .content_right {
-    margin: 0;
-    padding-right: 5rem;
+    padding: 0 1rem;
+  }
+  .gallery .box-container {
+    -moz-columns: 2 37rem;
+         columns: 2 37rem;
+  }
+  .gallery .box-container .box-gallery1,
+.gallery .box-container .box-gallery2,
+.gallery .box-container .box-gallery3,
+.gallery .box-container .box-gallery4,
+.gallery .box-container .box-gallery5,
+.gallery .box-container .box-gallery6 {
+    min-height: 30vh;
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 297.98px) and (max-width: 1068.98px) and (min-width: 297.98px) and (max-width: 375.98px) {
+  html {
+    font-size: 45%;
+  }
+  .home {
+    min-height: 35vh;
+  }
+  .home .big_text_xl {
+    font-size: 6rem;
+    font-weight: 500;
+    padding: 3rem 0 5rem;
+  }
+  .presentcard {
+    min-height: 35vh;
+  }
+  .presentcard .content {
+    margin-top: 30rem;
+  }
+  .presentcard .big_text_xl_light {
+    font-size: 3rem;
+  }
+  .presentcard .text_light_y {
+    font-size: 2rem;
+  }
+  .about_ipad {
+    margin-top: 3rem;
+    height: 35vh;
+    background-size: auto;
+    background-position: bottom;
+    display: block;
+  }
+  .about_ipad .content_right {
+    padding: 0 1rem;
+  }
+  .gallery .box-container {
+    -moz-columns: 2 37rem;
+         columns: 2 37rem;
+  }
+  .gallery .box-container .box-gallery1,
+.gallery .box-container .box-gallery2,
+.gallery .box-container .box-gallery3,
+.gallery .box-container .box-gallery4,
+.gallery .box-container .box-gallery5,
+.gallery .box-container .box-gallery6 {
+    min-height: 30vh;
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 297.98px) and (max-width: 1068.98px) {
+  .home_mac {
+    min-height: 50vh;
+  }
+  .home_mac .big_text_xl_0 {
+    font-size: 4rem;
+    font-weight: 500;
+  }
+  .home_mac .content {
+    padding: 0;
+  }
+}
+@media (min-width: 297.98px) and (max-width: 1068.98px) {
+  .dark {
+    min-height: 40vh;
+    background-color: black;
+  }
+}
+@media (min-width: 297.98px) and (max-width: 1068.98px) {
+  .macBook_pro {
+    margin-top: 3rem;
+    min-height: 40vh;
+    background-size: auto;
+    background-position: bottom;
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */
