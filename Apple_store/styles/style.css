@@ -2380,22 +2380,6 @@ body {
     background-position: bottom;
     display: block;
   }
-<<<<<<< HEAD
-  .ipad_info-box {
-    flex-direction: column;
-  }
-  .ipad_info-box .ipad-info {
-    margin: 0 auto;
-    padding: 2rem;
-  }
-  .ipad_info-box .ipad-info a {
-    white-space: nowrap;
-  }
-}
-@media screen and (min-width: 297.98px) and (max-width: 1068.98px) and (max-width: 610px) {
-  .mac_info-box {
-    flex-direction: column;
-=======
   .presentcard_mac {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
@@ -2437,7 +2421,11 @@ body {
   .one_mac .content_one_left,
 .one_mac .content_one_right {
     min-height: 20vh;
->>>>>>> 6f99ff8fa3cdb5f534bce138ecb4680808414a0e
+  }
+}
+@media screen and (min-width: 297.98px) and (max-width: 1068.98px) and (max-width: 610px) {
+  .mac_info-box {
+    flex-direction: column;
   }
 }
 @media (min-width: 297.98px) and (max-width: 1068.98px) and (min-width: 297.98px) and (max-width: 557.98px) {
