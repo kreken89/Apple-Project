@@ -427,6 +427,16 @@ footer .legal ul li:last-child {
   margin-bottom: 0.5rem;
   margin-bottom: 1rem;
 }
+.home_mac .content .buy_button {
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 300;
+  background-color: #0071e3;
+  padding: 0.8rem 1.5rem;
+  margin-right: 1rem;
+  border-radius: 2.3rem;
+}
 .home_mac .content ul li {
   list-style: none;
   display: inline;
@@ -476,6 +486,16 @@ footer .legal ul li:last-child {
   font-weight: 200;
   margin-bottom: 0.5rem;
   margin-bottom: 1rem;
+}
+.macBook_pro .content .buy_button {
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 300;
+  background-color: #0071e3;
+  padding: 0.8rem 1.5rem;
+  margin-right: 1rem;
+  border-radius: 2.3rem;
 }
 .macBook_pro .content ul li {
   list-style: none;
@@ -1291,28 +1311,10 @@ footer .legal ul li:last-child {
   padding: 0 5rem;
 }
 
-.link_section_support {
-  text-align: left;
-  margin-left: 50rem;
-  padding-top: 3rem;
-}
-.link_section_support h2 {
-  font-size: 2.5rem;
-  font-weight: 400;
-}
-.link_section_support a {
-  font-size: 2rem;
-  font-weight: 200;
-}
-.link_section_support .fa-chevron-right {
-  font-size: 1rem;
-}
-
 .text_section_support1 {
   max-width: 50%;
   margin: auto;
   padding: 3rem;
-  border-bottom: 1px solid lightgray;
   flex-direction: row;
 }
 .text_section_support1 h2 {
@@ -1327,12 +1329,14 @@ footer .legal ul li:last-child {
   font-size: 2rem;
   font-weight: 200;
 }
+.text_section_support1 .testar {
+  flex-direction: row;
+}
 
 .text_section_support2 {
   max-width: 50%;
   margin: auto;
   padding: 3rem;
-  border-bottom: 1px solid lightgray;
 }
 .text_section_support2 h2 {
   font-size: 2.5rem;
@@ -1345,6 +1349,27 @@ footer .legal ul li:last-child {
 .text_section_support2 a {
   font-size: 2rem;
   font-weight: 200;
+}
+
+.link_section_support {
+  text-align: left;
+  margin-left: 27%;
+  padding-top: 3rem;
+}
+.link_section_support h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.link_section_support a {
+  font-size: 2rem;
+  font-weight: 200;
+}
+.link_section_support .fa-chevron-right {
+  font-size: 1rem;
+}
+
+.full_line_border {
+  border: 1px solid rgb(245, 241, 241);
 }
 
 section {
