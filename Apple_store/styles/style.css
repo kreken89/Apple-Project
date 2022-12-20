@@ -695,7 +695,7 @@ footer .legal ul li:last-child {
 
 .change_ipad {
   background: url(/Apple_store/images/ipad_images/i444.png) no-repeat;
-  background-size: cover;
+  background-size: auto;
   background-position: center;
   display: flex;
   flex-direction: column;
