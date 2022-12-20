@@ -41,10 +41,6 @@ body {
   background: #f5f5f7;
 }
 
-// .nav_items_xmark {
-//   display: none;
-// }
-
 @media (min-width: 279.98px) and (max-width: 2559.98px) {
   html {
     font-size: 62.5%;
@@ -69,29 +65,6 @@ body {
     max-width: 1440px;
     column-gap: 0;
   }
-
-  // .presentcard_mac,
-  // .gallery-center-image .box-container-center-image,
-  // .gallery-center-image .box-container-center-image2,
-  // .one_mac {
-  //   @include grid(33rem);
-  //   max-width: 1440px;
-  //   //padding: 1rem;
-  //   column-gap: 0;
-  // }
-
-  // .mac_box_container,
-  // .mac_info_gallery .mac_info_container {
-  //   @include grid(33rem);
-  //   max-width: 1440px;
-  //   column-gap: 2rem;
-  // }
-
-  // .presentcard {
-  //   .content {
-  //     margin-top: 40rem;
-  //   }
-  // }
 
   @media (min-width: 279.98px) and (max-width: 1439.98px) {
     html {
@@ -133,8 +106,6 @@ body {
     display: flex;
     justify-content: flex-start;
     gap: 47%;
-    // padding-left: 2rem;
-    // padding-top: 2rem;
     padding: 1.5rem 2rem 1rem;
     width: 100%;
 
