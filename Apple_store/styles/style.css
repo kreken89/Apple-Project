@@ -484,11 +484,6 @@ footer .legal ul li:last-child {
   color: #06c;
   letter-spacing: inherit;
 }
-@media (min-width: 297.98px) and (max-width: 767.98px) {
-  .home_mac {
-    padding: 3rem 10rem;
-  }
-}
 
 .dark {
   min-height: 60vh;
@@ -2288,11 +2283,12 @@ body {
   }
   .presentcard_mac {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
     gap: 1.5rem;
     max-width: 736px;
     -moz-column-gap: 0;
          column-gap: 0;
+    gap: 0;
   }
   .gallery2 {
     min-height: 48vh;
@@ -2301,8 +2297,8 @@ body {
   .mac_box_container,
 .mac_info-box,
 .mac_info_gallery {
-    -moz-columns: 2 25rem;
-         columns: 2 25rem;
+    -moz-columns: 2 37rem;
+         columns: 2 37rem;
     -moz-column-gap: 1rem;
          column-gap: 1rem;
     max-width: 736px;
@@ -2323,6 +2319,9 @@ body {
   }
 }
 @media (min-width: 297.98px) and (max-width: 1068.98px) and (min-width: 297.98px) and (max-width: 768.98px) {
+  html {
+    font-size: 50%;
+  }
   #menu-btn {
     display: inline-block;
   }
@@ -2358,11 +2357,10 @@ body {
     margin-bottom: 1rem;
   }
   .home_mac {
-    min-height: 40vh;
-    margin-bottom: 3rem;
-    background-size: contain;
+    min-height: 50vh;
+    margin-top: 6rem;
+    background-size: cover;
     background-position: bottom;
-    display: block;
   }
   .home_mac .big_text_xl_0 {
     font-size: 3rem;
@@ -2382,6 +2380,7 @@ body {
     background-position: bottom;
     display: block;
   }
+<<<<<<< HEAD
   .ipad_info-box {
     flex-direction: column;
   }
@@ -2396,6 +2395,49 @@ body {
 @media screen and (min-width: 297.98px) and (max-width: 1068.98px) and (max-width: 610px) {
   .mac_info-box {
     flex-direction: column;
+=======
+  .presentcard_mac {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
+    gap: 1.5rem;
+    min-height: 20vh;
+    max-width: 736px;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    gap: 0;
+  }
+  .presentcard_mac .content_left {
+    min-height: 20vh;
+  }
+  .presentcard_mac .content_right {
+    min-height: 40vh;
+  }
+  .mac_box_container .mac_gallery1 {
+    min-height: 40vh;
+  }
+  .mac_box_container .gallery2 {
+    min-height: 40vh;
+  }
+  .mac_box_container .gallery2 .mac_gallery2 {
+    min-height: 40vh;
+  }
+  .mac_info_container .mac_info_gallery1 {
+    min-height: 30vh;
+  }
+  .mac_info_container .mac_info_gallery2 {
+    min-height: 30vh;
+  }
+  .content_mac p {
+    padding: 2rem;
+  }
+  .gallery-center-image .box-container-center-image,
+.gallery-center-image .box-container-center-image2 {
+    min-height: 30vh;
+  }
+  .one_mac .content_one_left,
+.one_mac .content_one_right {
+    min-height: 20vh;
+>>>>>>> 6f99ff8fa3cdb5f534bce138ecb4680808414a0e
   }
 }
 @media (min-width: 297.98px) and (max-width: 1068.98px) and (min-width: 297.98px) and (max-width: 557.98px) {
@@ -2419,6 +2461,29 @@ body {
   }
   .presentcard .text_light_y {
     font-size: 2.5rem;
+  }
+  .home_mac {
+    min-height: 50vh;
+    background-size: inherit;
+    background-position: center;
+  }
+  .home_mac .big_text_xl_0 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  .home_mac .content {
+    padding: 0;
+  }
+  .dark {
+    min-height: 35vh;
+    background-color: black;
+  }
+  .dark .macBook_pro {
+    margin-top: 3rem;
+    min-height: 30vh;
+    background-size: contain;
+    background-position: bottom;
+    display: block;
   }
   .about_ipad {
     margin-top: 3rem;
