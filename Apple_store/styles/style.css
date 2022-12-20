@@ -752,6 +752,10 @@ footer .legal ul li:last-child {
   padding-top: 70px;
   background-color: #ffffff;
 }
+.big-box div {
+  display: flex;
+  flex-direction: column;
+}
 .big-box .fancy-rainbow {
   margin: 0 auto;
   width: -webkit-fit-content;
@@ -775,6 +779,8 @@ footer .legal ul li:last-child {
   -webkit-text-fill-color: transparent;
 }
 .big-box .a-list {
+  display: flex;
+  margin: auto;
   padding: 20px;
 }
 .big-box .a-list button {
@@ -799,6 +805,14 @@ footer .legal ul li:last-child {
   align-items: center;
   gap: 50px;
 }
+.split-box div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.split-box ul {
+  display: flex;
+}
 .split-box .fancy-blue {
   margin: 0 auto;
   width: -webkit-fit-content;
@@ -812,6 +826,7 @@ footer .legal ul li:last-child {
 }
 .split-box .a-list {
   padding: 20px;
+  justify-content: center;
 }
 .split-box .a-list button {
   font-size: 17px;
@@ -825,6 +840,11 @@ footer .legal ul li:last-child {
   font-size: 21px;
   font-weight: 500;
   color: #0071e3;
+}
+
+.split-watch-2 {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
 }
 
 @media screen and (max-width: 760px) {
