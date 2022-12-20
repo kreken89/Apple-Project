@@ -224,9 +224,10 @@ body {
   }
   // Presentcard mac page
   .presentcard_mac {
-    @include grid(25rem);
+    @include grid(37rem);
     max-width: 736px;
     column-gap: 0;
+    gap: 0;
   }
   // info boxes under presencard
   .gallery2 {
@@ -237,7 +238,7 @@ body {
   .mac_box_container,
   .mac_info-box,
   .mac_info_gallery {
-    columns: 2 25rem;
+    columns: 2 37rem;
     column-gap: 1rem;
     max-width: 736px;
     margin: auto;
@@ -259,6 +260,10 @@ body {
   }
 
   @media (min-width: 297.98px) and (max-width: 768.98px) {
+    html{
+      font-size: 50%;
+    }
+
     #menu-btn {
       display: inline-block;
     }
@@ -299,11 +304,11 @@ body {
 
     // Mac page < 768px
     .home_mac {
-      min-height: 40vh;
-      margin-bottom: 3rem;
-      background-size: contain;
+      min-height: 50vh;
+      margin-top: 6rem;
+      background-size: cover;
       background-position: bottom;
-      display: block;
+      // display: block;
 
       .big_text_xl_0 {
         font-size: 3rem;
@@ -326,14 +331,62 @@ body {
         display: block;
       }
     }
-    .ipad_info-box{
-      flex-direction: column;
-      .ipad-info{
-        margin: 0 auto;
+
+    // Presentcard mac page
+    .presentcard_mac {
+      @include grid(37rem);
+      min-height: 20vh;
+      max-width: 736px;
+      column-gap: 0;
+      gap: 0;
+
+      .content_left{
+       min-height: 20vh;
+      }
+      .content_right{
+       min-height: 40vh;
+      }
+    }
+
+    // Under presentcard
+    .mac_box_container{
+      .mac_gallery1{
+        min-height: 40vh;
+      }
+      .gallery2{
+        min-height: 40vh;
+        .mac_gallery2{
+        min-height: 40vh;
+      }
+      }
+    }
+
+    // info container
+    .mac_info_container{
+      .mac_info_gallery1{
+        min-height: 30vh;
+      }
+      .mac_info_gallery2{
+        min-height: 30vh;
+      }
+    }
+
+    .content_mac {
+      p {
         padding: 2rem;
-        a{
-          white-space: nowrap;
-        }
+      }
+    }
+    // Big images
+    .gallery-center-image .box-container-center-image,
+    .gallery-center-image .box-container-center-image2 {
+      min-height: 30vh;
+    }
+
+    // One section
+    .one_mac{
+      .content_one_left,
+      .content_one_right{
+        min-height: 20vh;
       }
     }
   }
@@ -370,6 +423,38 @@ body {
         font-size: 2.5rem;
       }
     }
+
+    // Mac page
+    // Mac page < 556px
+    .home_mac {
+      min-height: 50vh;
+      background-size: inherit;
+      background-position: center;
+      // display: block;
+
+      .big_text_xl_0 {
+        font-size: 3rem;
+        font-weight: 500;
+      }
+      .content {
+        padding: 0;
+      }
+    }
+
+    .dark {
+      min-height: 35vh;
+      background-color: black;
+
+      .macBook_pro {
+        margin-top: 3rem;
+        min-height: 30vh;
+        background-size: contain;
+        background-position: bottom;
+        display: block;
+      }
+    }
+
+    // Presentcard mac page
 
     // About Ipad
     .about_ipad {
