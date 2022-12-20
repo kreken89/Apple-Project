@@ -887,7 +887,6 @@ footer .legal ul li:last-child {
 
 .support_img_nav {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   min-height: 15vh;
@@ -912,6 +911,24 @@ footer .legal ul li:last-child {
   font-weight: 300;
 }
 
+@media screen and (max-width: 620px) {
+  .support_img_nav .img_nav_support {
+    flex-wrap: wrap;
+    width: 280px;
+    gap: 2.5rem;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+  }
+  .support_img_nav .img_nav_support .img_nav4 {
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .support_img_nav .img_nav_support {
+    width: 230px;
+    gap: 1rem;
+  }
+}
 .support_link_nav {
   display: flex;
   flex-direction: row;
@@ -954,18 +971,23 @@ footer .legal ul li:last-child {
 }
 
 @media (max-width: 700px) {
-  .img_link_support {
+  .support_link_nav .img_link_support {
     flex-direction: column;
   }
-  .img_link_support a {
-    margin: 1rem 1rem;
+  .support_link_nav .img_link_support a {
+    margin: 0;
     width: 75vw;
     align-self: center;
     padding-top: 4rem;
     padding-bottom: 4rem;
+    padding-left: 0;
+    padding-right: 0;
   }
-  .img_link_support .img_link_navx {
-    border: 1px 0px 1px 0px solid rgba(123, 123, 123, 0.2);
+  .support_link_nav .img_link_support .img_link_navx {
+    border-top: 1px solid rgba(123, 123, 123, 0.2);
+    border-bottom: 1px solid rgba(123, 123, 123, 0.2);
+    border-left: transparent;
+    border-right: transparent;
   }
 }
 .support_search {
@@ -1004,6 +1026,14 @@ footer .legal ul li:last-child {
   background: none;
 }
 
+@media screen and (max-width: 700px) {
+  .support_search {
+    padding: 5rem;
+  }
+  .support_search .search-container {
+    padding: 0;
+  }
+}
 .get_support {
   background: url(/Apple_store/images/support_images/s5.png) no-repeat;
   background-size: cover;
@@ -1213,6 +1243,17 @@ footer .legal ul li:last-child {
   padding: 0 5rem;
 }
 
+@media screen and (max-width: 710px) {
+  .ipad_info-box {
+    flex-direction: column;
+    align-content: center;
+    gap: 0;
+  }
+  .ipad_info-box .ipad-info {
+    padding: 3rem;
+    align-self: center;
+  }
+}
 .watch_info-box {
   display: flex;
   justify-content: center;

@@ -195,6 +195,17 @@
     }
   }
 }
+@media screen and (max-width: 710px){
+  .ipad_info-box{
+    flex-direction: column;
+    align-content: center;
+    gap: 0;
+    .ipad-info{
+      padding: 3rem;
+      align-self: center;
+    }
+  }
+}
 
 // Information boxes watch page
 .watch_info-box {
