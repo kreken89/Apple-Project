@@ -2571,8 +2571,8 @@ body {
     display: block;
   }
   .about_ipad .content_right {
-    min-height: 23vh;
-    background: rgba(255, 255, 255, 0.732);
+    min-height: 22.1vh;
+    background: rgba(255, 255, 255, 0.7);
     padding: 0 1rem;
   }
   .dark_ipad {
