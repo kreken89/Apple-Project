@@ -119,10 +119,15 @@
       margin-right: 1rem;
       border-radius: 2.3rem;
     }
+    ul{
+      display: flex;
+      align-content: center;
+    }
 
     ul li {
       list-style: none;
-      display: inline;
+      align-self: center;
+      // display: inline;
 
       a {
         padding: 1rem;
@@ -161,6 +166,11 @@
       align-items: center;
       color: white;
 
+      ul{
+        display: flex;
+        
+      }
+
       h2 {
         font-size: 5.5rem;
         font-weight: 400;
@@ -196,6 +206,7 @@
         display: inline;
         padding: 0.5rem;
         margin-bottom: 2rem;
+        align-self: center;
 
         a {
           font-size: 2rem;
@@ -499,6 +510,9 @@
       background-color: #0071e3;
       color: white;
     }
+    li{
+      align-self: center;
+    }
     a {
       margin-left: 20px;
       font-size: 21px;
@@ -546,6 +560,9 @@
       border-radius: 2.5rem;
       background-color: #0071e3;
       color: white;
+    }
+    li{
+      align-self: center;
     }
     a {
       margin-left: 20px;

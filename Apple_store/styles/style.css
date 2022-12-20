@@ -473,9 +473,13 @@ footer .legal ul li:last-child {
   margin-right: 1rem;
   border-radius: 2.3rem;
 }
+.home_mac .content ul {
+  display: flex;
+  align-content: center;
+}
 .home_mac .content ul li {
   list-style: none;
-  display: inline;
+  align-self: center;
 }
 .home_mac .content ul li a {
   padding: 1rem;
@@ -505,6 +509,9 @@ footer .legal ul li:last-child {
   flex-direction: column;
   align-items: center;
   color: white;
+}
+.dark .macBook_pro .content ul {
+  display: flex;
 }
 .dark .macBook_pro .content h2 {
   font-size: 5.5rem;
@@ -537,6 +544,7 @@ footer .legal ul li:last-child {
   display: inline;
   padding: 0.5rem;
   margin-bottom: 2rem;
+  align-self: center;
 }
 .dark .macBook_pro .content ul li a {
   font-size: 2rem;
@@ -790,6 +798,9 @@ footer .legal ul li:last-child {
   background-color: #0071e3;
   color: white;
 }
+.big-box .a-list li {
+  align-self: center;
+}
 .big-box .a-list a {
   margin-left: 20px;
   font-size: 21px;
@@ -834,6 +845,9 @@ footer .legal ul li:last-child {
   border-radius: 2.5rem;
   background-color: #0071e3;
   color: white;
+}
+.split-box .a-list li {
+  align-self: center;
 }
 .split-box .a-list a {
   margin-left: 20px;
