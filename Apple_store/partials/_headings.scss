@@ -173,23 +173,23 @@
         margin-bottom: 2rem;
       }
 
-    .price {
-      font-size: 2rem;
-      font-weight: 200;
-      margin-bottom: 0.5rem;
-      margin-bottom: 1rem;
-    }
+      .price {
+        font-size: 2rem;
+        font-weight: 200;
+        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
+      }
 
-    .buy_button {
-      color: white;
-      cursor: pointer;
-      font-size: 2rem;
-      font-weight: 300;
-      background-color: #0071e3;
-      padding: 0.8rem 1.5rem;
-      margin-right: 1rem;
-      border-radius: 2.3rem;
-    }
+      .buy_button {
+        color: white;
+        cursor: pointer;
+        font-size: 2rem;
+        font-weight: 300;
+        background-color: #0071e3;
+        padding: 0.8rem 1.5rem;
+        margin-right: 1rem;
+        border-radius: 2.3rem;
+      }
 
       ul li {
         list-style: none;
@@ -226,7 +226,7 @@
   background-size: cover;
   background-position: center;
   display: flex;
-  height: 70vh;
+  height: 60vh;
   min-width: 30vw;
   align-items: center;
   justify-content: center;
@@ -271,78 +271,82 @@
 }
 
 //iPad pro img - purple image
-.ipad {
-  background: url(/Apple_store/images/ipad_images/i2.png) no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: row;
-  min-height: 70vh;
-  align-items: center;
-  justify-content: flex-start;
 
-  .content_about_ipad {
-    margin-top: -5rem;
+.dark_ipad {
+  min-height: 50vh;
+  background-color: black;
+  .ipad {
+    background: url(/Apple_store/images/ipad_images/i2.png) no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    background-position-x: 30%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 15rem;
+    flex-direction: row;
+    min-height: 50vh;
 
-    .big_text_xl_light {
-      font-size: 5.5rem;
-      font-weight: 500;
-      color: white;
-    }
+    .content_about_ipad {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 3rem;
+      // margin-left: 15rem;
 
-    .text_light_y {
-      color: white;
-      font-size: 2.7rem;
-      font-weight: 400;
-      margin-top: 1.5rem;
-      margin-bottom: 2rem;
-      padding: 0 5rem;
-    }
+      .big_text_xl_light {
+        font-size: 5.5rem;
+        font-weight: 500;
+        color: white;
+      }
 
-    h4 {
-      font-size: 1.5rem;
-      font-weight: 400;
-      color: #bf4800;
-    }
+      .text_light_y {
+        color: white;
+        font-size: 2.7rem;
+        font-weight: 400;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        padding: 0 5rem;
+      }
 
-    .fa-apple {
-      font-size: 5rem;
-    }
+      h4 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #bf4800;
+      }
 
-    .buy_button {
-      color: white;
-      cursor: pointer;
-      font-size: 1.8rem;
-      font-weight: 300;
-      background-color: #0071e3;
-      padding: 0.8rem 1.7rem;
-      margin-bottom: 1rem;
-      border-radius: 2.3rem;
-    }
+      .fa-apple {
+        font-size: 5rem;
+      }
 
-    ul li {
-      list-style: none;
-      display: inline;
+      .buy_button {
+        color: white;
+        cursor: pointer;
+        font-size: 1.8rem;
+        font-weight: 300;
+        background-color: #0071e3;
+        padding: 0.8rem 1.7rem;
+        margin-bottom: 1rem;
+        border-radius: 2.3rem;
+      }
 
-      a {
-        font-size: 2rem;
-        color: #06c;
-        letter-spacing: inherit;
+      ul li {
+        list-style: none;
+        display: inline;
+
+        a {
+          font-size: 2rem;
+          color: #06c;
+          letter-spacing: inherit;
+        }
       }
     }
-  }
 
-  @media (min-width: 297.98px) and (max-width: 767.98px) {
-    padding: 3rem 1rem;
+    @media (min-width: 297.98px) and (max-width: 767.98px) {
+      padding: 3rem 1rem;
 
-    .s1 {
-      font-size: 5vw;
-      margin: 3rem;
+      .s1 {
+        font-size: 5vw;
+        margin: 3rem;
+      }
     }
   }
 }
@@ -536,22 +540,22 @@
     }
   }
 }
-@media screen and (max-width: 760px){
-  .iphone-big-box{
+@media screen and (max-width: 760px) {
+  .iphone-big-box {
     display: flex;
     flex-direction: column;
   }
-  .big-iphone-2{
+  .big-iphone-2 {
     flex-direction: column;
     gap: 0;
-    img{
+    img {
       height: 30vh;
     }
   }
-  .split-watch-1{
+  .split-watch-1 {
     flex-direction: column;
   }
-  .split-watch-2{
+  .split-watch-2 {
     flex-direction: column;
   }
 }
@@ -565,13 +569,13 @@
   .big-watch-2 {
     width: 270px;
   }
-  .split-watch-1{
-    img{
+  .split-watch-1 {
+    img {
       height: 30vh;
     }
   }
-  .split-watch-2{
-    img{
+  .split-watch-2 {
+    img {
       width: 25vh;
     }
   }
@@ -629,7 +633,7 @@
   min-height: 15vh;
 
   .img_nav_support {
-    display: flex; 
+    display: flex;
     gap: 8rem;
     a {
       color: black;
@@ -637,7 +641,7 @@
       flex-direction: column;
       justify-content: center;
       font-size: 8rem;
-      img{
+      img {
         align-self: center;
         margin: 3rem;
       }
@@ -665,7 +669,7 @@
     border-bottom: 1px solid #7b7b7b33;
     font-weight: 100;
     width: 100%;
-    
+
     a {
       margin: 5rem 0;
       padding: 0 5rem;
@@ -675,11 +679,11 @@
       row-gap: 3rem;
       font-size: 8rem;
       color: #0070c9;
-      img{
+      img {
         align-self: center;
       }
     }
-    .img_link_navx{
+    .img_link_navx {
       border-left: 1px solid#7b7b7b33;
       border-right: 1px solid#7b7b7b33;
     }
@@ -694,21 +698,19 @@
     }
   }
 }
-@media (max-width: 700px){
-  .img_link_support{
+@media (max-width: 700px) {
+  .img_link_support {
     flex-direction: column;
-    
-    a{
+
+    a {
       margin: 1rem 1rem;
       width: 75vw;
       align-self: center;
       padding-top: 4rem;
       padding-bottom: 4rem;
     }
-    .img_link_navx{
-
-      border: 1px 0px 1px 0px solid#7b7b7b33; 
-      
+    .img_link_navx {
+      border: 1px 0px 1px 0px solid#7b7b7b33;
     }
   }
 }
@@ -728,9 +730,8 @@
     justify-content: center;
     width: 100%;
     padding-bottom: 5rem;
-    border-bottom: 1px solid #7b7b7b;
-    
-    .form_search{
+
+    .form_search {
       display: flex;
       border: 1px solid #7b7b7b;
       min-width: 50%;

@@ -550,7 +550,7 @@ footer .legal ul li:last-child {
   background-size: cover;
   background-position: center;
   display: flex;
-  height: 70vh;
+  height: 60vh;
   min-width: 30vw;
   align-items: center;
   justify-content: center;
@@ -589,30 +589,32 @@ footer .legal ul li:last-child {
   letter-spacing: inherit;
 }
 
-.ipad {
+.dark_ipad {
+  min-height: 50vh;
+  background-color: black;
+}
+.dark_ipad .ipad {
   background: url(/Apple_store/images/ipad_images/i2.png) no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position-y: 50%;
+  background-position-x: 30%;
   display: flex;
   flex-direction: row;
-  min-height: 70vh;
-  align-items: center;
-  justify-content: flex-start;
+  min-height: 50vh;
 }
-.ipad .content_about_ipad {
-  margin-top: -5rem;
+.dark_ipad .ipad .content_about_ipad {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 15rem;
+  margin-left: 3rem;
 }
-.ipad .content_about_ipad .big_text_xl_light {
+.dark_ipad .ipad .content_about_ipad .big_text_xl_light {
   font-size: 5.5rem;
   font-weight: 500;
   color: white;
 }
-.ipad .content_about_ipad .text_light_y {
+.dark_ipad .ipad .content_about_ipad .text_light_y {
   color: white;
   font-size: 2.7rem;
   font-weight: 400;
@@ -620,15 +622,15 @@ footer .legal ul li:last-child {
   margin-bottom: 2rem;
   padding: 0 5rem;
 }
-.ipad .content_about_ipad h4 {
+.dark_ipad .ipad .content_about_ipad h4 {
   font-size: 1.5rem;
   font-weight: 400;
   color: #bf4800;
 }
-.ipad .content_about_ipad .fa-apple {
+.dark_ipad .ipad .content_about_ipad .fa-apple {
   font-size: 5rem;
 }
-.ipad .content_about_ipad .buy_button {
+.dark_ipad .ipad .content_about_ipad .buy_button {
   color: white;
   cursor: pointer;
   font-size: 1.8rem;
@@ -638,20 +640,20 @@ footer .legal ul li:last-child {
   margin-bottom: 1rem;
   border-radius: 2.3rem;
 }
-.ipad .content_about_ipad ul li {
+.dark_ipad .ipad .content_about_ipad ul li {
   list-style: none;
   display: inline;
 }
-.ipad .content_about_ipad ul li a {
+.dark_ipad .ipad .content_about_ipad ul li a {
   font-size: 2rem;
   color: #06c;
   letter-spacing: inherit;
 }
 @media (min-width: 297.98px) and (max-width: 767.98px) {
-  .ipad {
+  .dark_ipad .ipad {
     padding: 3rem 1rem;
   }
-  .ipad .s1 {
+  .dark_ipad .ipad .s1 {
     font-size: 5vw;
     margin: 3rem;
   }
@@ -979,7 +981,6 @@ footer .legal ul li:last-child {
   justify-content: center;
   width: 100%;
   padding-bottom: 5rem;
-  border-bottom: 1px solid #7b7b7b;
 }
 .support_search .search-container .form_search {
   display: flex;
@@ -2337,6 +2338,16 @@ body {
     min-height: 48vh;
     background-size: cover;
   }
+  .dark_ipad {
+    min-height: 50vh;
+  }
+  .dark_ipad .ipad {
+    background-position-y: 50%;
+    background-position-x: 40%;
+  }
+  .dark_ipad .ipad .content_about_ipad {
+    margin-left: 1rem;
+  }
 }
 @media (min-width: 297.98px) and (max-width: 1068.98px) and (min-width: 297.98px) and (max-width: 768.98px) {
   html {
@@ -2349,7 +2360,7 @@ body {
     display: block;
   }
   .about_ipad {
-    height: 40vh;
+    height: 50vh;
   }
   .about_ipad .content_right {
     margin: 0;
@@ -2362,6 +2373,16 @@ body {
   .text_dark_y {
     font-size: 2rem;
     padding: 0;
+  }
+  .dark_ipad {
+    min-height: 50vh;
+  }
+  .dark_ipad .ipad {
+    background-position-y: 50%;
+    background-position-x: 40%;
+  }
+  .dark_ipad .ipad .content_about_ipad {
+    margin-left: 1rem;
   }
   .gallery .box-container {
     -moz-columns: 2 37rem;
@@ -2442,6 +2463,14 @@ body {
 .one_mac .content_one_right {
     min-height: 20vh;
   }
+  .about_ipad_home {
+    height: 50vh;
+  }
+  .about_ipad_home .content_right {
+    margin: 0;
+    padding-left: 300px;
+    padding-right: 0;
+  }
 }
 @media screen and (min-width: 297.98px) and (max-width: 1068.98px) and (max-width: 610px) {
   .mac_info-box {
@@ -2450,7 +2479,7 @@ body {
 }
 @media (min-width: 297.98px) and (max-width: 1068.98px) and (min-width: 297.98px) and (max-width: 557.98px) {
   html {
-    font-size: 50%;
+    font-size: 45%;
   }
   .home {
     min-height: 40vh;
@@ -2495,13 +2524,28 @@ body {
   }
   .about_ipad {
     margin-top: 3rem;
-    height: 40vh;
+    min-height: 51vh;
     background-size: auto;
     background-position: bottom;
     display: block;
   }
   .about_ipad .content_right {
+    min-height: 23vh;
+    background: rgba(255, 255, 255, 0.732);
     padding: 0 1rem;
+  }
+  .dark_ipad {
+    min-height: 50vh;
+  }
+  .dark_ipad .ipad {
+    min-height: 50vh;
+    background-position-y: 150px;
+    background-position-x: 50%;
+  }
+  .dark_ipad .ipad .content_about_ipad {
+    position: absolute;
+    left: 15%;
+    margin: auto;
   }
   .gallery .box-container {
     -moz-columns: 2 37rem;
