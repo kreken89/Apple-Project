@@ -607,7 +607,7 @@ footer .legal ul li:last-child {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 3rem;
+  margin-left: 20%;
 }
 .dark_ipad .ipad .content_about_ipad .big_text_xl_light {
   font-size: 5.5rem;
