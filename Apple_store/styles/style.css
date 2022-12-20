@@ -1384,9 +1384,10 @@ footer .legal ul li:last-child {
 }
 
 .text_section_support1 {
-  max-width: 50%;
+  width: 50%;
   margin: auto;
-  padding: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   flex-direction: row;
 }
 .text_section_support1 h2 {
@@ -1400,15 +1401,14 @@ footer .legal ul li:last-child {
 .text_section_support1 a {
   font-size: 2rem;
   font-weight: 200;
-}
-.text_section_support1 .testar {
-  flex-direction: row;
+  white-space: nowrap;
 }
 
 .text_section_support2 {
-  max-width: 50%;
-  margin: auto;
-  padding: 3rem;
+  width: 50%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin: 0 auto;
 }
 .text_section_support2 h2 {
   font-size: 2.5rem;
@@ -1424,9 +1424,13 @@ footer .legal ul li:last-child {
 }
 
 .link_section_support {
+  display: flex;
+  justify-content: center;
   text-align: left;
-  margin-left: 27%;
   padding-top: 3rem;
+}
+.link_section_support .support-section-container {
+  width: 50%;
 }
 .link_section_support h2 {
   font-size: 2.5rem;
@@ -1441,9 +1445,25 @@ footer .legal ul li:last-child {
 }
 
 .full_line_border {
-  border: 1px solid rgb(245, 241, 241);
+  border: 1px solid rgb(238, 237, 237);
 }
 
+@media screen and (max-width: 1600px) {
+  .text_section_support1, .text_section_support2 {
+    width: 65vw;
+  }
+  .link_section_support .support-section-container {
+    width: 65vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .text_section_support1, .text_section_support2 {
+    width: 85vw;
+  }
+  .link_section_support .support-section-container {
+    width: 85vw;
+  }
+}
 section {
   text-align: center;
   font-size: 1rem;
