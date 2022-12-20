@@ -810,6 +810,25 @@ footer .legal ul li:last-child {
   color: #0071e3;
 }
 
+@media screen and (max-width: 760px) {
+  .iphone-big-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .big-iphone-2 {
+    flex-direction: column;
+    gap: 0;
+  }
+  .big-iphone-2 img {
+    height: 30vh;
+  }
+  .split-watch-1 {
+    flex-direction: column;
+  }
+  .split-watch-2 {
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 1360px) {
   .watch-big-box {
     display: flex;
@@ -819,6 +838,12 @@ footer .legal ul li:last-child {
 @media screen and (max-width: 950px) {
   .big-watch-2 {
     width: 270px;
+  }
+  .split-watch-1 img {
+    height: 30vh;
+  }
+  .split-watch-2 img {
+    width: 25vh;
   }
 }
 @media screen and (max-width: 1060px) {
@@ -1532,6 +1557,7 @@ ul li a:hover {
 
 .watch-table .col .thead {
   width: 250px;
+  padding-top: 5rem;
 }
 .watch-table .col .thead .price {
   padding-top: 5px;
@@ -1543,7 +1569,22 @@ ul li a:hover {
 @media screen and (max-width: 960px) {
   .phone-table, .mac-table, .ipad-table {
     flex-wrap: wrap;
-    width: 600px;
+    width: 550px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .watch-table {
+    flex-wrap: wrap;
+    justify-content: start;
+    width: 550px;
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .phone-table, .mac-table, .ipad-table, .watch-table {
+    justify-content: center;
+    width: 250px;
   }
 }
 .gallery .box-container {
@@ -2259,6 +2300,21 @@ body {
     background-size: contain;
     background-position: bottom;
     display: block;
+  }
+  .ipad_info-box {
+    flex-direction: column;
+  }
+  .ipad_info-box .ipad-info {
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  .ipad_info-box .ipad-info a {
+    white-space: nowrap;
+  }
+}
+@media screen and (min-width: 297.98px) and (max-width: 1068.98px) and (max-width: 610px) {
+  .mac_info-box {
+    flex-direction: column;
   }
 }
 @media (min-width: 297.98px) and (max-width: 1068.98px) and (min-width: 297.98px) and (max-width: 557.98px) {

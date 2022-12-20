@@ -326,8 +326,22 @@ body {
         display: block;
       }
     }
+    .ipad_info-box{
+      flex-direction: column;
+      .ipad-info{
+        margin: 0 auto;
+        padding: 2rem;
+        a{
+          white-space: nowrap;
+        }
+      }
+    }
   }
-
+  @media screen and (max-width: 610px){
+    .mac_info-box{
+      flex-direction: column;
+    }
+    }
   @media (min-width: 297.98px) and (max-width: 557.98px) {
     html {
       font-size: 50%;

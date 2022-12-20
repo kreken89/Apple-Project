@@ -514,6 +514,25 @@
     }
   }
 }
+@media screen and (max-width: 760px){
+  .iphone-big-box{
+    display: flex;
+    flex-direction: column;
+  }
+  .big-iphone-2{
+    flex-direction: column;
+    gap: 0;
+    img{
+      height: 30vh;
+    }
+  }
+  .split-watch-1{
+    flex-direction: column;
+  }
+  .split-watch-2{
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 1360px) {
   .watch-big-box {
     display: flex;
@@ -523,6 +542,16 @@
 @media screen and (max-width: 950px) {
   .big-watch-2 {
     width: 270px;
+  }
+  .split-watch-1{
+    img{
+      height: 30vh;
+    }
+  }
+  .split-watch-2{
+    img{
+      width: 25vh;
+    }
   }
 }
 @media screen and (max-width: 1060px) {
